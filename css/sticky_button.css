@@ -1,6 +1,6 @@
 .sticky_button_up_c {
-	width: 3vw;
-	height: 6vh;
+	width: 3.5vmax;
+	height: 3.5vmax;
 	position: fixed;
 	right: 3vw;
 	bottom: 4vh;
@@ -8,9 +8,9 @@
 	border: 2px solid lightgray;
 	z-index: 1;	
 	text-align: center;
-	line-height: 6vh;
+	line-height: 3.5vmax;
 	color: gray;
-	font-size: 1.5vw;
+	font-size: 2vmax;
 	cursor: pointer;
 }
 .sticky_button_up_c:hover {

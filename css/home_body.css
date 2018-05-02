@@ -1,0 +1,110 @@
+.body_c{
+	width: 100vw;
+	height: auto;
+	background-color: white;
+	border-top: 1vh solid aquamarine;
+	border-bottom: 1vh solid aquamarine;
+}
+.body_pic_c{
+	width: 35vw;
+	height: auto;
+	position: relative;
+	left: 10vw;
+}
+.about_us_c{
+	width: 100vw;
+	height: auto;
+	text-align: center;
+}
+.title_c{
+	font-size: 300%;
+	font-family: "Pacifico";
+	font-weight: bolder;
+}
+.subtitle_c{
+	position: relative;
+	left: 20vw;
+	width: 60vw;
+	font-size: 120%;
+	color: gray;
+	font-style: italic;
+}
+.title_underline_c{
+	position: relative;
+	top: 1vmin;
+	width: 10vw;
+	border: 1px solid aquamarine; 
+	background-color: aquamarine;
+	height: 0.2vh;
+	overflow: hidden;
+}
+.body_text1_c{
+	font-family: "Open Sans";
+	width: 40vw;
+	font-size: 100%;
+	line-height: 30px;
+}
+
+.title_line_c{
+	position: relative;
+	top: 2%;
+	left: 9vw;
+	width: 83vw;
+	height: 10vmin;
+	background-color: aquamarine;
+}
+.title_in_line_c{
+	position: relative;
+	top: 10%;
+	font-size: 300%;
+	font-family: "Pacifico";
+	font-weight: bolder;
+	padding-left: 1%; 
+}
+.member_c{
+	position: relative;
+	top: 5%;
+	text-align: center;
+	overflow: hidden;
+}
+
+.mem_pic{
+	border-radius: 50%;
+}
+.mem_name{
+	font-weight: bolder;
+	font-family: "Open Sans";
+	font-size: 200%;		
+}
+
+.mem_descrition{
+	font-size: 100%;
+	color: gray;
+}
+
+@media only screen and (max-width: 530px) {
+	.title_in_line_c{
+		font-size: 185%;
+		text-align: center;
+	}
+	.subtitle_c{
+		font-size: 90%;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+    .body_pic_c{
+        width: 100%;
+		height: auto;
+		left: 0vw;
+    }
+	.body_text1_c{
+		width: 95vw;
+		font-size: 120%;
+		line-height: 7vmin;
+		
+	}
+	.col-md-12 > .title_c{
+		text-align: center;
+	}
+}
