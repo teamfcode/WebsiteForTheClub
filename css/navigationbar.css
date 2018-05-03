@@ -99,6 +99,14 @@ body{
 	cursor: pointer;
 }
 
+.login_c >  a:visited {
+	color: white;
+}
+
+.login_c >  a:link {
+	color: white;
+}
+
 .slice_caption_c{
 	position: relative;
 	font-size: 2vw;
@@ -150,7 +158,7 @@ body{
 	display: none;
 }
 
-@media only screen and (max-width: 1800px) {
+@media only screen and (max-width: 1200px) {
 	.header_hidden_c{
 		display: block;
 	}

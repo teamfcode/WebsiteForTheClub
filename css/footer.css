@@ -98,7 +98,7 @@
 	}
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
     .message_area_c{
         width: 95%;
 		height: 20vh;
@@ -134,7 +134,7 @@
 		width: 25vw;
 		font-size: 3.5vw;
 	}
-	::placeholder{
+	.name_input_c::placeholder, .email_input_c::placeholder, .message_area_c::placeholder{
 		font-size: 3vw;
 	}
 }
