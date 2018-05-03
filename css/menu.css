@@ -1,0 +1,96 @@
+body {
+	background-color: white;
+	position: relative;
+	margin: 0 !important;
+}
+a {text-decoration: none;}
+	
+i {
+font-family: 'fontawesome' !important;
+}
+h3 {		
+	font-family: Arial, sans-serif;
+	font-weight: 400;
+	color: #66615B;	
+	margin: 0;	
+}
+ 
+/*--------Menu------- */
+.wrapper {
+	top: 0;
+	position: relative;
+	min-height: 100vh;
+}
+.wrap_menu {
+	background-color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 260px;
+	min-height: 100vh;
+	border-right: 1px solid #DDDDDD; 
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.menu_logo {	
+	width: 220px;
+	height: 50px;
+	margin: 0 auto 0 auto;
+	padding-top: 20px;
+}	
+.menu_logo img {	
+	width: 50px;
+	height: 50px;	
+	float: left;
+}
+.menu_logo h3 {		
+	float: left;	
+	margin: 0;
+	line-height: 50px;
+	padding-left:24.075px;
+}
+
+.wrap_menu .line {
+	clear: left;
+	height: 1px;
+	width: 260px;
+	background-color: #D1CFCD;
+	margin: 25px auto 35px auto;	
+}
+
+.wrap_menu ul {
+	list-style: none;
+	display: table;
+	padding: 0 25px 0 25px;
+	width: 210px;
+}
+.wrap_menu ul > li {
+	position: relative;
+	display: block;	
+}
+.wrap_menu ul > li > a {
+	display: block;
+	position: relative;
+}
+.menu1 i, .menu2 i, .menu3 i, .menu4 i, .menu5 i {	
+	color: #B3B1AE;
+	font-size: 30px;
+	float: left;
+	margin-right: 15px;
+}
+.menu1 p, .menu2 p, .menu3 p, .menu4 p, .menu5 p {	
+	font-family: Arial, sans-serif;
+	color: #B3B1AE;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 400;	
+	margin: 0;
+}
+.menu1:hover i, .menu1:hover p, .menu2:hover i, .menu2:hover p, 
+.menu3:hover i, .menu3:hover p, .menu4:hover i, .menu4:hover p,
+.menu5:hover i, .menu5:hover p {
+	color: black; 
+	transition-delay: 0.1s;
+	transition-duration: 0.4s;
+}
+.menu2, .menu3, .menu4, .menu5 {padding-top: 30px;}
