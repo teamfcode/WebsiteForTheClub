@@ -150,7 +150,7 @@ body{
 	display: none;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1800px) {
 	.header_hidden_c{
 		display: block;
 	}

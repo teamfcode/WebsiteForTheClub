@@ -2,7 +2,15 @@
 	border-top: 1vh solid aquamarine; 
 	border-bottom: 1vh solid aquamarine; 
 	width: 100vw;
-	height: 350vh;
+	height: auto;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+.flex_container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 .event_title_c{
 	width: 100vw;
@@ -16,16 +24,13 @@
 	font-weight: lighter;
 }
 .date_picker_wrapper_c{
-	position: relative;
-	top: 7vmin;
+	padding-top: 7vmin;
 }
 .title_wrapper_c{
-	position: relative;
-	top: 14vmin;
+	padding-top: 7vmin;
+	padding-bottom: 12vmin;
 }
 .event_background_c{
-	position: relative;
-	top: 25vmin;
 	padding: 0vmax 1.5vmax 1.5vmax;
 	width: auto;
 	height: auto;
@@ -72,6 +77,8 @@
 }
 ::placeholder{
 	font-size: 1vmax;
+	vertical-align: middle;
+	line-height: 4vh;
 }
 .title_c{
 	font-family: none;
@@ -92,14 +99,14 @@
 	text-decoration: underline;
 }
 .event_date_text_c{
-	font-size: 1.5vmax;
+	font-size: 1.2vmax;
 }
 
 .event_date_text_c > i{
 	color: lightpink;	
 }
 .event_info_text_c{
-	font-size: 1.9vmax;
+	font-size: 1.5vmax;
 	font-family: none;
 	font-weight: lighter;
 	font-style: italic;
@@ -109,7 +116,7 @@
 	border-radius: 25px;
 	background-color: aquamarine;
 	color: white !important;
-	width: 15vw;
+	width: 12vw;
 	height: 5.5vmin;
 	padding: 2vmin;
 	outline: none;
@@ -131,11 +138,34 @@ a:visited{
 	color: black;
 }
 
-@media only screen and (max-width: 500px) {
+.pagination a{
+	display: inline-block;
+	background-color: aquamarine;
+	color: white;
+	padding: 1vh 1.5vh;
+}
+
+.pagination a:hover{
+	color: aquamarine;
+	background-color: white;
+}
+
+.pagination {
+	padding-top: 2vmin;
+	width: auto;
+	height: auto;
+}
+
+.page_wrapper{
+	display: inline-block;
+	padding-top: 1vh;
+}
+
+@media only screen and (max-width: 800px) {
 	.btn_view_more_c{
-		width: 30vw;
+		width: 35vw;
 		height: 8vmin;
-		font-size: 2.5vmax;
+		font-size: 2vmax;
 		line-height: 4vmin;
 	}
 	.date_text_c{
@@ -153,30 +183,59 @@ a:visited{
 	.event_info_text_c{
 		font-size: 2.5vmax;
 	}
-	.body_c{
-		height: 540vh;
+	.date_input_c{
+		width: 35vw;
+		font-size: 3vw;
+		vertical-align: middle;
+		line-height: 8vh; 
 	}
 }
 
-@media only screen and (max-width: 800px) and (min-width: 500px) {
+@media only screen and (max-width: 900px) and (min-width: 500px) {
 	.btn_submit_c{
 		width: 25vw;
 		font-size: 3vw;
 	}
 	.date_input_c{
 		width: 35vw;
+		font-size: 3vw;
+		vertical-align: middle;
+		line-height: 8vh; 
 	}
 	::placeholder{
 		font-size: 3vw;
 	}
-	.body_c{
-		height: 200vh;
+}
+
+@media only screen and (max-width: 1150px)  and (min-width: 900px){
+	.date_input_c{
+		width: 35vw;
+		font-size: 2.5vw;
+	}
+	.btn_view_more_c{
+		width: 20vw;
+		height: 5vmin;
+		font-size: 2vmax;
+		line-height: 1vmin;
+	}
+	::placeholder{
+		font-size: 3vw;
 	}
 }
 
-@media only screen and (max-width: 1100px)  and (min-width: 800px){
-	.body_c{
-		height: 190vh;
+@media only screen and (max-width: 1500px)  and (min-width: 1150px){
+	.date_input_c{
+		width: 20vw;
+		font-size: 2vw;
+	}
+	.btn_view_more_c{
+		width: 15vw;
+		height: 5vmin;
+		font-size: 2vmax;
+		line-height: 1vmin;
+	}
+	.date_input_c::placeholder{
+		font-size: 1.5vw;
 	}
 }
 

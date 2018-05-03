@@ -92,13 +92,13 @@
 }
 
 @media only screen and (max-width: 500px) {
-	.btn_submit_c{
+	#send_message_c{
 		position: relative;
 		left: 65vw;
 	}
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1100px) {
     .message_area_c{
         width: 95%;
 		height: 20vh;
@@ -106,6 +106,8 @@
 	.name_input_c, .email_input_c{
 		width: 93%;
 		font-size: 120%;
+		vertical-align: middle;
+		line-height: 10vh;
 	}
 	.text_input_c{
 		font-size: 3vw;
