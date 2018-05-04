@@ -22,8 +22,11 @@
 
 <body>
     <div>
-        <div class="cover">
-            <div class="circle">Profile picture here</div>
+        <div class="cover page">
+            <div class="circle">
+                <input id="image" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+            </div>
+            <br><br>
             <div class="inner-row">
                 <form class="form-horizontal" action="/action_page.php">
                     <div class="form-group">
@@ -38,8 +41,76 @@
             </div>
             <button>Your profile</button>
         </div>
+        <div class="profile page" style="background-color: beige">
+            <div class="upper-row">
+                <div>
+                    <form class="form-inline" action="/action_page.php">
+                        <div class="form-group">
+                            <label class="sr-only" for="firstname">First name</label>
+                            <input type="text" class="form-control" id="firstname" placeholder="First name">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="lastname">Last name</label>
+                            <input type="text" class="form-control" id="lastname" placeholder="Last name">
+                        </div>
+                    </form>
+                    <br>
+                    <form class="form-inline" action="/action_page.php">
+                        <div class="form-group">
+                            <label class="sr-only" for="dob">Date of birth</label>
+                            <input type="text" class="form-control" id="dob" placeholder="Date of birth">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="gender">Gender</label>
+                            <input type="text" class="form-control" id="gender" placeholder="Gender">
+                        </div>
+                    </form>
+                </div>
+                <!-----------------------------Major, Course, Email, Phone number-------------------------->
+                <div>
+                    <form class="form-inline" action="/action_page.php">
+                        <div class="form-group">
+                            <label for="major">Major:</label>
+                            <input type="text" class="form-control" id="major" placeholder="Ex: Software Engineering">
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Course:</label>
+                            <input type="text" class="form-control" id="course" placeholder="Ex: K14">
+                        </div>
+                    </form>
+                    <br>
+                    <form class="form-inline" action="/action_page.php">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ex: hongduc@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone no:</label>
+                            <input type="text" class="form-control" id="phone" placeholder="Ex: 01289583348">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <div class="lower-row">
+                <!--------------------------------Change Password------------------------------------------>
+                <form class="form-horizontal" action="/action_page.php">
+                    <div class="form-group">
+                        <label for="oldpw">Old password</label>
+                        <input type="password" class="form-control" id="oldpw" placeholder="Old password">
+                    </div>
+                    <div class="form-group">
+                        <label for="newpw">New password</label>
+                        <input type="password" class="form-control" id="newpw" placeholder="New password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmpw">Confirm password</label>
+                        <input type="password" class="form-control" id="confirmpw" placeholder="Confirm password">
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-
 </body>
 
 </html>

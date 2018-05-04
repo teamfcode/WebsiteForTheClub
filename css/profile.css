@@ -1,6 +1,14 @@
-.cover {
+.page {
     margin: 10vw auto;
     width: 17vw;
+}
+
+.profile {
+    width: 68vw;
+}
+
+.cover {
+    background-color: blanchedalmond;
 }
 
 .circle {
@@ -22,4 +30,9 @@
 
 .cover > button {
     margin-left: 11vw;
+}
+
+.upper-row {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
 }
