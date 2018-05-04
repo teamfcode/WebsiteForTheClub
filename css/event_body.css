@@ -7,21 +7,18 @@
 	padding-bottom: 5vh;
 }
 
-.flex_container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
 .event_title_c{
 	width: 100vw;
-	height: 25vh;
+	height: auto;
 	background-color: ghostwhite;
 	font-family: "Pacifico";
-	font-size: 7vmax;
+	font-size: 10vmin;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 25vh;
+	line-height: auto;
 	font-weight: lighter;
+	padding-bottom: 5vmin;
+	padding-top: 5vmin;
 }
 .date_picker_wrapper_c{
 	padding-top: 7vmin;
@@ -43,23 +40,24 @@
 	border-radius: 25px;
 	background-color: white;
 	color: black;
-	width: 17vw;
-	height: 6vh;
-	padding: 2vh;
+	width: 100%;
+	height: auto;
+	padding: 2.5% 5%;
+	line-height: auto;
 	outline: none;
     box-sizing: border-box;
 	font-size: 1vmax;
 }
-.btn_submit_c{
+#find_event_c{
 	outline: none;
-	width: 10vw;
-	height: 6vh;
+	width: 100%;
+	height: auto;
 	border: 3px solid lightpink;
     background-color: lightpink;
 	border-radius: 10%;
 	color: white;
 	text-align: center;
-	line-height: 5vh;
+	line-height: auto;
 	font-size: 1.5vw;
 	cursor: pointer;
 }
@@ -116,9 +114,9 @@
 	border-radius: 25px;
 	background-color: aquamarine;
 	color: white !important;
-	width: 12vw;
-	height: 5.5vmin;
-	padding: 2vmin;
+	width: 30%;
+	height: auto;
+	padding: 1.5vmin;
 	outline: none;
     box-sizing: border-box;
 	text-align: center;
@@ -161,11 +159,11 @@ a:visited{
 	padding-top: 1vh;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
 	.btn_view_more_c{
 		width: 35vw;
 		height: 8vmin;
-		font-size: 2vmax;
+		font-size: 2.5vmax;
 		line-height: 4vmin;
 	}
 	.date_text_c{
@@ -183,53 +181,28 @@ a:visited{
 	.event_info_text_c{
 		font-size: 2.5vmax;
 	}
-}
-
-@media only screen and (max-width: 800px){
-	.btn_submit_c{
-		width: 25vw;
+	#find_event_c{
 		font-size: 3vw;
+		padding: 2.5% 5%;
 	}
 	.date_input_c{
-		width: 35vw;
 		font-size: 3vw;
-		vertical-align: middle;
-		line-height: 8vh; 
 	}
 	.date_input_c::placeholder{
 		font-size: 3vw;
 	}
 }
 
-@media only screen and (max-width: 1150px)  and (min-width: 900px){
-	.date_input_c{
-		width: 35vw;
-		font-size: 2.5vw;
+@media only screen and (max-width: 1200px) and (min-width: 950px){
+	#find_event_c{
+		font-size: 2vw;
+		padding: 2.5% 5%;
 	}
-	.btn_view_more_c{
-		width: 20vw;
-		height: 5vmin;
-		font-size: 2vmax;
-		line-height: 1vmin;
+	.date_input_c{
+		font-size: 2vw;
 	}
 	.date_input_c::placeholder{
 		font-size: 2vw;
-	}
-}
-
-@media only screen and (max-width: 1500px)  and (min-width: 1150px){
-	.date_input_c{
-		width: 20vw;
-		font-size: 2vw;
-	}
-	.btn_view_more_c{
-		width: 15vw;
-		height: 5vmin;
-		font-size: 2vmax;
-		line-height: 1vmin;
-	}
-	.date_input_c::placeholder{
-		font-size: 1.5vw;
 	}
 }
 

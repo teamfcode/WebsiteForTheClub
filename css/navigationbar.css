@@ -22,9 +22,6 @@ body{
     list-style-type: none;
     margin: 0;
     padding: 0;
-	position: absolute;
-	top: 0%;
-	left: 40%;
 }
 .nav_bar_c> li {
 	left: 20vw;
@@ -39,7 +36,6 @@ body{
 	font-size: 1vmax;
 	font-weight: bold;
 	color: white;
-	position: relative;
 }
 
 .nav_bar_c > li a:hover {
@@ -47,26 +43,22 @@ body{
 	color: aquamarine;
 }
 .brand_c{
-	font-size: 3.2vw;
+	font-size: 3.2vmax;
 	color: white;
 	font-family: "Pacifico";	
 	cursor: default;
 }
 .search_c{
-	position: absolute;
-	top: 2.3%;
-	left: 69%;
 	outline: none;
-	box-sizing: border-box;
-	border: 1px solid white;
+	border: 0px solid white;
 	background-color: white;
 	color: black;
-	width: 12vw;
-	height: 4vh;
-	padding: 1vh;
+	width: 75%;
+	height: auto;
+	padding: 5px 5px;
 	outline: none;
-	padding: ;
     box-sizing: border-box;
+	font-size: 1vw;
 }
 ::placeholder{
 	color: gray;
@@ -74,29 +66,31 @@ body{
 	line-height: 2vh;
 }
 .search_btn_c{
-	position: absolute;
-	top: 2.3%;
-	left: 81%;
 	outline: none;
-	width: 2vw;
-	height: 4vh;
+	width: 15%;
+	height: auto;
 	border: 3px solid white;
     background-color: white;
 	color: black;
-	font-size: 0.8vw;
+	font-size: 1vw;
+	padding: 2px;
 	font-family: none;
 	cursor: pointer;
 	outline: none;
+	text-align: center;
+}
+
+.search_wrapper_c{
+	padding-top: 10%;
+	float: left;
 }
 
 .login_c{
-	position: absolute;
-	top: 2.2%;
-	left: 87%;
 	font-size: 1.5vmax;
 	font-family: "Open Sans";
 	color: white;
 	cursor: pointer;
+	padding-top: 10%;
 }
 
 .login_c >  a:visited {
@@ -146,19 +140,19 @@ body{
 	text-decoration: none;
 }
 
-.link_wrapper_c:hover > a:link {
+.link_wrapper_c:hover > a {
     color: aquamarine;
 }
 
 .link_wrapper_c:hover{
-	background-color: white;
+	background-color: white
 }
 
 .hidden_c{
 	display: none;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
 	.header_hidden_c{
 		display: block;
 	}

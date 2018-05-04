@@ -18,18 +18,31 @@
 <body>
 <div class="overflow">
 
-<div class="header_c">
-   	<div class="brand_c">Fcode</div>
-   	<ul class="nav_bar_c">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="news.html">NEWS</a></li>
-        <li><a href="event.html">EVENT</a></li>
-    </ul>
-    <div class="login_c"><a href=""><i class="fas fa-sign-in-alt"></i> LOG IN</a></div>
-    <form action="">
-      	<input class="search_c" type="text" name="search" placeholder="Search..">
-      	<button class="search_btn_c"type="submit"><i class="fas fa-search"></i></button>
-    </form>   
+<div class="header_c container-fluid">
+  	<div class="row">
+  		<div class="col-md-1">
+  			<div class="brand_c">Fcode</div>
+  		</div>
+  		<div class="col-md-3"></div>
+  		<div class="col-md-4">
+  			<ul class="nav_bar_c">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="news.html">NEWS</a></li>
+				<li><a href="event.html">EVENT</a></li>
+			</ul>
+  		</div>
+  		<div class="col-md-2">
+  			<div class="search_wrapper_c">
+  				<form action="">
+					<input class="search_c" type="text" name="search" placeholder="Search..">
+					<button class="search_btn_c"type="submit"><i class="fas fa-search"></i></button>
+				</form>
+  			</div>
+  		</div>
+  		<div class="col-md-2">
+  			<div class="login_c"><a href=""><i class="fas fa-sign-in-alt"></i> LOG IN</a></div>
+  		</div>
+  	</div>   
 </div>
 
 <div class="header_hidden_c container-fluid">
@@ -208,8 +221,8 @@
 							<textarea class="message_area_c" name="messsage"placeholder="Your Message"></textarea>
 						</div>
 						<div class="row">
-							<div class="col-sm-7"></div>
-							<div class="col-sm-5">
+							<div class="col-lg-6 col-sm-7 col-xs-0"></div>
+							<div class="col-lg-3 col-sm-3 col-xs-4">
 								<br>
 								<div id="send_message_c" class="btn_submit_c">Send</div>
 							</div>

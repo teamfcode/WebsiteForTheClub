@@ -8,14 +8,16 @@
 
 .event_title_c{
 	width: 100vw;
-	height: 25vh;
+	height: auto;
 	background-color: ghostwhite;
 	font-family: "Pacifico";
-	font-size: 7vmax;
+	font-size: 10vmin;
 	text-align: center;
 	vertical-align: middle;
-	line-height: 25vh;
+	line-height: auto;
 	font-weight: lighter;
+	padding-bottom: 5vmin;
+	padding-top: 5vmin;
 }
 
 .big_new_wrapper_c{
@@ -80,7 +82,7 @@ a:visited{
 	padding-top: 1vh;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) and (min-width: 1200px){
 	.medium_new_wrapper_c a > p{
 		font-size: 1.5vmax;
 	}

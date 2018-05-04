@@ -77,10 +77,10 @@
 	font-size: 1vmax;
 }
 
-.btn_submit_c{
+#send_message_c{
 	outline: none;
-	width: 10vw;
-	height: 6vh;
+	width: 100%;
+	height: auto;
 	border: 3px solid lightpink;
     background-color: lightpink;
 	border-radius: 10%;
@@ -91,7 +91,7 @@
 	cursor: pointer;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 750px) {
 	#send_message_c{
 		position: relative;
 		left: 65vw;
@@ -105,9 +105,8 @@
     }
 	.name_input_c, .email_input_c{
 		width: 93%;
-		font-size: 120%;
-		vertical-align: middle;
-		line-height: 10vh;
+		height: auto;
+		font-size: 3vmax;
 	}
 	.text_input_c{
 		font-size: 3vw;
@@ -130,11 +129,10 @@
 	.left_footer_c > p{
 		font-size: 2.5vw;
 	}
-	.btn_submit_c{
-		width: 25vw;
+	#send_message_c{
 		font-size: 3.5vw;
 	}
 	.name_input_c::placeholder, .email_input_c::placeholder, .message_area_c::placeholder{
-		font-size: 3vw;
+		font-size: 2.5vmax;
 	}
 }
