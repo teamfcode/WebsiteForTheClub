@@ -47,7 +47,7 @@
 	background-color: white;
 	color: black;
 	width: 17vw;
-	height: 5vh;
+	height: auto;
 	padding: 2vh;
 	outline: none;
     box-sizing: border-box;
@@ -106,7 +106,7 @@
 	.name_input_c, .email_input_c{
 		width: 93%;
 		height: auto;
-		font-size: 3vmax;
+		font-size: 2.5vmax;
 	}
 	.text_input_c{
 		font-size: 3vw;
