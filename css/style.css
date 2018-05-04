@@ -7,7 +7,8 @@ html {
 }
 
 body {
-  background: #c1bdba;
+  background-color: #c1bdba;
+    background-image:image("1.jpg");
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -67,9 +68,16 @@ a:hover {
 
 h1 {
   text-align: center;
-  color: #ffffff;
+  color: lightseagreen;
   font-weight: 300;
   margin: 0 0 40px;
+}
+
+h2  {
+    text-align: center;
+    color: skyblue;
+    font-weight: 800;
+    margin: 0 0 40px;
 }
 
 label {
@@ -85,7 +93,7 @@ label {
 }
 label .req {
   margin: 2px;
-  color: #1ab188;
+  color: steelblue;
 }
 
 label.active {
@@ -99,7 +107,7 @@ label.active .req {
 }
 
 label.highlight {
-  color: #ffffff;
+  color: steelblue;
 }
 
 input, textarea {
@@ -153,13 +161,13 @@ textarea {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .1em;
-  background: #1ab188;
+  background: #2569dd;
   color: #ffffff;
   transition: all 0.5s ease;
   -webkit-appearance: none;
 }
 .button:hover, .button:focus {
-  background: #179b77;
+  background: #4e8efc;
 }
 
 .button-block {
@@ -170,4 +178,9 @@ textarea {
 .forgot {
   margin-top: -20px;
   text-align: right;
+}
+.tabs select {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
 }
