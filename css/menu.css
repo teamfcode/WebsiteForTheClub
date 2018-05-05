@@ -8,10 +8,7 @@ a {text-decoration: none;}
 i {
 font-family: 'fontawesome' !important;
 }
-h3 {		
-	font-family: Arial, sans-serif;
-	font-weight: 400;
-	color: #66615B;	
+h3 {
 	margin: 0;	
 }
  
@@ -22,18 +19,19 @@ h3 {
 	min-height: 100vh;
 }
 .wrap_menu {
-	background-color: white;
+	/*background-color: #24333C;*/
+	background-color: #273238;
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 260px;
-	min-height: 100vh;
-	border-right: 1px solid #DDDDDD; 
-	border-bottom: 1px solid #DDDDDD;
+	width: 24s0px;
+	min-height: 100vh;	
+	/*box-shadow: 5px 0 10px grey;*/
+	z-index: 10;
 }
 
 .menu_logo {	
-	width: 220px;
+	width: 200px;
 	height: 50px;
 	margin: 0 auto 0 auto;
 	padding-top: 20px;
@@ -44,17 +42,20 @@ h3 {
 	float: left;
 }
 .menu_logo h3 {		
-	float: left;	
-	margin: 0;
+	float: left;		
 	line-height: 50px;
-	padding-left:24.075px;
+	padding-left: 20px;
+	color: white;
+	font-size: 24px;
+	font-family: "Pacifico";
+	font-weight: 300;
 }
 
 .wrap_menu .line {
 	clear: left;
 	height: 1px;
-	width: 260px;
-	background-color: #D1CFCD;
+	width: 240px;
+	background-color: gray;
 	margin: 25px auto 35px auto;	
 }
 
@@ -62,7 +63,7 @@ h3 {
 	list-style: none;
 	display: table;
 	padding: 0 25px 0 25px;
-	width: 210px;
+	width: 190px;
 }
 .wrap_menu ul > li {
 	position: relative;
@@ -83,13 +84,13 @@ h3 {
 	color: #B3B1AE;
 	font-size: 16px;
 	line-height: 30px;
-	font-weight: 400;	
+	font-weight: 300;	
 	margin: 0;
 }
 .menu1:hover i, .menu1:hover p, .menu2:hover i, .menu2:hover p, 
 .menu3:hover i, .menu3:hover p, .menu4:hover i, .menu4:hover p,
 .menu5:hover i, .menu5:hover p {
-	color: black; 
+	color: white; 
 	transition-delay: 0.1s;
 	transition-duration: 0.4s;
 }
