@@ -8,12 +8,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script src="jquery.flexslider.js"></script>
     <script src="js/flexslide.js" type="text/javascript" charset="utf-8"></script>
-    <!----------------------------------------------------------------------------------------->
     <!-----------------------------------bootstrap--------------------------------------------->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!----------------------------------------------------------------------------------------->
@@ -22,93 +21,107 @@
 
 <body>
     <div>
-        <div class="cover page">
-            <div class="circle">
-                <input id="image" type="file" name="profile_photo" placeholder="Photo" required="" capture>
-            </div>
-            <br><br>
-            <div class="inner-row">
-                <form class="form-horizontal" action="/action_page.php">
-                    <div class="form-group">
-                        <label class="sr-only" for="nickname">Nickname</label>
-                        <input type="text" class="form-control" id="nickname" placeholder="Nickname">
+        <!-- Place somewhere in the <body> of your page -->
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <div class="cover page">
+                        <div class="circle">
+                            <input id="image" type="file" name="profile_photo" placeholder="Photo" required="" capture>
+                        </div>
+                        <br><br>
+                        <div class="inner-row">
+                            <form class="form-horizontal" action="/action_page.php">
+                                <div class="form-group">
+                                    <label class="sr-only" for="nickname">Nickname</label>
+                                    <input type="text" class="form-control" id="nickname" placeholder="Nickname">
+                                </div>
+                                <div class="form-group">
+                                    <label class="sr-only" for="studentid">Your ID</label>
+                                    <input type="text" class="form-control" id="studentid" placeholder="Student ID">
+                                </div>
+                            </form>
+                        </div>
+                        <button>Your profile</button>
                     </div>
-                    <div class="form-group">
-                        <label class="sr-only" for="studentid">Your ID</label>
-                        <input type="text" class="form-control" id="studentid" placeholder="Student ID">
+                </li>
+                <li>
+                    <div class="profile page" style="background-color: beige">
+                        <div class="upper-row">
+                            <div>
+                                <form class="form-inline" action="/action_page.php">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="firstname">First name</label>
+                                        <input type="text" class="form-control" id="firstname" placeholder="First name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="lastname">Last name</label>
+                                        <input type="text" class="form-control" id="lastname" placeholder="Last name">
+                                    </div>
+                                </form>
+                                <br>
+                                <form class="form-inline" action="/action_page.php">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="dob">Date of birth</label>
+                                        <input type="text" class="form-control" id="dob" placeholder="Date of birth">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="gender">Gender</label>
+                                        <input type="text" class="form-control" id="gender" placeholder="Gender">
+                                    </div>
+                                </form>
+                            </div>
+                            <!-----------------------------Major, Course, Email, Phone number-------------------------->
+                            <div>
+                                <form class="form-inline" action="/action_page.php">
+                                    <div class="form-group">
+                                        <label for="major">Major:</label>
+                                        <input type="text" class="form-control" id="major" placeholder="Ex: Software Engineering">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="course">Course:</label>
+                                        <input type="text" class="form-control" id="course" placeholder="Ex: K14">
+                                    </div>
+                                </form>
+                                <br>
+                                <form class="form-inline" action="/action_page.php">
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Ex: hongduc@gmail.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone no:</label>
+                                        <input type="text" class="form-control" id="phone" placeholder="Ex: 01289583348">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="lower-row" style="width: 26vw; padding-left: 1vw">
+                            <!--------------------------------Change Password------------------------------------------>
+                            <form class="form-horizontal" action="/action_page.php">
+                                <div class="form-group">
+                                    <label for="oldpw">Old password</label>
+                                    <input type="password" class="form-control" id="oldpw" placeholder="Old password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="newpw">New password</label>
+                                    <input type="password" class="form-control" id="newpw" placeholder="New password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmpw">Confirm password</label>
+                                    <input type="password" class="form-control" id="confirmpw" placeholder="Confirm password">
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                </form>
-            </div>
-            <button>Your profile</button>
+                </li>
+            </ul>
         </div>
-        <div class="profile page" style="background-color: beige">
-            <div class="upper-row">
-                <div>
-                    <form class="form-inline" action="/action_page.php">
-                        <div class="form-group">
-                            <label class="sr-only" for="firstname">First name</label>
-                            <input type="text" class="form-control" id="firstname" placeholder="First name">
-                        </div>
-                        <div class="form-group">
-                            <label class="sr-only" for="lastname">Last name</label>
-                            <input type="text" class="form-control" id="lastname" placeholder="Last name">
-                        </div>
-                    </form>
-                    <br>
-                    <form class="form-inline" action="/action_page.php">
-                        <div class="form-group">
-                            <label class="sr-only" for="dob">Date of birth</label>
-                            <input type="text" class="form-control" id="dob" placeholder="Date of birth">
-                        </div>
-                        <div class="form-group">
-                            <label class="sr-only" for="gender">Gender</label>
-                            <input type="text" class="form-control" id="gender" placeholder="Gender">
-                        </div>
-                    </form>
-                </div>
-                <!-----------------------------Major, Course, Email, Phone number-------------------------->
-                <div>
-                    <form class="form-inline" action="/action_page.php">
-                        <div class="form-group">
-                            <label for="major">Major:</label>
-                            <input type="text" class="form-control" id="major" placeholder="Ex: Software Engineering">
-                        </div>
-                        <div class="form-group">
-                            <label for="course">Course:</label>
-                            <input type="text" class="form-control" id="course" placeholder="Ex: K14">
-                        </div>
-                    </form>
-                    <br>
-                    <form class="form-inline" action="/action_page.php">
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" placeholder="Ex: hongduc@gmail.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone no:</label>
-                            <input type="text" class="form-control" id="phone" placeholder="Ex: 01289583348">
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <br>
-            <div class="lower-row">
-                <!--------------------------------Change Password------------------------------------------>
-                <form class="form-horizontal" action="/action_page.php">
-                    <div class="form-group">
-                        <label for="oldpw">Old password</label>
-                        <input type="password" class="form-control" id="oldpw" placeholder="Old password">
-                    </div>
-                    <div class="form-group">
-                        <label for="newpw">New password</label>
-                        <input type="password" class="form-control" id="newpw" placeholder="New password">
-                    </div>
-                    <div class="form-group">
-                        <label for="confirmpw">Confirm password</label>
-                        <input type="password" class="form-control" id="confirmpw" placeholder="Confirm password">
-                    </div>
-                </form>
-            </div>
+        <div class="custom-navigation">
+            <a href="#" class="flex-prev">Prev</a>
+            <div class="custom-controls-container"></div>
+            <a href="#" class="flex-next">Next</a>
         </div>
     </div>
 </body>
