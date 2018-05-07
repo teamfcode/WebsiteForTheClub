@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F-code</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/navigationbar.css">
+    <link rel="stylesheet" href="css/home_body.css">
+    <link rel="stylesheet" href="css/sticky_button.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <!---------------------------------Prevent overflowing------------------------------------->
+    <div class="overflow">
+        <!---------------------------------Navigation bar------------------------------------->
+        <div class="header_c container-fluid">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="brand_c">Fcode</div>
+                </div>
+                <div class="col-md-2 col-lg-3"></div>
+                <div class="col-md-5 col-lg-4">
+                    <ul class="nav_bar_c">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="event.html">EVENT</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <div class="search_wrapper_c">
+                        <form action="">
+                            <input class="search_c" type="text" name="search" placeholder="Search..">
+                            <button class="search_btn_c" type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="login_c"><a href=""><img class="mem_pic" id="profile_pic_duc" src="image/member_pic1.jpg"></a></div>
+                </div>
+            </div>
+        </div>
+        <!---------------------------------Hidden navigation bar------------------------------------->
+        <div class="header_hidden_c container-fluid">
+            <div class="row">
+                <div class="col-xs-1">
+                    <div class="menu_c"><i class="fas fa-bars"></i></div>
+                </div>
+                <div class="col-xs-10" style="text-align: center">
+                    <div class="brand_alt_c">Fcode</div>
+                </div>
+                <div class="col-xs-1"></div>
+            </div>
+        </div>
+        <!---------------------------------Toggle for hidden navigation bar------------------------------------->
+        <div class="toggle_menu_c">
+            <div class="link_wrapper_c"><a href="index.html">HOME</a></div>
+            <div class="link_wrapper_c"><a href="news.html">NEWS</a></div>
+            <div class="link_wrapper_c"><a href="event.html">EVENT</a></div>
+            <!---------------------------------Profile Picture------------------------------------------------------>
+            <div class="link_wrapper_c"><a href="#"><img class="mem_pic profile_pic_duc" src="image/member_pic1.jpg"></a></div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/scroll_top_animation.js"></script>
+<script src="js/toggle_menu.js"></script>
+
+</html>

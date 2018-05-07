@@ -1,0 +1,95 @@
+.body_c{
+	width: 100vw;
+	height: auto;
+	background-color: white;
+	border-top: 1vh solid aquamarine;
+	border-bottom: 1vh solid aquamarine;
+}
+
+.event_title_c{
+	width: 100vw;
+	height: auto;
+	background-color: ghostwhite;
+	font-family: "Pacifico";
+	font-size: 10vmin;
+	text-align: center;
+	vertical-align: middle;
+	line-height: auto;
+	font-weight: lighter;
+	padding-bottom: 5vmin;
+	padding-top: 5vmin;
+}
+
+.big_new_wrapper_c{
+	padding-top: 8vmin;	
+}
+
+.medium_new_wrapper_c{
+	background-color: ghostwhite;
+	padding:1.5vmax 1.5vmax;
+	overflow: hidden;
+}
+
+.medium_new_wrapper_c a > p{
+	font-size: 1vmax;
+}
+
+.medium_new_wrapper_c a > p:hover{
+	font-size: 1vmax;
+	opacity: 0.5;
+}
+
+.small_new_wrapper_c{
+	padding: 1vmax 1vmax;
+}
+
+.news_pic_c{
+	width: 100%;
+	height: auto;
+}
+
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+.pagination a{
+	display: inline-block;
+	background-color: aquamarine;
+	color: white;
+	padding: 1vh 1.5vh;
+}
+
+.pagination a:hover{
+	color: aquamarine;
+	background-color: white;
+}
+
+.pagination {
+	padding-top: 2vmin;
+	width: auto;
+	height: auto;
+	float: right;
+}
+
+.page_wrapper{
+	display: inline-block;
+	padding-top: 1vh;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1200px){
+	.medium_new_wrapper_c a > p{
+		font-size: 1.5vmax;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.medium_new_wrapper_c a > p{
+		font-size: 2.5vmax;
+	}
+}
