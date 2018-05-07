@@ -27,9 +27,9 @@
   		<div class="col-md-2 col-lg-3"></div>
   		<div class="col-md-5 col-lg-4">
   			<ul class="nav_bar_c">
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="news.html">NEWS</a></li>
-				<li><a href="event.html">EVENT</a></li>
+				<li><div class="nav_bar_wrapper_c"><a href="index.html">HOME</a></div></li>
+				<li><div class="nav_bar_wrapper_c"><a href="news.html">NEWS</a></div></li>
+				<li><div class="nav_bar_wrapper_c"><a href="event.html">EVENT</a></div></li>
 			</ul>
   		</div>
   		<div class="col-md-2">
@@ -59,10 +59,24 @@
 </div>
 	<!---------------------------------Toggle for hidden navigation bar------------------------------------->
 <div class="toggle_menu_c">
-  	<div class="link_wrapper_c"><a href="index.html">HOME</a></div>
-	<div class="link_wrapper_c"><a href="news.html">NEWS</a></div>
-  	<div class="link_wrapper_c"><a href="event.html">EVENT</a></div>
-  	<div class="link_wrapper_c"><a href="#"><i class="fas fa-sign-in-alt"></i> LOG IN</a></div>     	
+ 	<div class="container-fluid">
+ 		<div class="row"><div class="link_wrapper_c"><a href="index.html">HOME</a></div></div>
+ 		<div class="row"><div class="link_wrapper_c"><a href="news.html">NEWS</a></div></div>
+ 		<div class="row"><div class="link_wrapper_c"><a href="event.html">EVENT</a></div></div>
+ 		<div class="row"><div class="link_wrapper_c"><a href="#"><i class="fas fa-sign-in-alt"></i> LOG IN</a></div> </div>
+ 		<div class="row">
+ 			<div class="col-md-4 col-xs-3"></div>
+ 			<div class="col-md-4 col-xs-6">
+ 				<div class="hidden_search_wrapper_c">
+					<form action="">
+						<input class="hidden_search_c" type="text" name="search" placeholder="Search..">
+						<button class="hidden_search_btn_c"type="submit"><i class="fas fa-search"></i></button>
+					</form>
+				</div> 
+ 			</div>
+ 			<div class="col-md-4 col-xs-3"></div>
+ 		</div>
+ 	</div>  	   	
 </div>
 	<!---------------------------------Slider------------------------------------->
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -75,7 +89,7 @@
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
 		  <div class="item active">
-			<img src="image/slide1.jpeg" style="width:100%;">
+			<img src="image/slide1.jpeg" style="width:100%; height: auto">
 			<div class="carousel-caption">
         		<h1>Learn to code</h1>
         		<p>Improve your skill with many challenge</p>
@@ -83,7 +97,7 @@
 		  </div>
 
 		  <div class="item">
-			<img src="image/slide2.jpeg" style="width:100%;">
+			<img src="image/slide2.jpeg" style="width:100%;height: auto">
 			<div class="carousel-caption">
         		<h1>Team bulding event</h1>
         		<p>Make new friends and have lots of fun</p>
@@ -135,108 +149,95 @@
 				<div class="col-lg-3 col-sm-6">
 					<h3 class="mem_name">Name here</h3>
 					<p class="mem_descrition">What they do</p>
-					<img class="mem_pic" src="image/member_pic1.jpg">
+					<div class="mem_pic_wrapper_c"><img class="mem_pic" src="image/member_pic1.jpg"></div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
 					<h3 class="mem_name">Name here</h3>
 					<p class="mem_descrition">What they do</p>
-					<img class="mem_pic" src="image/member_pic1.jpg">
+					<div class="mem_pic_wrapper_c"><img class="mem_pic" src="image/member_pic1.jpg"></div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
 					<h3 class="mem_name">Name here</h3>
 					<p class="mem_descrition">What they do</p>
-					<img class="mem_pic" src="image/member_pic1.jpg">
+					<div class="mem_pic_wrapper_c"><img class="mem_pic" src="image/member_pic1.jpg"></div>
 				</div>
 				<div class="col-lg-3 col-sm-6">
 					<h3 class="mem_name">Name here</h3>
 					<p class="mem_descrition">What they do</p>
-					<img class="mem_pic" src="image/member_pic1.jpg">
+					<div class="mem_pic_wrapper_c"><img class="mem_pic" src="image/member_pic1.jpg"></div>
 				</div>
 			</div>
 		</div>
 		<div><br><br></div>
 	</div>
 	<div class="footer_c">
-		<!---------------------------------Text on left footer------------------------------------->
 		<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-1"></div>
-			<div class="left_footer_c col-sm-11">
-				<h1>Contact</h1>
-			</div>
-		</div>
 			<div class="row">
-				<div class="col-lg-4 col-md-12">
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="left_footer_c col-sm-8">
-							<h3>Our Address</h3>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="left_footer_c col-sm-10">
-							<br>
-							<p>3869 Shearwood Forest Drive 
-							Glendale, NH 03246 
-							United States </p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-8" >
-							<br>
-							<p class="icon_holder_c">
-								<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-								<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-								<a href="https://plus.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
-								<a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-							</p>
-						</div>
-					</div>
+				<div class="col-lg-1"></div>
+				<!---------------------------------Information------------------------------------->
+				<div class="col-lg-3 col-md-6">
+					<h3 class="footer_title_c">Information</h3>
+					<br>
+					<p class="footer_text_c">
+						- Lorem ipsum dolor sit amet consectetur. <br> 
+						- Sit amet consectetur dolor. <br>
+						- Dolor sit amet consectetur dolor. <br>
+						- Claritas est etiam processus dynamicus. <br>
+						- Sit amet consectetur dolor. <br>
+						- Dolor sit amet consectetur dolor. <br>
+						- Mirum est notare quam littera gothica. <br>
+					</p>
+					<br><br>
 				</div>
-	<!---------------------------------Form in footer------------------------------------->
-				<div class="col-lg-8 col-md-12">
+				<!---------------------------------Find us at----------------------------------->
+				<div class="col-lg-3 col-md-6">
+					<h3 class="footer_title_c">Find Us At</h3>
+					<br>
+					<p class="footer_text_c">Innovation building, block 24, Quang Trung <br> Software City, District 12, Ho Chi Minh City, <br> Vietnam</p>
+					<br>
+					<p class="icon_holder_c">
+							<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+							<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+							<a href="https://plus.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+							<a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+					</p>
+					<br><br>
+				</div>
+				<!---------------------------------Send a message form------------------------------------->
+				<div class="col-lg-4">
+					<h3 class="footer_title_c">Send Us A Message</h3>
 					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-8">
-							<h3 class="contact_form_c">Contact form</h3>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-5">
+						<div class="col-sm-6">
 							<br>
 							<form name="message" action="">
 								<p class="text_input_c">Your Name</p>
 								<input class="name_input_c" type="text" name="name" placeholder="Your Name">
 							</form>
 						</div>
-						<div class="col-sm-5">
+						<div class="col-sm-6">
 							<br>
 							<form name="message" action="">
 								<p class="text_input_c">Your Email</p>
-								<input class="email_input_c" type="text" name="email" placeholder="Your Email">
+									<input class="email_input_c" type="text" name="email" placeholder="Your Email">
 							</form>
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-1"></div>
-						<div class="col-sm-10">
+						<div class="col-sm-12">
 							<br>			
 							<p class="text_input_c">Your Message</p>
 							<textarea class="message_area_c" name="messsage"placeholder="Your Message"></textarea>
 						</div>
 						<div class="row">
-							<div class="col-lg-6 col-sm-7 col-xs-0"></div>
+							<div class="col-lg-9 col-sm-8 col-xs-0"></div>
 							<div class="col-lg-3 col-sm-3 col-xs-4">
 								<br>
 								<div id="send_message_c" class="btn_submit_c">Send</div>
 							</div>
 						</div>
 					</div>
-					<br><br><br>
 				</div>
+				<div class="col-lg-1"></div>
 			</div>
 		</div>
 	</div>

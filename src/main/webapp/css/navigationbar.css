@@ -6,13 +6,13 @@ body{
 	overflow: hidden;
 }
 .header_c{
-	background-color: aquamarine;
+	background-color: rgb(20, 193, 121);
 	width: 100vw;
 	height: auto;
 }
 
 .header_hidden_c{
-	background-color: aquamarine;
+	background-color: rgb(20, 193, 121);
 	width: 100vw;
 	height: auto;
 	display: none;
@@ -21,16 +21,15 @@ body{
 .nav_bar_c {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-top: 5px;
 }
 .nav_bar_c> li {
-	left: 20vw;
+	padding: 1.5vw 2vw;
     float: left;
 }
 
 .nav_bar_c >li a {
     display: list-item;
-    padding: 25px 40px ;
     text-decoration: none;
 	cursor: pointer;
 	font-size: 1vmax;
@@ -38,15 +37,26 @@ body{
 	color: white;
 }
 
-.nav_bar_c > li a:hover {
-	background-color: white;
-	color: aquamarine;
+.nav_bar_c >li a:hover {
+	color: rgb(20, 193, 121);
 }
+
+.nav_bar_wrapper_c{
+	border-radius: 25px;
+	padding: 0.2vw 1vw;
+}
+
+.nav_bar_wrapper_c:hover{
+	background-color: white;
+}
+
 .brand_c{
 	font-size: 3.2vmax;
 	color: white;
 	font-family: "Pacifico";	
 	cursor: default;
+	padding-left: 5.5vmax;
+	padding-top: 1vmin;
 }
 .search_c{
 	outline: none;
@@ -60,7 +70,7 @@ body{
     box-sizing: border-box;
 	font-size: 1vw;
 }
-::placeholder{
+.search_c::placeholder{
 	color: gray;
 	font-size: 1vw;
 	line-height: 2vh;
@@ -81,8 +91,46 @@ body{
 }
 
 .search_wrapper_c{
-	padding-top: 10%;
-	float: left;
+	padding-top: 23px;
+}
+
+
+.hidden_search_c{
+	outline: none;
+	border: 0px solid white;
+	background-color: white;
+	color: black;
+	width: 75%;
+	height: auto;
+	padding: 5px 5px;
+	outline: none;
+    box-sizing: border-box;
+	font-size: 1.7vmax;
+}
+
+.hidden_search_btn_c{
+	outline: none;
+	width: 15%;
+	height: auto;
+	border: 3px solid white;
+    background-color: white;
+	color: black;
+	font-size: 1.7vw;
+	padding: 2px;
+	font-family: none;
+	cursor: pointer;
+	outline: none;
+	text-align: center;
+}
+
+.hidden_search_wrapper_c{
+	padding: 1.5vmin;
+}
+
+.hidden_search_c::placeholder{
+	color: gray;
+	font-size: 1.5vw;
+	line-height: 2vh;
 }
 
 .login_c{
@@ -90,7 +138,7 @@ body{
 	font-family: "Open Sans";
 	color: white;
 	cursor: pointer;
-	padding-top: 10%;
+	padding-top: 20px;
 }
 
 .login_c >  a:visited {
@@ -99,6 +147,7 @@ body{
 
 .login_c >  a:link {
 	color: white;
+	text-decoration: none;
 }
 
 .slice_caption_c{
@@ -124,10 +173,11 @@ body{
 }
 
 .toggle_menu_c{
-	background-color: aquamarine;
+	background-color: rgb(20, 193, 121);
 	font-size: 2vmax;
 	font-family: none;
 	text-align: center;
+	padding: 1vmin;
 	display: none;
 }
 
@@ -138,14 +188,6 @@ body{
 .link_wrapper_c > a:link {
     color: white;
 	text-decoration: none;
-}
-
-.link_wrapper_c:hover > a {
-    color: aquamarine;
-}
-
-.link_wrapper_c:hover{
-	background-color: white
 }
 
 .hidden_c{
@@ -161,6 +203,3 @@ body{
 		display: none;
 	}
 }
-
-
-

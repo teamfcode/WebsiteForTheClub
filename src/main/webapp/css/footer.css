@@ -2,21 +2,16 @@
 	width: 100vw;
 	height: auto;
 	background-color: white;
+	padding-bottom: 5vmin;
+	padding-top: 3vmin;
 }
 
-.left_footer_c > h1{
-	font-family: "Pacifico";	
-	font-weight: bolder;
-	font-size: 6vw;
-}
-
-.left_footer_c > h3{
-	font-family: "Open Sans";	
-	font-weight: bolder;
+.footer_title_c{
 	font-size: 2vw;
+	font-family: "Pacifico";
 }
 
-.left_footer_c > p{
+.footer_text_c{
 	font-size: 1vw;
 }
 
@@ -25,56 +20,53 @@
 	font-size: 2vw;
 }
 .icon_holder_c > a:visited {
-    color: aquamarine;
+    color: gray;
 }
 
 .icon_holder_c > a:link {
-    color: aquamarine;
+    color: gray;
 	text-decoration: none;
 }
 
-.contact_form_c{
-	font-weight: bolder;
-	font-family: "Open Sans";
-	font-size: 2vw;
+.icon_holder_c > a:hover {
+	color: rgb(20, 193, 121);
 }
 
 .name_input_c, .email_input_c{
 	outline: none;
-	box-sizing: border-box;
-	border: 2px solid aquamarine;
+	border: 2px solid rgb(20, 193, 121);
 	border-radius: 25px;
 	background-color: white;
 	color: black;
-	width: 17vw;
+	width: 100%;
 	height: auto;
-	padding: 2vh;
+	padding: 1vmin 1.5vmin;
 	outline: none;
-    box-sizing: border-box;
-	font-size: 1vmax;
+	font-size: 0.8vmax;
 }
 
 .text_input_c{
 	position: relative;
 	font-weight: bold;
 	font-family: none;
-	font-size: 1.5vw;
+	font-size: 1vw;
 }
+
 .message_area_c{
 	outline: none;
 	box-sizing: border-box;
-	border: 2px solid aquamarine;
+	border: 2px solid rgb(20, 193, 121);
 	border-radius: 25px;
 	background-color: white;
 	color: black;
-	height: 25vh;
-	width: 45vw;
+	height: 10vmin;
+	width: 100%;
 	padding: 2vh;
 	outline: none;
-	padding: ;
+	padding: 1.5vmin 1.5vmin;
     box-sizing: border-box;
 	resize: none;
-	font-size: 1vmax;
+	font-size: 0.8vmax;
 }
 
 #send_message_c{
@@ -86,8 +78,8 @@
 	border-radius: 10%;
 	color: white;
 	text-align: center;
-	line-height: 5vh;
-	font-size: 1.5vw;
+	line-height: 4vmin;
+	font-size: 1vw;
 	cursor: pointer;
 }
 
@@ -95,6 +87,32 @@
 	#send_message_c{
 		position: relative;
 		left: 65vw;
+	}
+}
+
+@media only screen and (max-width: 1000px){
+	.footer_title_c{
+		font-size: 10vw;
+	}
+	.footer_text_c{
+		font-size: 5vw;
+	}
+	.icon_holder_c{
+		letter-spacing: 1vw; 
+		font-size: 10vw;
+	}
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1000px){
+	.footer_title_c{
+		font-size: 8vw;
+	}
+	.footer_text_c{
+		font-size: 2vw;
+	}
+	.icon_holder_c{
+		letter-spacing: 1vw; 
+		font-size: 6.5vw;
 	}
 }
 
@@ -113,10 +131,6 @@
 	}
 	.contact_form_c{
 		font-size: 5vw;
-	}
-	.icon_holder_c{
-		letter-spacing: 1vw;
-		font-size: 4vw;
 	}
 	.left_footer_c > h1{
 		font-size: 10vw;
