@@ -1,3 +1,30 @@
 #profile_pic_duc {
     width: 43px;
 }
+
+#avatar_wrapper_duc {
+    padding-top: 6%;
+}
+
+#profile-shortcuts-duc {
+    background-color: #3A4B40;
+    text-align: center;
+}
+
+#profile-shortcuts-duc > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#profile-shortcuts-duc > ul > li > a {
+    text-decoration: none;
+    color: #9CB0A4;
+    font-size: 18px;
+    padding: 14px 25px;
+    display: block;
+}
+
+#profile-shortcuts-duc > ul > li > a:hover, a:active {
+    color: 
+}
