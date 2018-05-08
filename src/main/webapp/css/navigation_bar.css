@@ -38,10 +38,6 @@ body{
 	padding-top: 0.1vw;
 }
 
-.nav_bar_c >li a:hover {
-	color: rgb(20, 193, 121);
-}
-
 .nav_bar_wrapper_c{
 	border-radius: 25px;
 	padding: 0.3vw 1vw;
@@ -49,6 +45,10 @@ body{
 
 .nav_bar_wrapper_c:hover{
 	background-color: white;
+}
+
+.nav_bar_wrapper_c:hover > a{
+	color: rgb(20, 193, 121) !important;
 }
 
 .brand_c{

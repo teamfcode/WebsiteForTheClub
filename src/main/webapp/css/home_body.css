@@ -6,10 +6,8 @@
 	border-bottom: 1vh solid rgb(20, 193, 121);
 }
 .body_pic_c{
-	width: 35vw;
+	width: 100%;
 	height: auto;
-	position: relative;
-	left: 10vw;
 }
 .about_us_c{
 	width: 100vw;
@@ -17,7 +15,7 @@
 	text-align: center;
 }
 .title_c{
-	font-size: 300%;
+	font-size: 3vw;
 	font-family: "Pacifico";
 	font-weight: bolder;
 }
@@ -40,16 +38,13 @@
 }
 .body_text1_c{
 	font-family: "Open Sans";
-	width: 40vw;
+	width: 100%;
 	font-size: 100%;
 	line-height: 30px;
 }
 
 .title_line_c{
-	position: relative;
-	top: 2%;
-	left: 9vw;
-	width: 83vw;
+	width: 100%;
 	height: auto;
 	background-color: rgb(20, 193, 121);
 }
@@ -73,15 +68,59 @@
 	border-radius: 50%;
 }
 
-.mem_pic:hover{
-	transform: scale(1.2);
-}
-
 .mem_pic_wrapper_c{
 	width: 100%;
 	height: auto;
 	border-radius: 50%;
 	overflow: hidden;
+	position: relative;
+}
+
+.mem_pic_wrapper_c:hover .mem_pic_overlay_c{
+	top: 0;
+}
+
+.mem_pic_wrapper_c:hover .overlay_icon_c{
+	top: 43%;
+}
+
+.mem_pic_overlay_c{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: black;
+	opacity: 0.7;
+	position: absolute;
+	top: 80%;
+	transition: top 1s;
+}
+
+.overlay_icon_c{
+	position: absolute;
+	top: 123%;
+	left: 25%;
+	transition: top 1s;
+}
+
+.icon_overlay_holder_c{
+	
+}
+
+.icon_overlay_holder_c{
+	letter-spacing: 0.6vw;
+	font-size: 2vw;
+}
+.icon_overlay_holder_c > a:visited {
+    color: snow;
+}
+
+.icon_overlay_holder_c > a:link {
+    color: snow;
+	text-decoration: none;
+}
+
+.icon_overlay_holder_c > a:hover {
+	color: rgb(20, 193, 121);
 }
 
 .mem_name{
@@ -100,24 +139,37 @@
 		font-size: 185%;
 		text-align: center;
 	}
-	.subtitle_c{
-		font-size: 90%;
+}
+
+@media only screen and (max-width: 900px) {
+	.icon_overlay_holder_c{
+		letter-spacing: 4vw !important;
+		font-size: 10vw !important;
 	}
 }
 
+
 @media only screen and (max-width: 1200px) {
-    .body_pic_c{
-        width: 100%;
-		height: auto;
-		left: 0vw;
-    }
 	.body_text1_c{
-		width: 95vw;
-		font-size: 120%;
-		line-height: 7vmin;
-		
+		font-size: 2.5vw;
+		line-height: 40px
 	}
-	.col-md-12 > .title_c{
+	.title_c{
 		text-align: center;
+		font-size: 7vw;
+	}
+	.subtitle_c{
+		font-size: 2.2vw;
+	}
+	.mem_name{
+		font-size: 300%;		
+	}
+
+	.mem_descrition{
+		font-size: 200%;
+	}
+	.icon_overlay_holder_c{
+		letter-spacing: 1.5vw;
+		font-size: 5vw;
 	}
 }
