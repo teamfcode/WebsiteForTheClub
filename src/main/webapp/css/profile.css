@@ -3,30 +3,17 @@
 }
 
 #avatar_wrapper_duc {
-    padding-top: 6%;
+    padding-top: 4%;
 }
 
-#profile-shortcuts-duc {
-    background-color: #F0FCF4;
-    text-align: center;
-    padding: 0;
-}
-
-#profile-shortcuts-duc > ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#profile-shortcuts-duc > ul > li > a {
-    text-decoration: none;
+.nav > li > a {
     color: black;
-    font-size: 18px;
-    padding: 14px 25px;
-    display: block;
-    border-bottom: 3px solid #E9961C;
 }
 
-#profile-shortcuts-duc > ul > li:hover {
-background-color: #E9961C;
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background: #EE9400;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background: #EE9400;
 }
