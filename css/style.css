@@ -87,7 +87,7 @@ label {
   color: rgba(255, 255, 255, 0.5);
   transition: all 0.15s ease;
   -webkit-backface-visibility: hidden;
-  pointer-events: none;
+  pointer-events: all;
   font-size: 22px;
 }
 label .req {

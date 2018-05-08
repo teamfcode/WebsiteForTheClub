@@ -2,10 +2,11 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TestingLoginInSignUp</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <!-----Style for the selected box------>
     <style>
         /*the container must be positioned relative:*/
@@ -78,6 +79,73 @@
             background-color: rgba(0, 0, 0, 0.1);
         }
     </style>
+    <style>
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+</style>
 </head>
 
 <body>
@@ -98,14 +166,14 @@
                 <form action="/" method="post">
 
                     <div class="top-row">
-                        <div class="field-wrap" style="height:45px">
+                        <div class="field-wrap" style="height:6%; width: 48%">
                             <label>
                 First Name<span class="req">*</span>
               </label>
                             <input type="text" required autocomplete="off" />
                         </div>
 
-                        <div class="field-wrap" style="height:45px">
+                        <div class="field-wrap" style="height:6%; width: 48%;">
                             <label>
                 Last Name<span class="req">*</span>
               </label>
@@ -116,9 +184,9 @@
                     </div>
                         <div class="top-row">
                           
-                         <div class="field-wrap" style="height: 45px;">
+                         <div class="field-wrap" style="height:6%;">
                         <div class="top-row">
-                            <div class="custom-select" style="width:250px;">
+                            <div class="custom-select" style="height: 100%; width:100%;">
                                 <select>
     <option value="0"> Chooose Gender </option>
     <option value="1">Male</option>
@@ -128,7 +196,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="field-wrap" style="height: 45px">
+                    <div class="field-wrap" style="height:6%">
                         <label>
                  <span class="req"></span>
              </label>
@@ -136,7 +204,7 @@
                     </div>
                    
                     </div>
-                     <div class="field-wrap" style="height: 45px">
+                     <div class="field-wrap" style="height:6%">
                         <label>Username
                         <span class="req">*</span></label>
                         <input type="text" name="username" required autocomplete="off" />
@@ -145,14 +213,14 @@
                     
                       <!-- Set up Passwords -->
                    
-                    <div class="field-wrap" style="height:45px">
+                    <div class="field-wrap" style="height:6%">
                         <label>
               Password<span class="req">*</span>
             </label>
                         <input type="password" name="password" id="password"  onkeyup='check();' required autocomplete="off" />
                     </div>
                     
-                        <div class="field-wrap" style="height:45px">
+                        <div class="field-wrap" style="height:6%">
                         <label>
               Confirm password<span class="req">*</span>
             </label>
@@ -160,13 +228,13 @@
                         <span id='message'></span>
                     </div>
                    <div class="top-row">
-                        <div class="field-wrap" style="height: 45px">
+                        <div class="field-wrap" style="height:6%;width: 48%">
                             <label>
                     Major<span class="req">*</span>
                 </label>
                             <input type="text" required autocomplete="off" />
                         </div>
-                        <div class="field-wrap" style="height: 45px">
+                        <div class="field-wrap" style="height:6%; width: 48%">
                             <label>
                     Course<span class="req">*</span>
                 </label>
@@ -174,18 +242,18 @@
                         </div>
                     </div>
                
-                    <div class="field-wrap" style="height:45px">
+                    <div class="field-wrap" style="height:6%">
                         <label>
               Student ID<span class="req">*</span>
             </label>
-                        <input type="text" required autocomplete="off" />
+                        <input type="text" required autocomplete="on" />
                     </div>
 
                 <!-- date of birth -->
 
                     <!-- Phone number -->
                     
-                    <div class="field-wrap" style="height: 45px">
+                    <div class="field-wrap" style="height:6%">
                         <label>
                  Phone Number<span class="req"></span>
              </label>
@@ -194,7 +262,7 @@
                     
                     <!-- email -->
                     
-                    <div class="field-wrap" style="height:45px">
+                    <div class="field-wrap" style="height:6%">
                         <label>
               Email Address<span class="req">*</span>
             </label>
@@ -216,22 +284,28 @@
 
                 <form action="/" method="post">
 
-                    <div class="field-wrap" style="height:45px">
+                    <div class="field-wrap" style="height:6%">
                         <label>
               Username<span class="req">*</span>
             </label>
                         <input type="text" required autocomplete="off" />
                     </div>
 
-                    <div class="field-wrap" style="height:45px">
+                    <div class="field-wrap" style="height:6%">
                         <label>
               Password<span class="req">*</span>
             </label>
+                       
                         <input type="password" required autocomplete="off" />
                     </div>
-
+                    <label class="container">Remember Me
+  <input type="checkbox" name="remember_me">
+  <span class="checkmark"></span>
+</label>
+                   
+                   <div class="field-wrap">
                     <p class="forgot"><a href="#">Forgot Password?</a></p>
-
+</div>
                     <button class="button button-block">Log In</button>
 
                 </form>
