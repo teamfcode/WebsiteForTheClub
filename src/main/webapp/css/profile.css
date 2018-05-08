@@ -7,8 +7,9 @@
 }
 
 #profile-shortcuts-duc {
-    background-color: #3A4B40;
+    background-color: #F0FCF4;
     text-align: center;
+    padding: 0;
 }
 
 #profile-shortcuts-duc > ul {
@@ -19,12 +20,13 @@
 
 #profile-shortcuts-duc > ul > li > a {
     text-decoration: none;
-    color: #9CB0A4;
+    color: black;
     font-size: 18px;
     padding: 14px 25px;
     display: block;
+    border-bottom: 3px solid #E9961C;
 }
 
-#profile-shortcuts-duc > ul > li > a:hover, a:active {
-    color: 
+#profile-shortcuts-duc > ul > li:hover {
+background-color: #E9961C;
 }
