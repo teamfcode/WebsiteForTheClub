@@ -17,3 +17,17 @@
 .nav>li>a:focus, .nav>li>a:hover {
     background: #EE9400;
 }
+
+.sidebar-hidden-duc {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+	.sidebar-hidden-duc{
+		display: block;
+	}
+	
+	.sidebar-duc{
+		display: none;
+	}
+}
