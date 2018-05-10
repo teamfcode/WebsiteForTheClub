@@ -3,13 +3,12 @@
 <head>
 	<title>F-Code Website</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/day_menu.css">
-	<link rel="stylesheet" href="css/day_menu_header.css">
-	<link rel="stylesheet" href="css/day_content.css">
+	<link rel="stylesheet" href="css/day_admin.css">	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico">	
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nova+Mono">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	
 </head>
 
 <body>
@@ -22,8 +21,8 @@
 			</div>
 			<div class="line_da"></div>
 			<ul>
-				<li class="menu1_da menu_da">
-					<a class="mainmenu_da" href="javascript:void(0)">
+				<li class="menu1_da menu_da" >
+					<a class="mainmenu_da 1x" href="javascript:void(0)">
 						<i class="fa fa-bar-chart"></i>
 						<p>DASHBOARD</p>
 					</a>
@@ -60,17 +59,7 @@
 			<div class="header_da">
 				<h3 style="	color: #333333">ADMIN</h3>
 				<div class="inner_right_da">
-					<ul>
-						<!-- <li>
-							<a href="javascript:void(0)">
-								<i class="fa fa-envelope-o"></i>								
-							</a>							
-						</li>
-						<li>
-							<a href="javascript:void(0)">
-								<i class="fa fa-bell-o"></i>									
-							</a>														
-						</li> -->
+					<ul>						
 						<li class="dropdown_da">
 							<a href="javascript:void(0)">
 								<i id="showDropdown_da" class="fa fa-bars"></i>														
@@ -96,16 +85,54 @@
 		
 			<div class="wrap_content_da">
 				<div class="content_da">
-					
+					<div class="dashboard_da">	
+						<h3>DASHBOARD</h3>	
+						<div class="space_da"></div>
+						<div class="container_da">
+							<ul>
+								<li class="news_da">								
+									<a href="news.html" target="_blank"><h4>NEWS</h4></a>
+									<img src="img/event_pic1.jpg" alt="news">	
+									<ol>
+										<li>Total news: 3<li>
+										<li>Lasted news: 10/05/2018</li>
+										<li>Comments: 999</li>
+										<li>...</li>
+									</ol>								
+								</li>	
+	
+								<li class="event_da">								
+									<a href="event.html" target="_blank"><h4>EVENT</h4></a>
+									<img src="img/event_pic1.jpg" alt="event">	
+									<ol>
+										<li>Total event: 3<li>
+										<li>Lasted event: 10/05/2018</li>
+										<li>Comments: 9 tỉ</li>
+										<li>...</li>
+									</ol>								
+								</li>
+
+								<li class="member_da">								
+									<a href="javascript:void(0)"><h4>MEMBERS</h4></a>
+									<img src="img/member_pic1.jpg" alt="member">	
+									<ol>
+										<li>Members: 500 anh em<li>
+										<li>New Members: 4</li>
+										<li>Admin: 4</li>
+										<li>Online: 3 chục</li>
+									</ol>								
+								</li>	
+							</ul>
+						</div>		
+					</div>
 				</div>
 			</div>
 		</div>
 
 	</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/day_button.js"></script>
-	<script src="js/day_button_main_menu.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+	<script src="js/day_admin.js"></script>
 	
 </body>
 </html>
