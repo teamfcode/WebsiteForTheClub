@@ -132,22 +132,22 @@ textarea {
   resize: vertical;
 }
 
-.field-wrap {
+.field-wrap_t {
   position: relative;
   margin-bottom: 40px;
 }
 
-.top-row:after {
+.top-row_t:after {
   content: "";
   display: table;
   clear: both;
 }
-.top-row > div {
+.top-row_t > div {
   float: left;
   width: 48%;
   margin-right: 4%;
 }
-.top-row > div:last-child {
+.top-row_t > div:last-child {
   margin: 0;
 }
 
@@ -174,8 +174,8 @@ textarea {
   width: 100%;
 }
 
-.forgot {
-  margin-top: -20px;
+.forgot{
+  margin-top: -30px;
   text-align: right;
 }
 .tabs select {
