@@ -23,7 +23,7 @@ body{
     margin: 0;
 	padding: 0;
 }
-.nav_bar_c> li {
+.nav_bar_c > li {
 	padding: 1.5vw 2vw;
     float: left;
 }
@@ -36,19 +36,18 @@ body{
 	font-weight: bold;
 	color: white;
 	padding-top: 0.1vw;
-}
-
-.nav_bar_wrapper_c{
 	border-radius: 25px;
 	padding: 0.3vw 1vw;
 }
 
-.nav_bar_wrapper_c:hover{
+.nav_bar_active_c{
+	color: rgb(20, 193, 121) !important;
 	background-color: white;
 }
 
 .nav_bar_wrapper_c:hover > a{
-	color: rgb(20, 193, 121) !important;
+	color: rgb(20, 193, 121);
+	background-color: white;
 }
 
 .brand_c{

@@ -45,6 +45,13 @@
 	font-size: 0.8vmax;
 }
 
+label.error{
+	padding-top: 1vmin;
+	font-weight: lighter;
+	font-size: 1vw;
+	font-style: italic;
+}
+
 .text_input_c{
 	position: relative;
 	font-weight: bold;
@@ -124,6 +131,9 @@
 	.name_input_c, .email_input_c{
 		width: 93%;
 		height: auto;
+		font-size: 2.5vmax;
+	}
+	label.error{
 		font-size: 2.5vmax;
 	}
 	.text_input_c{

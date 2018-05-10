@@ -29,7 +29,7 @@
 				<ul class="nav_bar_c">
 					<li><div class="nav_bar_wrapper_c"><a href="index.html">HOME</a></div></li>
 					<li><div class="nav_bar_wrapper_c"><a href="news.html">NEWS</a></div></li>
-					<li><div class="nav_bar_wrapper_c"><a href="event.html">EVENT</a></div></li>
+					<li><div class="nav_bar_wrapper_c"><a class="nav_bar_active_c" href="event.html">EVENT</a></div></li>
 				</ul>
 			</div>
 			<div class="col-md-2">
@@ -41,7 +41,7 @@
 				</div>
 			</div>
 			<div class="col-md-2">
-				<div class="login_c"><a href=""><i class="fas fa-sign-in-alt"></i> LOG IN</a></div>
+				<div class="login_c"><a href="signIn_signUp.html"><i class="fas fa-sign-in-alt"></i> LOGIN</a></div>
 			</div>
 		</div>   
 	</div>
@@ -63,7 +63,7 @@
 			<div class="row"><div class="link_wrapper_c"><a href="index.html">HOME</a></div></div>
 			<div class="row"><div class="link_wrapper_c"><a href="news.html">NEWS</a></div></div>
 			<div class="row"><div class="link_wrapper_c"><a href="event.html">EVENT</a></div></div>
-			<div class="row"><div class="link_wrapper_c"><a href="#"><i class="fas fa-sign-in-alt"></i> LOG IN</a></div> </div>
+			<div class="row"><div class="link_wrapper_c"><a href="signIn_signUp.html"><i class="fas fa-sign-in-alt"></i> LOGIN</a></div> </div>
 			<div class="row">
 				<div class="col-md-4 col-xs-3"></div>
 				<div class="col-md-4 col-xs-6">
@@ -270,36 +270,34 @@
 				<!---------------------------------Send a message form------------------------------------->
 				<div class="col-lg-4">
 					<h3 class="footer_title_c">Send Us A Message</h3>
-					<div class="row">
-						<div class="col-sm-6">
-							<br>
-							<form name="message" action="">
-								<p class="text_input_c">Your Name</p>
-								<input class="name_input_c" type="text" name="name" placeholder="Your Name">
-							</form>
-						</div>
-						<div class="col-sm-6">
-							<br>
-							<form name="message" action="">
-								<p class="text_input_c">Your Email</p>
-									<input class="email_input_c" type="text" name="email" placeholder="Your Email">
-							</form>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-sm-12">
-							<br>			
-							<p class="text_input_c">Your Message</p>
-							<textarea class="message_area_c" name="messsage"placeholder="Your Message"></textarea>
-						</div>
+					<form name="message" action="#thís">
 						<div class="row">
-							<div class="col-lg-9 col-sm-8 col-xs-0"></div>
-							<div class="col-lg-3 col-sm-3 col-xs-4">
+							<div class="col-sm-6">
 								<br>
-								<div id="send_message_c" class="btn_submit_c">Send</div>
+								<p class="text_input_c">Your Name</p>
+								<input class="name_input_c" type="text" name="name" placeholder="Your Name" autocomplete="off">
+							</div>
+							<div class="col-sm-6">
+								<br>
+								<p class="text_input_c">Your Email</p>
+								<input class="email_input_c" type="text" name="email" placeholder="Your Email" autocomplete="off">
 							</div>
 						</div>
-					</div>
+						<div class="row">
+							<div class="col-sm-12">
+								<br>			
+								<p class="text_input_c">Your Message</p>
+								<textarea class="message_area_c" name="messsage"placeholder="Your Message"></textarea>
+							</div>
+							<div class="row">
+								<div class="col-lg-9 col-sm-8 col-xs-0"></div>
+								<div class="col-lg-3 col-sm-3 col-xs-4">
+								<br>
+								<button id="send_message_c" type="submit">Send</button>
+								</div>
+							</div>
+						</div>
+					</form>
 				</div>
 				<div class="col-lg-1"></div>
 			</div>
@@ -310,6 +308,8 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 <script src="js/scroll_top_animation.js"></script>
 <script src="js/toggle_menu.js"></script>
+<script src="js/validation_form.js"></script>
 </html>
