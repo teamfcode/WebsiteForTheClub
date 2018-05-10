@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F-code</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/navigationbar.css">
+    <link rel="stylesheet" href="css/home_body.css">
+    <link rel="stylesheet" href="css/sticky_button.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+    <!---------------------------------Prevent overflowing------------------------------------->
+    <div class="overflow">
+        <!---------------------------------Navigation bar------------------------------------->
+        <div class="header_c container-fluid">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="brand_c">Fcode</div>
+                </div>
+                <div class="col-md-2 col-lg-3"></div>
+                <div class="col-md-5 col-lg-4">
+                    <ul class="nav_bar_c">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="event.html">EVENT</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <div class="search_wrapper_c">
+                        <form action="">
+                            <input class="search_c" type="text" name="search" placeholder="Search..">
+                            <button class="search_btn_c" type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="dropdown" id="avatar_wrapper_duc">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background: #0DC079; border: none"><img class="mem_pic" id="profile_pic_duc" src="image/member_pic1.jpg">
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu" style="text-align: center">
+                            <li><a href="profile.html">Profile</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------------------------------Hidden navigation bar------------------------------------->
+        <div class="header_hidden_c container-fluid">
+            <div class="row">
+                <div class="col-xs-1">
+                    <div class="menu_c"><i class="fas fa-bars"></i></div>
+                </div>
+                <div class="col-xs-10" style="text-align: center">
+                    <div class="brand_alt_c">Fcode</div>
+                </div>
+                <div class="col-xs-1"></div>
+            </div>
+        </div>
+        <!---------------------------------Toggle for hidden navigation bar------------------------------------->
+        <div class="toggle_menu_c">
+            <div class="link_wrapper_c"><a href="index.html">HOME</a></div>
+            <div class="link_wrapper_c"><a href="news.html">NEWS</a></div>
+            <div class="link_wrapper_c"><a href="event.html">EVENT</a></div>
+            <!---------------------------------Profile Picture------------------------------------------------------>
+            <div class="login_c" id="avatar_wrapper_duc"><a href="profile.html"><img class="mem_pic" id="profile_pic_duc" src="image/member_pic1.jpg"></a></div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-2 sidebar-duc" style="text-align: center">
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills nav-stacked" id="myTab" role="tablist">
+                    <li class="nav-item active">
+                        <a class="nav-link active" id="account-tab" data-toggle="pill" href="#account" role="tab" aria-controls="account" aria-selected="true">Account</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="pill" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="privacy-tab" data-toggle="pill" href="#privacy" role="tab" aria-controls="privacy" aria-selected="false">Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="logout-tab" data-toggle="pill" href="#" role="tab" aria-controls="logout" aria-selected="false">Log out</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-8">
+                <!--============================= Profile pictures and nick name =========================-->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="account" role="tabpanel" aria-labelledby="account-tab">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4" style="text-align: center">
+                            <img class="mem_pic" src="image/member_pic1.jpg">
+                            <form>
+                                <div class="form-group">
+                                    <label for="nickname-duc">Alias:</label>
+                                    <input type="text" class="form-control" id="nickname-duc" disabled>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                    <!--============================== User infomation ==================================-->
+                    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <label for="firstname-duc">First name:</label>
+                                    <input type="text" class="form-control" id="firstname-duc">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="lastname-duc">Last name:</label>
+                                    <input type="text" class="form-control" id="lastname-duc">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <label for="dob-duc">Date of birth:</label>
+                                    <input type="date" class="form-control" id="dob-duc">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="gender-duc">Gender:</label>
+                                    <input type="text" class="form-control" id="gender-duc" readonly>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <label for="course-duc">Course:</label>
+                                    <select class="form-control" id="course-duc">
+                                <option>K11</option>
+                                <option>K12</option>
+                                <option>K13</option>
+                                <option>K14</option>
+                            </select>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="major-duc">Course:</label>
+                                    <select class="form-control" id="major-duc">
+                                        <option>Software engineer</option>
+                                        <option>Infomation assurance</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <label for="email-duc">Email:</label>
+                                    <input type="email" class="form-control" id="email-duc">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="phone-duc">Phone number:</label>
+                                    <input type="text" class="form-control" id="phone-duc">
+                                </div>
+                            </div>
+                        </form>
+                        <button style="margin: 0 15px">Confirm Changes</button>
+                    </div>
+                    <!--============================== Change password,.... ==================================-->
+                    <div class="tab-pane" id="privacy" role="tabpanel" aria-labelledby="privacy-tab">
+                        <div class="col-sm-4">
+                            <form>
+                                <div class="form-group">
+                                    <label for="oldpw-duc">Password:</label>
+                                    <input type="password" class="form-control" id="oldpw-duc">
+                                </div>
+                                <div class="form-group">
+                                    <label for="newpw-duc">New password:</label>
+                                    <input type="password" class="form-control" id="newpw-duc">
+                                </div>
+                                <div class="form-group">
+                                    <label for="validnewpw-duc">Confirm new password:</label>
+                                    <input type="password" class="form-control" id="validnewpw-duc">
+                                </div>
+                            </form>
+                            <button>Change password</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+            </div>
+        </div>
+        <div class="sidebar-hidden-duc" style="text-align: center">
+            <!-- Nav tabs -->
+            <ul class="nav nav-pills nav-stacked" id="myTab" role="tablist">
+                <li class="nav-item active">
+                    <a class="nav-link active" id="account-tab" data-toggle="pill" href="#account" role="tab" aria-controls="account" aria-selected="true">Account</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="pill" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="privacy-tab" data-toggle="pill" href="#privacy" role="tab" aria-controls="privacy" aria-selected="false">Privacy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="logout-tab" data-toggle="pill" href="#" role="tab" aria-controls="logout" aria-selected="false">Log out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/scroll_top_animation.js"></script>
+<script src="js/toggle_menu.js"></script>
+
+</html>

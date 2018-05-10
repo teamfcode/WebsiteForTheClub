@@ -1,9 +1,9 @@
-.wrap_content {
+.wrap_content_da {
 	position: relative;
-	background-color: #E4E5E4;
+	background-color: #EAEAEA;
 	height: 100vh;
 	border-top: 1.5px solid #DBDDDC;
 }
-.wrap_content h1 {
+.wrap_content_da h1 {
 	margin: 0;
 }
