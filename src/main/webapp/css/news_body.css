@@ -21,7 +21,6 @@
 	padding-top: 5vmin;
 }
 
-<<<<<<< HEAD
 .news_background_c{
 	padding: 0vmax 1.5vmax 1.5vmax;
 	width: auto;
@@ -89,6 +88,7 @@ a:visited{
 
 .pagination a:hover{
 	color: rgb(20, 193, 121);
+	background-color: white;
 }
 
 .pagination {

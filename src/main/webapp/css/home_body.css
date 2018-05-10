@@ -17,6 +17,7 @@
 .title_c{
 	font-size: 3vw;
 	font-family: "Pacifico";
+	font-weight: bolder;
 }
 .subtitle_c{
 	position: relative;
@@ -53,7 +54,6 @@
 	font-weight: bolder;
 	padding: 3vh 1vw;
 	color: white;
-
 }
 .member_c{
 	position: relative;
