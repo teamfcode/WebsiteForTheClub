@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>F-code</title>
+	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico" />
@@ -11,70 +12,72 @@
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine" />
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/cuong_home_page.css">
+	 <link rel="stylesheet" href="css/thinh_login_form.css" type="text/css">
 </head>
 <body>
 	<!---------------------------------Prevent overflowing------------------------------------->
 <div class="overflow">
 		<!---------------------------------Navigation bar------------------------------------->
-	<div class="header_c container-fluid">
-		<div class="row">
-			<div class="col-md-1">
-				<div class="brand_c">Fcode</div>
-			</div>
-			<div class="col-md-2 col-lg-3"></div>
-			<div class="col-md-5 col-lg-4">
-				<ul class="nav_bar_c">
-					<li><div class="nav_bar_wrapper_c"><a href="index.html">HOME</a></div></li>
-					<li><div class="nav_bar_wrapper_c"><a href="news.html">NEWS</a></div></li>
-					<li><div class="nav_bar_wrapper_c"><a href="event.html">EVENT</a></div></li>
-				</ul>
-			</div>
-			<div class="col-md-2">
-				<div class="search_wrapper_c">
+	<!---------------------------------Navigation bar------------------------------------->
+<div class="header_c container-fluid">
+  	<div class="row">
+  		<div class="col-md-1">
+  			<div class="brand_c">Fcode</div>
+  		</div>
+  		<div class="col-md-2 col-lg-3"></div>
+  		<div class="col-md-5 col-lg-4">
+  			<ul class="nav_bar_c">
+				<li><div class="nav_bar_wrapper_c"><a href="index.html">HOME</a></div></li>
+				<li><div class="nav_bar_wrapper_c"><a class="nav_bar_active_c" href="news.html">NEWS</a></div></li>
+				<li><div class="nav_bar_wrapper_c"><a href="event.html">EVENT</a></div></li>
+			</ul>
+  		</div>
+  		<div class="col-md-2">
+  			<div class="search_wrapper_c">
+  				<form action="">
+					<input class="search_c" type="text" name="search" style="display: inline" placeholder="Search.."> 
+					<button class="search_btn_c"type="submit"><i class="fas fa-search"></i></button>
+				</form>
+  			</div>
+  		</div>
+  		<div class="col-md-2">
+  			<div class="login_c"><a href="login.html"><i class="fas fa-sign-in-alt"></i> LOGIN</a></div>
+  		</div>
+  	</div>   
+</div>
+	<!---------------------------------Hidden navigation bar------------------------------------->
+<div class="header_hidden_c container-fluid">
+ 	<div class="row">
+ 		<div class="col-xs-1">
+ 			<div class="menu_c"><i class="fas fa-bars"></i></div>
+ 		</div>
+ 		 <div class="col-xs-10"style="text-align: center">
+ 			<div class="brand_alt_c">Fcode</div>
+ 		</div>
+ 		<div class="col-xs-1"></div>
+ 	</div>
+</div>
+	<!---------------------------------Toggle for hidden navigation bar------------------------------------->
+<div class="toggle_menu_c">
+ 	<div class="container-fluid">
+ 		<div class="row"><div class="link_wrapper_c"><a href="index.html">HOME</a></div></div>
+ 		<div class="row"><div class="link_wrapper_c"><a class="nav_bar_active_c" href="news.html">NEWS</a></div></div>
+ 		<div class="row"><div class="link_wrapper_c"><a href="event.html">EVENT</a></div></div>
+ 		<div class="row"><div class="link_wrapper_c"><a href="login.html"><i class="fas fa-sign-in-alt"></i> LOGIN</a></div> </div>
+ 		<div class="row">
+ 			<div class="col-md-4 col-xs-3"></div>
+ 			<div class="col-md-4 col-xs-6">
+ 				<div class="hidden_search_wrapper_c">
 					<form action="">
-						<input class="search_c" type="text" name="search" placeholder="Search..">
-						<button class="search_btn_c" type="submit"><i class="fas fa-search"></i></button>
+						<input class="hidden_search_c" type="text" name="search" style="display: inline" placeholder="Search..">
+						<button class="hidden_search_btn_c"type="submit"><i class="fas fa-search"></i></button>
 					</form>
-				</div>
-			</div>
-			<div class="col-md-2">
-				<div class="login_c"><a href=""><i class="fas fa-sign-in-alt"></i> LOG IN</a></div>
-			</div>
-		</div>   
-	</div>
-		<!---------------------------------Hidden navigation bar------------------------------------->
-	<div class="header_hidden_c container-fluid">
-		<div class="row">
-			<div class="col-xs-1">
-				<div class="menu_c"><i class="fas fa-bars"></i></div>
-			</div>
-			 <div class="col-xs-10"style="text-align: center">
-				<div class="brand_alt_c">Fcode</div>
-			</div>
-			<div class="col-xs-1"></div>
-		</div>
-	</div>
-		<!---------------------------------Toggle for hidden navigation bar------------------------------------->
-	<div class="toggle_menu_c">
-		<div class="container-fluid">
-			<div class="row"><div class="link_wrapper_c"><a href="index.html">HOME</a></div></div>
-			<div class="row"><div class="link_wrapper_c"><a href="news.html">NEWS</a></div></div>
-			<div class="row"><div class="link_wrapper_c"><a href="event.html">EVENT</a></div></div>
-			<div class="row"><div class="link_wrapper_c"><a href="#"><i class="fas fa-sign-in-alt"></i> LOG IN</a></div> </div>
-			<div class="row">
-				<div class="col-md-4 col-xs-3"></div>
-				<div class="col-md-4 col-xs-6">
-					<div class="hidden_search_wrapper_c">
-						<form action="">
-							<input class="hidden_search_c" type="text" name="search" placeholder="Search..">
-							<button class="hidden_search_btn_c" type="submit"><i class="fas fa-search"></i></button>
-						</form>
-					</div> 
-				</div>
-				<div class="col-md-4 col-xs-3"></div>
-			</div>
-		</div>  	   	
-	</div>
+				</div> 
+ 			</div>
+ 			<div class="col-md-4 col-xs-3"></div>
+ 		</div>
+ 	</div>  	   	
+</div>
 	<!---------------------------------Page title------------------------------------->
 	<div class="news_title_c">~News List~</div>
 	<div class="body_c">
