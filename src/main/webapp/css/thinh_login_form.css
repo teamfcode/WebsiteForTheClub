@@ -2,12 +2,13 @@
   box-sizing: border-box;
 }
 
+
 html {
   overflow-y: scroll;
 }
 
 body {
-  background: #c1bdba;
+
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -20,7 +21,7 @@ a:hover {
   color: #3887ff;
 }
 
-.form {
+.form_t {
   background: rgba(19, 35, 47, 0.9);
   padding: 40px;
   max-width: 600px;
@@ -151,7 +152,7 @@ textarea {
   margin: 0;
 }
 
-.button {
+.button_t {
   border: 0;
   outline: none;
   border-radius: 0;
@@ -165,11 +166,11 @@ textarea {
   transition: all 0.5s ease;
   -webkit-appearance: none;
 }
-.button:hover, .button:focus {
+.button_t:hover, .button_t:focus {
   background: #4e8efc;
 }
 
-.button-block {
+.button-block_t {
   display: block;
   width: 100%;
 }
