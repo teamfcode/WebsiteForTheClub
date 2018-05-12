@@ -4,20 +4,21 @@
     <meta charset="utf-8">
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
     <title>Login/SignUp</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
-    <link rel="stylesheet" href="css/thinh_login_form.css" >
-    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico" />
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/cuong_home_page.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+    <link rel="stylesheet" href="css/thinh_login_form.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cuong_home_page.css">
     <!-----Style for the selected box------>
     <style>
         /*the container must be positioned relative:*/
@@ -91,360 +92,395 @@
         }
     </style>
     <style>
-/* The container */
-.container {
-    display: block;
-    position: inherit;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
+        /* The container */
 
-/* Hide the browser's default checkbox */
-.container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
+        .container {
+            display: block;
+            position: inherit;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
 
-/* Create a custom checkbox */
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-    cursor: pointer;
-}
+        /* Hide the browser's default checkbox */
 
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-    background-color: #ccc;
-    cursor: pointer;
-}
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
 
-/* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
-    background-color: #2196F3;
-}
+        /* Create a custom checkbox */
 
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+            cursor: pointer;
+        }
 
-/* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
-    display: block;
-}
+        /* On mouse-over, add a grey background color */
 
-/* Style the checkmark/indicator */
-.container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-</style>
-<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+        .container:hover input~.checkmark {
+            background-color: #ccc;
+            cursor: pointer;
+        }
+
+        /* When the checkbox is checked, add a blue background */
+
+        .container input:checked~.checkmark {
+            background-color: #2196F3;
+        }
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the checkmark when checked */
+
+        .container input:checked~.checkmark:after {
+            display: block;
+        }
+
+        /* Style the checkmark/indicator */
+
+        .container .checkmark:after {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    </style>
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
 </head>
 
 <body>
-	<!---------------------------------Prevent overflowing------------------------------------->
-<div class="overflow">
-	<!---------------------------------Navigation bar------------------------------------->
-<div class="header_c container-fluid">
-  	<div class="row">
-  		<div class="col-md-1">
-  			<div class="brand_c">Fcode</div>
-  		</div>
-  		<div class="col-md-2 col-lg-3"></div>
-  		<div class="col-md-5 col-lg-4">
-  			<ul class="nav_bar_c">
-				<li><div class="nav_bar_wrapper_c"><a href="index.html">HOME</a></div></li>
-				<li><div class="nav_bar_wrapper_c"><a href="news.html">NEWS</a></div></li>
-				<li><div class="nav_bar_wrapper_c"><a href="event.html">EVENT</a></div></li>
-			</ul>
-  		</div>
-  		<div class="col-md-2">
-  			<div class="search_wrapper_c">
-  				<form action="">
-					<input class="search_c" type="text" name="search" style="display: inline" placeholder="Search.."> 
-					<button class="search_btn_c"type="submit"><i class="fas fa-search"></i></button>
-				</form>
-  			</div>
-  		</div>
-  		<div class="col-md-2">
-  			<div class="login_c"><a href="login.html"><i class="fas fa-sign-in-alt"></i> LOGIN</a></div>
-  		</div>
-  	</div>   
-</div>
-	<!---------------------------------Hidden navigation bar------------------------------------->
-<div class="header_hidden_c container-fluid">
- 	<div class="row">
- 		<div class="col-xs-1">
- 			<div class="menu_c"><i class="fas fa-bars"></i></div>
- 		</div>
- 		 <div class="col-xs-10"style="text-align: center">
- 			<div class="brand_alt_c">Fcode</div>
- 		</div>
- 		<div class="col-xs-1"></div>
- 	</div>
-</div>
-	<!---------------------------------Toggle for hidden navigation bar------------------------------------->
-<div class="toggle_menu_c">
- 	<div class="container-fluid">
- 		<div class="row"><div class="link_wrapper_c"><a href="index.html">HOME</a></div></div>
- 		<div class="row"><div class="link_wrapper_c"><a href="news.html">NEWS</a></div></div>
- 		<div class="row"><div class="link_wrapper_c"><a href="event.html">EVENT</a></div></div>
- 		<div class="row"><div class="link_wrapper_c"><a href="login.html"><i class="fas fa-sign-in-alt"></i> LOGIN</a></div> </div>
- 		<div class="row">
- 			<div class="col-md-4 col-xs-3"></div>
- 			<div class="col-md-4 col-xs-6">
- 				<div class="hidden_search_wrapper_c">
-					<form action="">
-						<input class="hidden_search_c" type="text" name="search" style="display: inline" placeholder="Search..">
-						<button class="hidden_search_btn_c"type="submit"><i class="fas fa-search"></i></button>
-					</form>
-				</div> 
- 			</div>
- 			<div class="col-md-4 col-xs-3"></div>
- 		</div>
- 	</div>  	   	
-</div>
-<!-----the form for the sign up and Login----->
-   <div class="body_c">
-    <div class="form_t">
-
-        <ul class="tab-group">
-            <li class="tab active"><a href="#login">Log In</a></li>
-            <li class="tab"><a href="#signup">Sign Up</a></li>
-        </ul>
-
-        <div class="tab-content">
-                  <div id="login">
-                <h1 style="font-family: 'Pacifico', cursive; color: lightseagreen">Welcome Back Member!</h1> <br>
-
-                <form action="/" method="post">
-
-                    <div class="field-wrap" style="height:6%">
-                
-                        <input type="text" placeholder="Username*" style="font-size: 20px; color: aliceblue" autocomplete="off" />
+    <!---------------------------------Prevent overflowing------------------------------------->
+    <div class="overflow">
+        <!---------------------------------Navigation bar------------------------------------->
+        <div class="header_c container-fluid" style="height: 65px">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="brand_c">Fcode</div>
+                </div>
+                <div class="col-md-2 col-lg-3"></div>
+                <div class="col-md-5 col-lg-4">
+                    <ul class="nav_bar_c">
+                        <li>
+                            <div class="nav_bar_wrapper_c"><a class="a_t" href="index.html">HOME</a></div>
+                        </li>
+                        <li>
+                            <div class="nav_bar_wrapper_c"><a class="a_t" href="news.html">NEWS</a></div>
+                        </li>
+                        <li>
+                            <div class="nav_bar_wrapper_c"><a class="a_t" href="event.html">EVENT</a></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <div class="search_wrapper_c">
+                        <form action="">
+                            <input class="search_c" type="text" name="search" style="display: inline" placeholder="Search..">
+                            <button class="search_btn_c" type="submit"><i class="fas fa-search"></i></button>
+                        </form>
                     </div>
-
-                    <div class="field-wrap" style="height:6%">
-           
-                       
-                        <input type="password" placeholder="Password*" style="font-size: 20px; color: aliceblue" autocomplete="off" />
+                </div>
+                <div class="col-md-2">
+                    <div class="login_c"><a href="login.html"><i class="fas fa-sign-in-alt"></i> LOGIN</a></div>
+                </div>
+            </div>
+        </div>
+        <!---------------------------------Hidden navigation bar------------------------------------->
+        <div class="header_hidden_c container-fluid">
+            <div class="row">
+                <div class="col-xs-1">
+                    <div class="menu_c"><i class="fas fa-bars"></i></div>
+                </div>
+                <div class="col-xs-10" style="text-align: center">
+                    <div class="brand_alt_c">Fcode</div>
+                </div>
+                <div class="col-xs-1"></div>
+            </div>
+        </div>
+        <!---------------------------------Toggle for hidden navigation bar------------------------------------->
+        <div class="toggle_menu_c">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="link_wrapper_c"><a href="index.html">HOME</a></div>
+                </div>
+                <div class="row">
+                    <div class="link_wrapper_c"><a href="news.html">NEWS</a></div>
+                </div>
+                <div class="row">
+                    <div class="link_wrapper_c"><a href="event.html">EVENT</a></div>
+                </div>
+                <div class="row">
+                    <div class="link_wrapper_c"><a href="login.html"><i class="fas fa-sign-in-alt"></i> LOGIN</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-xs-3"></div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="hidden_search_wrapper_c">
+                            <form action="">
+                                <input class="hidden_search_c" type="text" name="search" style="display: inline" placeholder="Search..">
+                                <button class="hidden_search_btn_c" type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                        </div>
                     </div>
-                    <label class="container" style="font-size: 120%; padding-left: 7%">Remember Me
+                    <div class="col-md-4 col-xs-3"></div>
+                </div>
+            </div>
+        </div>
+        <!-----the form for the sign up and Login----->
+        <div class="body_c">
+            <div class="form_t">
+
+                <ul class="tab-group">
+                    <li class="tab active"><a href="#login">Log In</a></li>
+                    <li class="tab"><a href="#signup">Sign Up</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="login">
+                        <h1 class="h1_t"  style="font-family: 'Pacifico', cursive; color: lightseagreen; font-size: 35px; padding-top: 21px;">Welcome Back Member!</h1> <br>
+
+                        <form action="/" method="post">
+
+                            <div class="field-wrap" style="height:6%">
+
+                                <input class="input_t" type="text" placeholder="Username*" style="font-size: 20px; color: aliceblue" autocomplete="off" />
+                            </div>
+
+                            <div class="field-wrap" style="height:6%">
+
+
+                                <input class="input_t" type="password" placeholder="Password*" style="font-size: 20px; color: aliceblue" autocomplete="off" />
+                            </div>
+
+                                   <div class="top-row"> 
+                              <label class="container" style="font-size: 120%; padding-left: 7%">Remember Me
   <input type="checkbox" name="remember_me">
   <span class="checkmark"></span>
 </label>
-                   
-                   <div class="field-wrap">
-                    <p class="forgot" style="font-size: 120%; text-align: right;"><a href="#">Forgot Password?</a></p>
-</div>
-                   <a href="profile.html" class="button_t button-block_t" style="text-align: center">LogIn</a>
+                                        
 
-                </form>
+                          
+                                <p class="forgot" style="font-size: 120%; text-align: right;"><a href="#">Forgot Password?</a></p>
+                            </div>
+                            
+                            <a href="profile.html" class="button_t button-block_t" style="text-align: center">LogIn</a>
 
-            </div>
-            <div id="signup">
-                <h1 style="font-family: 'Pacifico', cursive; color: lightseagreen">Welcome to F-Code</h1>
-                <h2 style="font-family: 'Abril Fatface', cursive; color:lightsteelblue">Enter your information to this form</h2><br>
-                
-
-                <form action="/" method="post">
-
-                    <div class="top-row">
-                        <div class="field-wrap" style="height:6%; width: 48%">
-                            <input type="text" placeholder="First Name*" style="font-size: 20px; color: aliceblue" required autocomplete="off" />
-                        </div>
-
-                        <div class="field-wrap" style="height:6%; width: 48%;">
-                
-                            <input type="text" placeholder="Last Name*" style="font-size: 20px; color: aliceblue" required autocomplete="off" />
-                        </div>
-
+                        </form>
 
                     </div>
-                        <div class="top-row">
-                          
-                         <div class="field-wrap" style="height:6%;">
-                        <div class="top-row">
-                           <div class="custom-select" style="width: 99%">                                <select>
-    <option value="0"> Chooose Gender </option>
+                    <div id="signup">
+                        <h1 class="h1_t" style="font-family: 'Pacifico', cursive; color: lightseagreen; font-size: 35px; padding-top: 21px;">Welcome to F-Code</h1>
+                        <h2 class="h2_t" style="font-family: 'Abril Fatface', cursive; color:lightsteelblue; font-size: 25px;">Enter your information to this form</h2><br>
+
+
+                        <form action="/" method="post">
+
+                            <div class="top-row">
+                                <div class="field-wrap" style="height:6%; width: 48%">
+                                    <input class="input_t" type="text" placeholder="First Name*" style="font-size: 20px; color: aliceblue" required autocomplete="off" />
+                                </div>
+
+                                <div class="field-wrap" style="height:6%; width: 48%;">
+
+                                    <input class="input_t" type="text" placeholder="Last Name*" style="font-size: 20px; color: aliceblue" required autocomplete="off" />
+                                </div>
+
+
+                            </div>
+                            <div class="top-row">
+
+                                <div class="field-wrap" style="height:6%;">
+                                    <div class="top-row">
+                                        <div class="custom-select" style="width: 99%"> <select>
+    <option value="0"> Chooose Gender* </option>
     <option value="1">Male</option>
     <option value="2">Female</option>
     <option value="3">Others</option>
   </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="field-wrap" style="height:6%">
+
+                                    <input class="input_t" type="date" placeholder="Date Of Birth*" style="font-size: 20px; color: aliceblue" required autocomplete="off" />
+                                </div>
+
                             </div>
-                            
-                        </div>
-                    </div>
-                    <div class="field-wrap" style="height:6%">
-             
-                        <input type="date" placeholder="Date Of Birth*" style="font-size: 20px; color: aliceblue" required autocomplete="off" />
-                    </div>
-                   
-                    </div>
-                     <div class="field-wrap" style="height:6%">
-                        
-                        <input type="text" name="username" placeholder="Username*"  style="font-size: 20px; color: aliceblue" required autocomplete="off" />
-                    </div>
-                    
-                    
-                      <!-- Set up Passwords -->
-                   
-                    <div class="field-wrap" style="height:6%">
-                        <input type="password" name="password" placeholder="Password*" style="font-size: 20px; color: aliceblue" id="password"  onkeyup='check();' required autocomplete="off" />
-                    </div>
-                    
-                        <div class="field-wrap" style="height:6%">
-                        <input type="password" placeholder="Confirm Password*" style="font-size: 20px; color: aliceblue" name="confirm_password" id="confirm_password"  onkeyup='check();' required autocomplete="off" />
-                        <span id='message'></span>
-                    </div>
-                   <div class="top-row">
-                        <div class="field-wrap" style="height:6%;width: 48%">
-                   
-                            <input type="text" placeholder="Major*" style="font-size: 20px; color: aliceblue" required autocomplete="off" />
-                        </div>
-                        <div class="field-wrap" style="height:6%; width: 48%">
-             
-                            <input type="text" placeholder="Course*" style="font-size: 20px; color: aliceblue" maxlength="3" required autocomplete="off" />
-                        </div>
-                    </div>
-               
-                    <div class="field-wrap" style="height:6%">
-                        <input type="text" placeholder="Student ID*" style="font-size: 20px; color: aliceblue" maxlength="8"required autocomplete="on" />
-                    </div>
-                     <div class="field-wrap" style="height:6%">
-             
-                        <input type="email" placeholder="Email*" style="font-size: 20px; color: aliceblue" required autocomplete="off" />
+                            <div class="field-wrap" style="height:6%">
+
+                                <input class="input_t" type="text" name="username" placeholder="Username*" style="font-size: 20px; color: aliceblue" maxlength="32"required autocomplete="off" />
+                            </div>
+
+
+                            <!-- Set up Passwords -->
+
+                            <div class="field-wrap" style="height:6%">
+                                <input class="input_t" type="password" name="password" placeholder="Password*" style="font-size: 20px; color: aliceblue" id="password" maxlength="60" onkeyup='check();' required autocomplete="off" />
+                            </div>
+
+                            <div class="field-wrap" style="height:6%">
+                                <input class="input_t" type="password" placeholder="Confirm Password*" style="font-size: 20px; color: aliceblue" name="confirm_password" maxlength="60" id="confirm_password" onkeyup='check();' required autocomplete="off" />
+                                <span id='message'></span>
+                            </div>
+                            <div class="top-row">
+                                               <div class="field-wrap" style="height:6%;">
+                                    <div class="top-row">
+                                        <div class="custom-select" style="width: 99%"> <select>
+    <option value="0">Choose Major* </option>
+    <option value="1">Software Engineer</option>
+    <option value="2">Information Assurance</option>
+  </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                                                           <div class="field-wrap" style="height:6%;">
+                                    <div class="top-row">
+                                        <div class="custom-select" style="width: 99%"> <select>
+    <option value="0"> Choose Course* </option>
+    <option value="1">K12</option>
+    <option value="2">K13</option>
+    <option value="3">K14</option>
+  </select>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="field-wrap" style="height:6%">
+                                <input  class="input_t" type="text" placeholder="Student ID*" style="font-size: 20px; color: aliceblue" maxlength="8" required autocomplete="on" />
+                            </div>
+                            <div class="field-wrap" style="height:6%">
+
+                                <input class="input_t" type="email" placeholder="Email*" style="font-size: 20px; color: aliceblue" required autocomplete="off" />
+                            </div>
+
+                            <!-- date of birth -->
+
+                            <!-- Phone number -->
+
+                            <div class="field-wrap" style="height:6%">
+                                <input class="input_t" type="tel" placeholder="Phone Number" style="font-size: 20px; color: aliceblue" autocomplete="off" />
+                            </div>
+
+                            <!-- email -->
+
+
+
+
+
+                            <!-- Submit button -->
+
+                            <button type="submit" class="button_t button-block_t">Submit</button>
+
+                        </form>
+
                     </div>
 
-                <!-- date of birth -->
 
-                    <!-- Phone number -->
-                    
-                    <div class="field-wrap" style="height:6%">
-                        <input type="tel" placeholder="Phone Number" style="font-size: 20px; color: aliceblue" autocomplete="off" />
-                    </div>
-                    
-                    <!-- email -->
-                    
-                   
-
-                 
-                         
-                        <!-- Submit button -->  
-                                   
-                 <button type="submit" class="button_t button-block_t">Submit</button>
-
-                </form>
-
+                </div>
             </div>
-
-     
         </div>
-    </div>
-    </div>
-    <!-- tab-content -->
-    <hr>
-    <div class="footer_c">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-lg-1"></div>
-				<!---------------------------------Information------------------------------------->
-				<div class="col-lg-3 col-md-6">
-					<h3 class="footer_title_c">Information</h3>
-					<br>
-					<p class="footer_text_c">
-						- Lorem ipsum dolor sit amet consectetur. <br> 
-						- Sit amet consectetur dolor. <br>
-						- Dolor sit amet consectetur dolor. <br>
-						- Claritas est etiam processus dynamicus. <br>
-						- Sit amet consectetur dolor. <br>
-						- Dolor sit amet consectetur dolor. <br>
-						- Mirum est notare quam littera gothica. <br>
-					</p>
-					<br><br>
-				</div>
-				<!---------------------------------Find us at----------------------------------->
-				<div class="col-lg-3 col-md-6">
-					<h3 class="footer_title_c">Find Us At</h3>
-					<br>
-					<p class="footer_text_c">Innovation building, block 24, Quang Trung <br> Software City, District 12, Ho Chi Minh City, <br> Vietnam</p>
-					<br>
-					<p class="icon_holder_c">
-							<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-							<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-							<a href="https://plus.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
-							<a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-					</p>
-					<br><br>
-				</div>
-				<!---------------------------------Send a message form------------------------------------->
-				<div class="col-lg-4">
-					<h3 class="footer_title_c">Send Us A Message</h3>
-					<form name="message" action="#thís">
-						<div class="row">
-							<div class="col-sm-6">
-								<br>
-								<p class="text_input_c">Your Name</p>
-								<input class="name_input_c" type="text" name="name" placeholder="Your Name" autocomplete="off">
-							</div>
-							<div class="col-sm-6">
-								<br>
-								<p class="text_input_c">Your Email</p>
-								<input class="email_input_c" type="text" name="email" placeholder="Your Email" autocomplete="off">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-12">
-								<br>			
-								<p class="text_input_c">Your Message</p>
-								<textarea class="message_area_c" name="messsage"placeholder="Your Message"></textarea>
-							</div>
-							<div class="row">
-								<div class="col-lg-9 col-sm-8 col-xs-0"></div>
-								<div class="col-lg-3 col-sm-3 col-xs-4">
-								<br>
-								<button id="send_message_c" type="submit">Send</button>
-								</div>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div class="col-lg-1"></div>
-			</div>
-		</div>
-	</div>
-	<div class="sticky_button_up_c"><i class="fas fa-arrow-up" style="
+        <!-- tab-content -->
+        <hr>
+        <div class="footer_c">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <!---------------------------------Information------------------------------------->
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="footer_title_c">Information</h3>
+                        <br>
+                        <p class="footer_text_c">
+                            - Lorem ipsum dolor sit amet consectetur. <br> - Sit amet consectetur dolor. <br> - Dolor sit amet consectetur dolor. <br> - Claritas est etiam processus dynamicus. <br> - Sit amet consectetur dolor. <br> - Dolor sit amet consectetur dolor. <br> - Mirum est notare quam littera gothica. <br>
+                        </p>
+                        <br><br>
+                    </div>
+                    <!---------------------------------Find us at----------------------------------->
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="footer_title_c">Find Us At</h3>
+                        <br>
+                        <p class="footer_text_c">Innovation building, block 24, Quang Trung <br> Software City, District 12, Ho Chi Minh City, <br> Vietnam</p>
+                        <br>
+                        <p class="icon_holder_c">
+                            <a class="a_t" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="a_t" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a class="a_t" href="https://plus.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+                            <a class="a_t" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </p>
+                        <br><br>
+                    </div>
+                    <!---------------------------------Send a message form------------------------------------->
+                    <div class="col-lg-4">
+                        <h3 class="footer_title_c">Send Us A Message</h3>
+                        <form name="message" action="#thís">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <br>
+                                    <p class="text_input_c">Your Name</p>
+                                    <input class="name_input_c" type="text" name="name" placeholder="Your Name" autocomplete="off">
+                                </div>
+                                <div class="col-sm-6">
+                                    <br>
+                                    <p class="text_input_c">Your Email</p>
+                                    <input class="email_input_c" type="text" name="email" placeholder="Your Email" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <br>
+                                    <p class="text_input_c">Your Message</p>
+                                    <textarea class="message_area_c" name="messsage" placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-9 col-sm-8 col-xs-0"></div>
+                                    <div class="col-lg-3 col-sm-3 col-xs-4">
+                                        <br>
+                                        <button id="send_message_c" type="submit">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky_button_up_c"><i class="fas fa-arrow-up" style="
     padding-top: 7;
 "></i></div>
-</div>
-    
+    </div>
+
     <!-- /form -->
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <!-----------Animation for the selected box------------>
-    
+
     <!-- Error when split into another file -->
-    
+
     <script>
         var x, i, j, selElmnt, a, b, c;
         /*look for any elements with the class "custom-select":*/
@@ -521,23 +557,23 @@
         document.addEventListener("click", closeAllSelect);
     </script>
     <script>
-     var check = function() {
-      if (document.getElementById('password').value ==
-          document.getElementById('confirm_password').value) {
-          document.getElementById('message').style.color = 'green';
-          document.getElementById('message').innerHTML = 'matching';
-      } else {
-      		document.getElementById('message').style.color = 'red';
-          document.getElementById('message').innerHTML = 'not matching';
-      }
-  }
+        var check = function() {
+            if (document.getElementById('password').value ==
+                document.getElementById('confirm_password').value) {
+                document.getElementById('message').style.color = 'green';
+                document.getElementById('message').innerHTML = 'matching';
+            } else {
+                document.getElementById('message').style.color = 'red';
+                document.getElementById('message').innerHTML = 'not matching';
+            }
+        }
     </script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
     <script src="js/thinh_login_form.js"></script>
-<script src="js/cuong_home_page.js"></script>
+    <script src="js/cuong_home_page.js"></script>
 
 
 
