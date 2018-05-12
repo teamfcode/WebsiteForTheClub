@@ -70,6 +70,7 @@
 .search_c::placeholder{
 	color: gray;
 	font-size: 1vw;
+	line-height: 2vh;
 }
 .search_btn_c{
 	outline: none;
@@ -125,6 +126,7 @@
 .hidden_search_c::placeholder{
 	color: gray;
 	font-size: 1.7vmax;
+	line-height: 2vh;
 }
 
 .login_c{
@@ -182,14 +184,6 @@
 .link_wrapper_c > a:link {
     color: white;
 	text-decoration: none;
-}
-
-.link_wrapper_c:hover{
-	background-color: white;
-}
-
-.link_wrapper_c:hover > a{
-	color: rgb(20, 193, 121);
 }
 
 .hidden_c{
@@ -527,6 +521,7 @@
 	display: inline-block;
 	padding-top: 1vh;
 }
+
 
 @media only screen and (max-width: 1200px) and (min-width: 1000px){
 	.medium_event_wrapper_c > p{

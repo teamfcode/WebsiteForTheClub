@@ -12,12 +12,12 @@ body {
   font-family: 'Titillium Web', sans-serif;
 }
 
-a {
+.a_t {
   text-decoration: none;
   color: #4c93ff;
   transition: .5s ease;
 }
-a:hover {
+.a_t:hover {
   color: #3887ff;
 }
 
@@ -66,14 +66,14 @@ a:hover {
   display: none;
 }
 
-h1 {
+.h1_t {
   text-align: center;
   color: lightseagreen;
   font-weight: 300;
   margin: 0 0 40px;
 }
 
-h2  {
+.h2_t  {
     text-align: center;
     color: skyblue;
     font-weight: 800;
@@ -110,7 +110,7 @@ label.highlight {
   color: steelblue;
 }
 
-input, textarea {
+.input_t, .textarea_t {
   font-size: 22px;
   display: block;
   width: 100%;
@@ -123,12 +123,12 @@ input, textarea {
   border-radius: 0;
   transition: border-color .15s ease, box-shadow .15s ease;
 }
-input:focus, textarea:focus {
+.input_t:focus, .textarea_t:focus {
   outline: 0;
   border-color: #1ab188;
 }
 
-textarea {
+.textarea_t {
   border: 2px solid #a0b3b0;
   resize: vertical;
 }
