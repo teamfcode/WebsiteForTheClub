@@ -9,7 +9,7 @@
 
     <title>Login/SignUp</title>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> 
     <link rel="stylesheet" href="css/thinh_login_form.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -34,7 +34,7 @@
         }
 
         .select-selected {
-            background-color: DodgerBlue;
+            background-color: rgb(43, 181, 123);
         }
 
         /*style the arrow inside the select element:*/
@@ -73,7 +73,7 @@
 
         .select-items {
             position: absolute;
-            background-color: DodgerBlue;
+            background-color: rgb(43, 181, 123);
             top: 100%;
             left: 0;
             right: 0;
@@ -137,7 +137,7 @@
         /* When the checkbox is checked, add a blue background */
 
         .container input:checked~.checkmark {
-            background-color: #2196F3;
+            background-color: rgb(43, 181, 123);
         }
 
         /* Create the checkmark/indicator (hidden when not checked) */
@@ -157,10 +157,10 @@
         /* Style the checkmark/indicator */
 
         .container .checkmark:after {
-            left: 9px;
-            top: 5px;
-            width: 5px;
-            height: 10px;
+            left: 10px;
+            top: 6px;
+            width: 7px;
+            height: 13px;
             border: solid white;
             border-width: 0 3px 3px 0;
             -webkit-transform: rotate(45deg);
@@ -172,9 +172,9 @@
 </head>
 
 <body>
-    <!---------------------------------Prevent overflowing------------------------------------->
+    <!--------------------Prevent overflowing------------------------------------>
     <div class="overflow">
-        <!---------------------------------Navigation bar------------------------------------->
+        <!--------------------------------Navigation bar------------------------------------>
         <div class="header_c container-fluid" style="height: 65px">
             <div class="row">
                 <div class="col-md-1">
@@ -207,7 +207,7 @@
                 </div>
             </div>
         </div>
-        <!---------------------------------Hidden navigation bar------------------------------------->
+        <!--Hidden navigation bar---------------------->
         <div class="header_hidden_c container-fluid">
             <div class="row">
                 <div class="col-xs-1">
@@ -219,7 +219,7 @@
                 <div class="col-xs-1"></div>
             </div>
         </div>
-        <!---------------------------------Toggle for hidden navigation bar------------------------------------->
+        <!-----------------Toggle for hidden navigation bar---------------------------------->
         <div class="toggle_menu_c">
             <div class="container-fluid">
                 <div class="row">
@@ -248,7 +248,7 @@
                 </div>
             </div>
         </div>
-        <!-----the form for the sign up and Login----->
+        <!----the form for the sign up and Login---->
         <div class="body_c">
             <div class="form_t">
 
@@ -259,22 +259,22 @@
 
                 <div class="tab-content">
                     <div id="login">
-                        <h1 class="h1_t"  style="font-family: 'Pacifico', cursive; color: lightseagreen; font-size: 35px; padding-top: 21px;">Welcome Back Member!</h1> <br>
+                        <h1 class="h1_t"  style="font-family: 'Pacifico', cursive; color: rgb(20, 193, 121); font-size: 35px; padding-top: 21px;">Welcome Back Member!</h1> <br>
 
                         <form action="/" method="post">
 
-                            <div class="field-wrap" style="height:6%">
+                            <div class="field-wrap"  style="height:6%;">
 
                                 <input class="input_t" type="text" placeholder="Username*" style="font-size: 20px; color: aliceblue" autocomplete="off" />
                             </div>
 
-                            <div class="field-wrap" style="height:6%">
+                            <div class="field-wrap" style="height:6%; margin-bottom: 30px">
 
 
                                 <input class="input_t" type="password" placeholder="Password*" style="font-size: 20px; color: aliceblue" autocomplete="off" />
                             </div>
 
-                                   <div class="top-row"> 
+                                   <div class="top-row" style="margin-bottom: 20px"> 
                               <label class="container" style="font-size: 120%; padding-left: 7%">Remember Me
   <input type="checkbox" name="remember_me">
   <span class="checkmark"></span>
@@ -282,7 +282,7 @@
                                         
 
                           
-                                <p class="forgot" style="font-size: 120%; text-align: right;"><a href="#">Forgot Password?</a></p>
+                                <p class="forgot" style="font-size: 120%; text-align: right;"><a class="a_t" style="color:rgb(43, 181, 123);" href="#">Forgot Password?</a></p>
                             </div>
                             
                             <a href="profile.html" class="button_t button-block_t" style="text-align: center">LogIn</a>
@@ -291,7 +291,7 @@
 
                     </div>
                     <div id="signup">
-                        <h1 class="h1_t" style="font-family: 'Pacifico', cursive; color: lightseagreen; font-size: 35px; padding-top: 21px;">Welcome to F-Code</h1>
+                        <h1 class="h1_t" style="font-family: 'Pacifico', cursive; color: rgb(20, 193, 121); font-size: 35px; padding-top: 21px;">Welcome to F-Code</h1>
                         <h2 class="h2_t" style="font-family: 'Abril Fatface', cursive; color:lightsteelblue; font-size: 25px;">Enter your information to this form</h2><br>
 
 
@@ -313,26 +313,28 @@
 
                                 <div class="field-wrap" style="height:6%;">
                                     <div class="top-row">
-                                        <div class="custom-select" style="width: 99%"> <select>
+                                      <!--  <div >--> <select class="custom-select" style="width: 99%; height: 100%"> 
     <option value="0"> Chooose Gender* </option>
     <option value="1">Male</option>
     <option value="2">Female</option>
     <option value="3">Others</option>
   </select>
-                                        </div>
+                                      <!--  </div> -->
 
                                     </div>
                                 </div>
-                                <div class="field-wrap" style="height:6%">
+                                <div class="field-wrap" style="height:6%; width: 48%;">
 
-                                    <input class="input_t" type="date" placeholder="Date Of Birth*" style="font-size: 20px; color: aliceblue" required autocomplete="off" />
+                                      <input class="input_t" placeholder="Date of Birth*" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  required id="date" style="padding-left: 15px; font-size: 20px ">
                                 </div>
 
                             </div>
                             <div class="field-wrap" style="height:6%">
 
-                                <input class="input_t" type="text" name="username" placeholder="Username*" style="font-size: 20px; color: aliceblue" maxlength="32"required autocomplete="off" />
+                                <input class="input_t" type="text" name="username" placeholder="Username*" style="font-size: 20px; color: aliceblue" maxlength="32"required autocomplete="off" onblur='inputValidation(this)'/>
+                                 <div id='textField'></div>
                             </div>
+       
 
 
                             <!-- Set up Passwords -->
@@ -342,30 +344,30 @@
                             </div>
 
                             <div class="field-wrap" style="height:6%">
-                                <input class="input_t" type="password" placeholder="Confirm Password*" style="font-size: 20px; color: aliceblue" name="confirm_password" maxlength="60" id="confirm_password" onkeyup='check();' required autocomplete="off" />
+                                <input class="input_t" type="password" placeholder="Confirm Password*" style="font-size: 20px; color: aliceblue" name="confirm_password" maxlength="60" id="confirm_password" onkeyup='check();'  required autocomplete="off" />
                                 <span id='message'></span>
                             </div>
                             <div class="top-row">
                                                <div class="field-wrap" style="height:6%;">
                                     <div class="top-row">
-                                        <div class="custom-select" style="width: 99%"> <select>
+                                        <select class="custom-select" style="width: 99%; height: 100%">
     <option value="0">Choose Major* </option>
     <option value="1">Software Engineer</option>
     <option value="2">Information Assurance</option>
   </select>
-                                        </div>
+                                        
 
                                     </div>
                                 </div>
                                                                            <div class="field-wrap" style="height:6%;">
                                     <div class="top-row">
-                                        <div class="custom-select" style="width: 99%"> <select>
+                                         <select class="custom-select" style="width: 99%; height: 100%">
     <option value="0"> Choose Course* </option>
     <option value="1">K12</option>
     <option value="2">K13</option>
     <option value="3">K14</option>
   </select>
-                                        </div>
+                                        
 
                                     </div>
                                 </div>
@@ -376,7 +378,8 @@
                             </div>
                             <div class="field-wrap" style="height:6%">
 
-                                <input class="input_t" type="email" placeholder="Email*" style="font-size: 20px; color: aliceblue" required autocomplete="off" />
+                                <input class="input_t" type="email" placeholder="Email*" style="font-size: 20px; color: aliceblue" required autocomplete="off" onblur='inputEmailValidation(this)' />
+                                <div id='textField_t'></div>
                             </div>
 
                             <!-- date of birth -->
@@ -384,7 +387,7 @@
                             <!-- Phone number -->
 
                             <div class="field-wrap" style="height:6%">
-                                <input class="input_t" type="tel" placeholder="Phone Number" style="font-size: 20px; color: aliceblue" autocomplete="off" />
+                                <input class="input_t" type="tel" placeholder="Phone Number" style="font-size: 20px; color: aliceblue" maxlength="10" autocomplete="off" />
                             </div>
 
                             <!-- email -->
@@ -411,7 +414,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-1"></div>
-                    <!---------------------------------Information------------------------------------->
+                    <!---Information---->
                     <div class="col-lg-3 col-md-6">
                         <h3 class="footer_title_c">Information</h3>
                         <br>
@@ -420,7 +423,7 @@
                         </p>
                         <br><br>
                     </div>
-                    <!---------------------------------Find us at----------------------------------->
+                    <!---Find us at---->
                     <div class="col-lg-3 col-md-6">
                         <h3 class="footer_title_c">Find Us At</h3>
                         <br>
@@ -434,7 +437,7 @@
                         </p>
                         <br><br>
                     </div>
-                    <!---------------------------------Send a message form------------------------------------->
+                    <!--Send a message form-->
                     <div class="col-lg-4">
                         <h3 class="footer_title_c">Send Us A Message</h3>
                         <form name="message" action="#thís">
@@ -568,6 +571,63 @@
             }
         }
     </script>
+        <script>
+    function inputValidation(inputTxt){
+   
+        var regx = /^[0-9a-zA-Z]+$/;
+        var textField = document.getElementById("textField");
+           
+        if(inputTxt.value != '' ){
+       
+            if(inputTxt.value.length >= 5){
+           
+                if(inputTxt.value.match(regx)){
+                    textField.textContent = 'Good input';
+                    textField.style.color = "green";
+                       
+                }else{
+                    textField.textContent = 'only numbers and letters';
+                    textField.style.color = "red";
+                }  
+            }else{
+                textField.textContent = 'your input is less than 5 chracters';
+                textField.style.color = "red";
+            }  
+        }else{
+            textField.textContent = 'your input is empty';
+            textField.style.color = "red";
+        }
+    }
+    </script>
+            <script>
+    function inputEmailValidation(inputEmail){
+   
+        var regx_t = /^[a-zA-Z0-9]*\@[a-zA-Z0-9]*\.[a-zA-Z0-9]*$/gm;
+        var textField_t = document.getElementById("textField_t");
+           
+        if(inputEmail.value != '' ){
+       
+            if(inputEmail.value.length >= 5){
+           
+                if(inputEmail.value.match(regx_t)){
+                    textField_t.textContent = 'Good input';
+                    textField_t.style.color = "green";
+                       
+                }else{
+                    textField_t.textContent = 'only numbers,@ and letters';
+                    textField_t.style.color = "red";
+                }  
+            }else{
+                textField_t.textContent = 'your input is less than 5 chracters';
+                textField_t.style.color = "red";
+            }  
+        }else{
+            textField_t.textContent = 'your input is empty';
+            textField_t.style.color = "red";
+        }
+    }
+    </script>
+ 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
