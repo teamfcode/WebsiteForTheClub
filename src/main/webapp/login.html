@@ -340,7 +340,8 @@
                             <!-- Set up Passwords -->
 
                             <div class="field-wrap" style="height:6%">
-                                <input class="input_t" type="password" name="password" placeholder="Password*" style="font-size: 20px; color: aliceblue" id="password" maxlength="60" onkeyup='check();' required autocomplete="off" />
+                                <input class="input_t" type="password" name="password" placeholder="Password*" style="font-size: 20px; color: aliceblue" id="password" maxlength="60" onkeyup='check();' required autocomplete="off" onblur="inputPasswordValidation(this)" />
+                                <div id='textField_p'></div>
                             </div>
 
                             <div class="field-wrap" style="height:6%">
@@ -374,7 +375,8 @@
                             </div>
 
                             <div class="field-wrap" style="height:6%">
-                                <input  class="input_t" type="text" placeholder="Student ID*" style="font-size: 20px; color: aliceblue" maxlength="8" required autocomplete="on" />
+                                <input  class="input_t" type="text" placeholder="Student ID*" style="font-size: 20px; color: aliceblue" maxlength="8" onblur="inputStudentNumberValidation(this)"  required autocomplete="on" />
+                                <div id='textField_s'></div>
                             </div>
                             <div class="field-wrap" style="height:6%">
 
@@ -483,7 +485,7 @@
     <!-----------Animation for the selected box------------>
 
     <!-- Error when split into another file -->
-
+<!--
     <script>
         var x, i, j, selElmnt, a, b, c;
         /*look for any elements with the class "custom-select":*/
@@ -617,18 +619,60 @@
                     textField_t.textContent = 'only numbers,@ and letters';
                     textField_t.style.color = "red";
                 }  
-            }else{
-                textField_t.textContent = 'your input is less than 5 chracters';
-                textField_t.style.color = "red";
-            }  
-        }else{
-            textField_t.textContent = 'your input is empty';
-            textField_t.style.color = "red";
+            }
         }
     }
     </script>
- 
-
+  <script>
+    function inputStudentNumberValidation(inputSNum){
+   
+        var regx_s = /(?:SE|IA)\d+/gm;
+        var textField_s = document.getElementById("textField_s");
+           
+        if(inputSNum.value != '' ){
+       
+            if(inputSNum.value.length <= 8 || inputSNum.value.length >= 7 ){
+           
+                if(inputSNum.value.match(regx_s)){
+                    textField_s.textContent = 'Good input';
+                    textField_s.style.color = "green";
+                       
+                }else{
+                    textField_s.textContent = 'only numbers, SE or IA';
+                    textField_s.style.color = "red";
+                }  
+            }else{
+                textField_s.textContent = 'your input less than 7 chracters';
+                textField_s.style.color = "red";
+            }  
+        }
+    }
+    </script>
+   <script>
+    function inputPasswordValidation(inputPW){
+   
+        var regx_p= /[0-9a-zA-Z]/gm;
+        var textField_p = document.getElementById("textField_p");
+           
+        if(inputPW.value != '' ){
+       
+            if(inputPW.value.length <= 60 || inputPW.value.length >= 10){
+           
+                if(inputPW.value.match(regx_p)){
+                    textField_p.textContent = 'Good input';
+                    textField_p.style.color = "green";
+                       
+                }else{
+                    textField_p.textContent = 'only numbers and letters';
+                    textField_p.style.color = "red";
+                }  
+            }else{
+                textField_p.textContent = 'your input must be more than 10 characters';
+                textField_p.style.color = "red";
+            }  
+        }
+    }
+    </script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
