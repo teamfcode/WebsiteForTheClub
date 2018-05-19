@@ -1180,12 +1180,12 @@
 	}
 }
 
-@media only screen and (max-width: 50px){
+@media only screen and (max-width: 500px){
 	.footer_title_c{
 		font-size: 10vw;
 	}
 	.footer_text_c{
-		font-size: 4vw;
+		font-size: 4.5vw;
 	}
 	.icon_holder_c{
 		letter-spacing: 1vw; 
@@ -1193,7 +1193,7 @@
 	}
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) and (min-width: 500px){
 	.footer_title_c{
 		font-size: 10vw;
 	}
