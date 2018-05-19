@@ -23,6 +23,7 @@
 .nav_bar_c > li {
 	padding: 1.5vw 2vw;
     float: left;
+	padding-top: 4.5%;
 }
 
 .nav_bar_c >li a {
@@ -32,7 +33,6 @@
 	font-size: 1vmax;
 	font-weight: bold;
 	color: white;
-	padding-top: 0.1vw;
 	border-radius: 25px;
 	padding: 0.3vw 1vw;
 }
@@ -53,7 +53,7 @@
 	font-family: "Pacifico";	
 	cursor: default;
 	padding-left: 5.5vmax;
-	padding-top: 1vmin;
+	padding-top: 0.5vmin;
 }
 .search_c{
 	outline: none;
@@ -70,7 +70,6 @@
 .search_c::placeholder{
 	color: gray;
 	font-size: 1vw;
-	line-height: 2vh;
 }
 .search_btn_c{
 	outline: none;
@@ -126,7 +125,6 @@
 .hidden_search_c::placeholder{
 	color: gray;
 	font-size: 1.7vmax;
-	line-height: 2vh;
 }
 
 .login_c{
@@ -134,7 +132,7 @@
 	font-family: "Open Sans";
 	color: white;
 	cursor: pointer;
-	padding: 1.5vw 0vw;
+	padding-top: 9.5%;
 }
 
 .login_c >  a:visited {
@@ -163,8 +161,8 @@
 	color: white;
 	font-family: "Pacifico";	
 	cursor: pointer;
-	position: absolute;
-	top: 1vmin;
+	padding-left: 10%;
+	padding-top: 10%;
 	z-index: 1;	
 }
 
@@ -186,8 +184,22 @@
 	text-decoration: none;
 }
 
+.link_wrapper_c:hover{
+	background-color: white;
+}
+
+.link_wrapper_c:hover > a{
+    color: rgb(20, 193, 121);
+}
+
 .hidden_c{
 	display: none;
+}
+
+@media only screen and (max-width: 500px) {
+	.menu_c{
+		padding-top: 50%;
+	}
 }
 
 @media only screen and (max-width: 1000px) {
@@ -335,7 +347,7 @@
 
 @media only screen and (max-width: 530px) {
 	.title_in_line_c{
-		font-size: 185%;
+		font-size: 200%;
 		text-align: center;
 	}
 }
@@ -345,27 +357,36 @@
 		letter-spacing: 4vw !important;
 		font-size: 10vw !important;
 	}
+	.body_text1_c{
+		font-size: 3.5vw !important;
+	}
+	.title_c{
+		font-size: 10vw !important;
+	}
+	.subtitle_c{
+		font-size: 3.5vw !important
+	}
 }
 
 
 @media only screen and (max-width: 1200px) {
 	.body_text1_c{
 		font-size: 2.5vw;
-		line-height: 40px
+		line-height: 40px;
 	}
 	.title_c{
 		text-align: center;
 		font-size: 7vw;
 	}
 	.subtitle_c{
-		font-size: 2.2vw;
+		font-size: 2.5vw;
 	}
 	.mem_name{
-		font-size: 300%;		
+		font-size: 280%;		
 	}
 
 	.mem_descrition{
-		font-size: 200%;
+		font-size: 180%;
 	}
 	.icon_overlay_holder_c{
 		letter-spacing: 1.5vw;
@@ -432,6 +453,13 @@
 	line-height: 5vh;
 	font-size: 1.5vw;
 	cursor: pointer;
+	padding-bottom: 0.5vh; 
+	padding-top: 0.5vh; 	
+}
+
+#find_event_c:hover{
+	border: 3px solid hotpink;
+	background-color: hotpink;
 }
 
 .invisible{
@@ -528,10 +556,13 @@
 		font-size: 1.5vmax;
 	}
 	.event_date_text_c{
-		font-size: 1.4vmax;
+		font-size: 1.2vmax;
 	}
 	.event_name_c{
-		font-size: 2vmax;
+		font-size: 1.8vmax;
+	}
+	#find_event_c{
+		font-size: 3vw; 
 	}
 }
 
@@ -540,13 +571,13 @@
 		font-size: 2.5vmax;
 	}
 	.event_date_text_c{
-		font-size: 2.8vmax;
+		font-size: 2vmax;
 	}
 	.event_name_c{
-		font-size: 4vmax;
+		font-size: 3vmax;
 	}
 	#find_event_c{
-		font-size: 2vw;
+		font-size: 3vw; 
 	}
 	.date_input_c{
 		font-size: 2vw;
@@ -565,10 +596,10 @@
 		font-size: 2vmax;
 	}
 	.event_date_text_c{
-		font-size: 2.2vmax;
+		font-size: 1.7vmax;
 	}
 	.event_name_c{
-		font-size: 3.2vmax;
+		font-size: 2.5vmax;
 	}
 		#find_event_c{
 		font-size: 3.5vw;
@@ -743,7 +774,6 @@
 }
 .sort_by_text_c{
 	font-size: 1vw;
-	padding-right: 1vw;
 }
 .sort_by_c{
 	width: 110%;
@@ -755,6 +785,7 @@
 	height: auto;
 	display: flex;
 	float: left;
+	padding-bottom: 1.5vmin;
 }
 .post_mem_img_c{
 	width: 100%;
@@ -765,7 +796,7 @@
 	height: auto;
 	padding-right: 1vw
 }
-.comment_c{
+.write_comment_c{
 	outline: none;
 	box-sizing: border-box;
 	border: 1px solid gray;
@@ -794,6 +825,64 @@
 	height: 5vmin;
 	display: none;
 }
+
+.comment_c{
+	height: auto;
+	width: 100%;
+	font-size: 1vw;
+}
+
+.comment_info_c{
+	display: flex;
+}
+
+.comment_description_c{
+	font-size: 1vw;
+	color: gray;
+	font-style: italic;
+	cursor: pointer;
+}
+
+.comment_description_c:hover{
+	text-decoration: underline;
+}
+
+.dot_c{
+	font-size: 1vw;
+	padding-left: 0.5vw;
+	padding-right: 0.5vw;
+	display: flex;
+	align-items: center;
+	font-weight: bolder;
+}
+
+.comment_name_c{
+	font-weight: bolder;
+	font-size: 1vw;
+	font-family: "Open Sans";
+	color: rgb(20, 193, 121);
+	cursor: pointer;
+}
+
+.comment_name_c:hover{
+	text-decoration: underline;
+}
+
+.comment_text_c{
+	font-size: 1vw;
+	display: inline;
+}
+
+.delete_comment_c{
+	font-size: 1vw;
+	color: rgb(20, 193, 121);
+	cursor: pointer;
+}
+
+.delete_comment_c:hover{
+	text-decoration: underline;
+}
+
 .post_btn_c{
 	position: relative;
 	top: 20%;
@@ -809,7 +898,7 @@
 	cursor: pointer;
 	float: right;
 }
-.comment_c::placeholder{
+.write_comment_c::placeholder{
 	font-size: 1.5vw;
 }
 .recent_post_header_c{
@@ -819,7 +908,8 @@
 	width: 100%;
 	height: auto;
 	font-size: 1.5vw;
-	padding: 2% 5%;
+	padding: 3% 7%;
+	border-radius: 25px
 }
 .recent_post_c hr{
 	width: 90%;
@@ -837,9 +927,62 @@
 	font-size: 1vw;
 	font-weight: bold;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
 	.post_this_c{
 		bottom: 2vmin;
+	}
+	.comment_description_c{
+		font-size: 3vw !important;
+	}
+	.comment_name_c{
+		font-size: 3vw !important;
+	}
+	.dot_c{
+		font-size: 3vw !important;
+	}
+	.comment_text_c{
+		font-size: 3vw !important;
+	}
+	.delete_comment_c{
+		font-size: 3vw !important;
+	}
+	.write_comment_c{
+		font-size: 3vw !important;
+	}
+	.write_comment_c::placeholder{
+		font-size: 3vw !important;
+	}
+	.post_title_c{
+		font-size: 7vw !important;
+	}
+	.post_summary_c{
+		font-size: 4vw !important;
+	}
+	.date_of_post_c{
+		font-size: 3vw !important;
+	}
+	.post_text_c{
+		font-size: 3vw !important;
+		line-height: 4.5vw !important;
+	}
+	.post_img_caption_c{
+		font-size: 3vw !important;
+	}
+	.poster_name_c{
+		font-size: 7vw !important;
+	}
+	.num_of_comment_c{
+		font-size: 3vw !important;
+	}
+	.sort_by_text_c{
+		font-size: 3vw !important;
+	}
+	.sort_by_c{
+		position: relative;
+		bottom: 1.5vmin;
+		right: 5vmin;
+		width: 150% !important;
+		font-size: 3.5vw !important;
 	}
 }
 @media only screen and (max-width: 800px) (min-width: 500px) {
@@ -853,8 +996,6 @@
 	}
 	.post_summary_c{
 		font-size: 3vw;
-		font-weight: bold;
-		font-style: italic;
 	}
 	.date_of_post_c{
 		font-size: 2vw;
@@ -879,11 +1020,26 @@
 		width: 120%;
 		font-size: 2.5vw;
 	}
-	.comment_c{
+	.comment_description_c{
+		font-size: 2vw;
+	}
+	.comment_name_c{
+		font-size: 2vw;
+	}
+	.dot_c{
+		font-size: 2vw;
+	}
+	.comment_text_c{
+		font-size: 2vw;
+	}
+	.delete_comment_c{
+		font-size: 2vw;
+	}
+	.write_comment_c{
 		font-size: 2.5vw;
 		overflow: hidden;
 	}
-	.comment_c::placeholder{
+	.write_comment_c::placeholder{
 		font-size: 2.5vw;
 	}
 	.recent_post_wrapper_c{
@@ -911,14 +1067,19 @@
 	border: 2px solid lightgray;
 	z-index: 1;	
 	text-align: center;
-	vertical-align: middle;
-	line-height: 3.5vmax;
-	color: gray;
+	color: lightgray;
 	font-size: 2vmax;
 	cursor: pointer;
 }
+
+.sticky_button_up_c > i{
+	position: relative;
+	right: 1.5%;
+	top: 5.5%
+}
 .sticky_button_up_c:hover {
-	background-color: slategray;
+	background-color: lightgray;
+	color: white;
 }
 								/*------------Footer--------------*/
 .footer_c{
@@ -932,6 +1093,7 @@
 .footer_title_c{
 	font-size: 2vw;
 	font-family: "Pacifico";
+	padding-bottom: 2vmin;
 }
 
 .footer_text_c{
@@ -968,13 +1130,6 @@
 	font-size: 0.8vmax;
 }
 
-label.error{
-	padding-top: 1vmin;
-	font-weight: lighter;
-	font-size: 1vw;
-	font-style: italic;
-}
-
 .text_input_c{
 	position: relative;
 	font-weight: bold;
@@ -993,7 +1148,7 @@ label.error{
 	width: 100%;
 	padding: 2vh;
 	outline: none;
-	padding: 1.5vmin 1.5vmin;
+	padding: 1.5vh 1.5vh;
     box-sizing: border-box;
 	resize: none;
 	font-size: 0.8vmax;
@@ -1013,6 +1168,11 @@ label.error{
 	cursor: pointer;
 }
 
+#send_message_c:hover{
+	border: 3px solid hotpink;
+	background-color: hotpink;
+}
+
 @media only screen and (max-width: 750px) {
 	#send_message_c{
 		position: relative;
@@ -1020,29 +1180,29 @@ label.error{
 	}
 }
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 50px){
 	.footer_title_c{
 		font-size: 10vw;
 	}
 	.footer_text_c{
-		font-size: 5vw;
+		font-size: 4vw;
 	}
 	.icon_holder_c{
 		letter-spacing: 1vw; 
-		font-size: 10vw;
+		font-size: 8.5vw;
 	}
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 1000px){
+@media only screen and (max-width: 1200px) {
 	.footer_title_c{
-		font-size: 8vw;
+		font-size: 10vw;
 	}
 	.footer_text_c{
-		font-size: 2vw;
+		font-size: 3vw;
 	}
 	.icon_holder_c{
-		letter-spacing: 1vw; 
-		font-size: 6.5vw;
+		letter-spacing: 1.5vw; 
+		font-size: 8vw;
 	}
 }
 
@@ -1054,9 +1214,6 @@ label.error{
 	.name_input_c, .email_input_c{
 		width: 93%;
 		height: auto;
-		font-size: 2.5vmax;
-	}
-	label.error{
 		font-size: 2.5vmax;
 	}
 	.text_input_c{
