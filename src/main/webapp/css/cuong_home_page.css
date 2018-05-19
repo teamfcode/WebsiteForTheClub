@@ -834,6 +834,11 @@
 	font-size: 1vw;
 	color: gray;
 	font-style: italic;
+	cursor: pointer;
+}
+
+.comment_description_c:hover{
+	text-decoration: underline;
 }
 
 .dot_c{
@@ -850,7 +855,11 @@
 	font-size: 1vw;
 	font-family: "Open Sans";
 	color: rgb(20, 193, 121);
+	cursor: pointer;
+}
 
+.comment_name_c:hover{
+	text-decoration: underline;
 }
 
 .comment_text_c{
@@ -861,6 +870,11 @@
 .delete_comment_c{
 	font-size: 1vw;
 	color: rgb(20, 193, 121);
+	cursor: pointer;
+}
+
+.delete_comment_c:hover{
+	text-decoration: underline;
 }
 
 .post_btn_c{
