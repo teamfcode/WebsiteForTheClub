@@ -171,7 +171,7 @@
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
 </head>
 
-<body>
+<body class="body_t">
     <!--------------------Prevent overflowing------------------------------------>
     <div class="overflow">
         <!--------------------------------Navigation bar------------------------------------>
@@ -373,24 +373,25 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="top-row">
 
                             <div class="field-wrap" style="height:6%">
                                 <input  class="input_t" type="text" placeholder="Student ID*" style="font-size: 20px; color: aliceblue" maxlength="8" onblur="inputStudentNumberValidation(this)"  required autocomplete="on" />
                                 <div id='textField_s'></div>
                             </div>
                             <div class="field-wrap" style="height:6%">
+                                <input class="input_t" type="tel" placeholder="Phone Number" style="font-size: 20px; color: aliceblue" maxlength="10" autocomplete="off" />
+                            </div>
+</div>
+                            <!-- date of birth -->
+
+                            <!-- Phone number -->
+<div class="field-wrap" style="height:6%">
 
                                 <input class="input_t" type="email" placeholder="Email*" style="font-size: 20px; color: aliceblue" required autocomplete="off" onblur='inputEmailValidation(this)' />
                                 <div id='textField_t'></div>
                             </div>
-
-                            <!-- date of birth -->
-
-                            <!-- Phone number -->
-
-                            <div class="field-wrap" style="height:6%">
-                                <input class="input_t" type="tel" placeholder="Phone Number" style="font-size: 20px; color: aliceblue" maxlength="10" autocomplete="off" />
-                            </div>
+                            
 
                             <!-- email -->
 
@@ -411,7 +412,7 @@
             </div>
         </div>
         <!-- tab-content -->
-        <hr>
+    
         <div class="footer_c">
             <div class="container-fluid">
                 <div class="row">
