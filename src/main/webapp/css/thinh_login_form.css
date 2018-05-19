@@ -7,9 +7,10 @@ html {
   overflow-y: scroll;
 }
 
-body {
-
+.body_t {
+background-image: url(code-26oct.jpg);
   font-family: 'Titillium Web', sans-serif;
+    background-size: 1580px 1400px;
 }
 
 .a_t {
@@ -22,7 +23,7 @@ body {
 }
 
 .form_t {
-  background: rgba(19, 35, 47, 0.9);
+  background: rgb(5, 22, 51);
   padding: 40px;
   max-width: 600px;
   margin: 40px auto;
@@ -54,11 +55,11 @@ body {
   transition: .5s ease;
 }
 .tab-group li a:hover {
-  background: #4e8efc;
+  background: rgb(82, 211, 153);
   color: #ffffff;
 }
 .tab-group .active a {
-  background: #2569dd;
+  background: rgb(76, 165, 125);
   color: #ffffff;
 }
 
@@ -161,13 +162,13 @@ label.highlight {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .1em;
-  background: #2569dd;
+  background: rgb(76, 165, 125);
   color: #ffffff;
   transition: all 0.5s ease;
   -webkit-appearance: none;
 }
 .button_t:hover, .button_t:focus {
-  background: #4e8efc;
+  background: rgb(82, 211, 153);
 }
 
 .button-block_t {
