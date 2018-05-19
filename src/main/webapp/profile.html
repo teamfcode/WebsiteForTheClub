@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>F-code</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/cuong_home_page.css">
     <link rel="stylesheet" href="css/duc_profile.css">
     <link rel="stylesheet" href="css/duc_confirm_changes_btn.css">
-    
+
 </head>
 
 <body>
@@ -69,43 +70,48 @@
         </div>
         <!---------------------------------Toggle for hidden navigation bar------------------------------------->
         <div class="toggle_menu_c">
-			<div class="container-fluid">
-				<div class="row"><div class="link_wrapper_c"><a href="index.html">HOME</a></div></div>
-				<div class="row"><div class="link_wrapper_c"><a href="news.html">NEWS</a></div></div>
-				<div class="row"><div class="link_wrapper_c"><a href="event.html">EVENT</a></div></div>
-				<div class="row"><div class="link_wrapper_c"><a href="login.html"><i class="fas fa-sign-in-alt"></i> LOGIN</a></div> </div>
-				<div class="row">
-					<div class="col-md-4 col-xs-3"></div>
-					<div class="col-md-4 col-xs-6">
-						<div class="hidden_search_wrapper_c">
-							<form action="">
-								<input class="hidden_search_c" type="text" name="search" placeholder="Search..">
-								<button class="hidden_search_btn_c"type="submit"><i class="fas fa-search"></i></button>
-							</form>
-						</div> 
-					</div>
-					<div class="col-md-4 col-xs-3"></div>
-				</div>
-			<!---------------------------------Profile Picture------------------------------------------------------>
-            	<div class="login_c" id="avatar_wrapper_duc"><a href="profile.html"><img class="mem_pic" id="profile_pic_duc" src="img/member_pic1.jpg"></a></div>
-			</div>  	   	
-		</div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="link_wrapper_c"><a href="index.html">HOME</a></div>
+                </div>
+                <div class="row">
+                    <div class="link_wrapper_c"><a href="news.html">NEWS</a></div>
+                </div>
+                <div class="row">
+                    <div class="link_wrapper_c"><a href="event.html">EVENT</a></div>
+                </div>
+                <div class="row">
+                    <div class="link_wrapper_c"><a href="login.html"><i class="fas fa-sign-in-alt"></i> LOGIN</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-xs-3"></div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="hidden_search_wrapper_c">
+                            <form action="">
+                                <input class="hidden_search_c" type="text" name="search" placeholder="Search..">
+                                <button class="hidden_search_btn_c" type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-3"></div>
+                </div>
+                <!---------------------------------Profile Picture------------------------------------------------------>
+                <div class="login_c" id="avatar_wrapper_duc"><a href="profile.html"><img class="mem_pic" id="profile_pic_duc" src="img/member_pic1.jpg"></a></div>
+            </div>
+        </div>
         <br>
         <div class="row">
             <div class="col-sm-2 sidebar-duc" style="text-align: center">
                 <!-- Nav tabs -->
                 <ul class="nav nav-pills nav-stacked" id="myTab" role="tablist">
                     <li class="nav-item active">
-                        <a class="nav-link active" id="account-tab" data-toggle="pill" href="#account" role="tab" aria-controls="account" aria-selected="true">Account</a>
+                        <a class="nav-link active" id="account-tab" data-toggle="pill" href="#account" role="tab" aria-controls="account" aria-selected="true"><i class="far fa-user-circle"></i> Account</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="pill" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                        <a class="nav-link" id="profile-tab" data-toggle="pill" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="far fa-address-book"></i> Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="privacy-tab" data-toggle="pill" href="#privacy" role="tab" aria-controls="privacy" aria-selected="false">Privacy</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="logout-tab" data-toggle="pill" href="#" role="tab" aria-controls="logout" aria-selected="false">Log out</a>
+                        <a class="nav-link" id="privacy-tab" data-toggle="pill" href="#privacy" role="tab" aria-controls="privacy" aria-selected="false"><i class="fas fa-user-lock"></i> Privacy</a>
                     </li>
                 </ul>
             </div>
@@ -177,7 +183,7 @@
                                 </div>
                             </div>
                         </form>
-                        <button style="margin: 0 15px">Confirm Changes</button>
+                        <button type="button" class="btn btn-success" style="margin: 0 15px">Confirm Changes</button>
                     </div>
                     <!--============================== Change password,.... ==================================-->
                     <div class="tab-pane" id="privacy" role="tabpanel" aria-labelledby="privacy-tab">
@@ -196,7 +202,7 @@
                                     <input type="password" class="form-control" id="validnewpw-duc">
                                 </div>
                             </form>
-                            <button>Change password</button>
+                            <button type="button" class="btn btn-success">Change password</button>
                         </div>
                     </div>
                 </div>
@@ -208,16 +214,13 @@
             <!-- Nav tabs -->
             <ul class="nav nav-pills nav-stacked" id="myTab" role="tablist">
                 <li class="nav-item active">
-                    <a class="nav-link active" id="account-tab" data-toggle="pill" href="#account" role="tab" aria-controls="account" aria-selected="true">Account</a>
+                    <a class="nav-link active" id="account-tab" data-toggle="pill" href="#account" role="tab" aria-controls="account" aria-selected="true"><i class="far fa-user-circle"></i> Account</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="pill" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                    <a class="nav-link" id="profile-tab" data-toggle="pill" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><i class="far fa-address-book"></i> Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="privacy-tab" data-toggle="pill" href="#privacy" role="tab" aria-controls="privacy" aria-selected="false">Privacy</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="logout-tab" data-toggle="pill" href="#" role="tab" aria-controls="logout" aria-selected="false">Log out</a>
+                    <a class="nav-link" id="privacy-tab" data-toggle="pill" href="#privacy" role="tab" aria-controls="privacy" aria-selected="false"><i class="fas fa-user-lock"></i> Privacy</a>
                 </li>
             </ul>
         </div>
@@ -226,4 +229,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/cuong_home_page.js"></script>
+
 </html>
