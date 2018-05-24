@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> 
     <link rel="stylesheet" href="css/thinh_login_form.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico" />
@@ -30,11 +31,13 @@
 
         .custom-select select {
             display: none;
+            transition: .5s ease;
             /*hide original SELECT element:*/
         }
 
         .select-selected {
             background-color: rgb(43, 181, 123);
+            transition: .5s ease;
         }
 
         /*style the arrow inside the select element:*/
@@ -45,9 +48,10 @@
             top: 14px;
             right: 10px;
             width: 0;
-            height: 0;
+            height: 100%;
             border: 6px solid transparent;
             border-color: #fff transparent transparent transparent;
+            transition: .16s ease;
         }
 
         /*point the arrow upwards when the select box is open (active):*/
@@ -67,6 +71,9 @@
             border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
             cursor: pointer;
             user-select: none;
+            transition: .5s ease;
+            transition-property: all;
+            transition-duration: 2s;
         }
 
         /*style items (options):*/
@@ -78,17 +85,21 @@
             left: 0;
             right: 0;
             z-index: 99;
+            transition: .1s ease;
+            
         }
 
         /*hide the items when the select box is closed:*/
 
         .select-hide {
             display: none;
+            transition: .3s ease;
         }
 
         .select-items div:hover,
         .same-as-selected {
             background-color: rgba(0, 0, 0, 0.1);
+            transition: .3s ease;
         }
     </style>
     <style>
@@ -97,8 +108,8 @@
         .container {
             display: block;
             position: inherit;
-            padding-left: 35px;
-            margin-bottom: 12px;
+            padding-right: 65%;
+            margin-bottom: 6%;
             cursor: pointer;
             font-size: 22px;
             -webkit-user-select: none;
@@ -125,6 +136,7 @@
             width: 25px;
             background-color: #eee;
             cursor: pointer;
+            transition: 0.5s ease;
         }
 
         /* On mouse-over, add a grey background color */
@@ -132,12 +144,14 @@
         .container:hover input~.checkmark {
             background-color: #ccc;
             cursor: pointer;
+            transition: 0.5s ease;
         }
 
         /* When the checkbox is checked, add a blue background */
 
         .container input:checked~.checkmark {
             background-color: rgb(43, 181, 123);
+            transition: 0.2s ease;
         }
 
         /* Create the checkmark/indicator (hidden when not checked) */
@@ -198,7 +212,7 @@
                     <div class="search_wrapper_c">
                         <form action="">
                             <input class="search_c" type="text" name="search" style="display: inline" placeholder="Search..">
-                            <button class="search_btn_c" type="submit"><i class="fas fa-search"></i></button>
+                            <button class="search_btn_c a_t" type="submit"><i class="fas fa-search"></i></button>
                         </form>
                     </div>
                 </div>
@@ -259,7 +273,7 @@
 
                 <div class="tab-content">
                     <div id="login">
-                        <h1 class="h1_t"  style="font-family: 'Pacifico', cursive; color: rgb(20, 193, 121); font-size: 35px; padding-top: 21px;">Welcome Back Member!</h1> <br>
+                        <h1 class="h1_t"  style="font-family: 'Pacifico', cursive; color: rgb(20, 193, 121); font-size: 40px; padding-top: 21px;">Welcome Back Member!</h1> <br>
 
                         <form action="/" method="post">
 
@@ -275,7 +289,7 @@
                             </div>
 
                                    <div class="top-row" style="margin-bottom: 20px"> 
-                              <label class="container" style="font-size: 120%; padding-left: 7%">Remember Me
+                              <label class="container label" style="font-size: 120%; color: rgb(20, 193, 121)">Remember Me
   <input type="checkbox" name="remember_me">
   <span class="checkmark"></span>
 </label>
@@ -291,8 +305,8 @@
 
                     </div>
                     <div id="signup">
-                        <h1 class="h1_t" style="font-family: 'Pacifico', cursive; color: rgb(20, 193, 121); font-size: 35px; padding-top: 21px;">Welcome to F-Code</h1>
-                        <h2 class="h2_t" style="font-family: 'Abril Fatface', cursive; color:lightsteelblue; font-size: 25px;">Enter your information to this form</h2><br>
+                        <h1 class="h1_t" style="font-family: 'Pacifico', cursive; color: rgb(20, 193, 121); font-size: 40px; padding-top: 21px;">Welcome to F-Code</h1>
+                        <h2 class="h2_t" style="font-family: 'Abril Fatface', cursive; color:lightsteelblue; font-size: 25px;">Enter your information to this form</h2>
 
 
                         <form action="/" method="post">
@@ -313,12 +327,14 @@
 
                                 <div class="field-wrap" style="height:6%;">
                                     <div class="top-row">
-                                      <!--  <div >--> <select class="custom-select" style="width: 99%; height: 100%"> 
+                                      <div class="custom-select" style="width: 99%; height: 100%">                                <select style="height: 100%">
     <option value="0"> Chooose Gender* </option>
     <option value="1">Male</option>
     <option value="2">Female</option>
     <option value="3">Others</option>
   </select>
+                            </div>
+     
                                       <!--  </div> -->
 
                                     </div>
@@ -331,7 +347,7 @@
                             </div>
                             <div class="field-wrap" style="height:6%">
 
-                                <input class="input_t" type="text" name="username" placeholder="Username*" style="font-size: 20px; color: aliceblue" maxlength="32"required autocomplete="off" onblur='inputValidation(this)'/>
+                                <input class="input_t" type="text" name="username" placeholder="Username*" style="font-size: 20px; color: aliceblue" maxlength="32"required autocomplete="off" id="name"/>
                                  <div id='textField'></div>
                             </div>
        
@@ -351,23 +367,27 @@
                             <div class="top-row">
                                                <div class="field-wrap" style="height:6%;">
                                     <div class="top-row">
-                                        <select class="custom-select" style="width: 99%; height: 100%">
-    <option value="0">Choose Major* </option>
+                                        <div class="custom-select" style="width: 99%; height: 100%">                                <select style="height: 100%">
+  <option value="0">Choose Major* </option>
     <option value="1">Software Engineer</option>
     <option value="2">Information Assurance</option>
   </select>
+                            </div>
                                         
 
                                     </div>
                                 </div>
                                                                            <div class="field-wrap" style="height:6%;">
                                     <div class="top-row">
-                                         <select class="custom-select" style="width: 99%; height: 100%">
-    <option value="0"> Choose Course* </option>
+                                        
+                                        <div class="custom-select" style="width: 99%; height: 100%">                                <select style="height: 100%">
+   <option value="0"> Choose Course* </option>
     <option value="1">K12</option>
     <option value="2">K13</option>
     <option value="3">K14</option>
   </select>
+                            </div>
+                                       
                                         
 
                                     </div>
@@ -466,7 +486,7 @@
                                     <div class="col-lg-9 col-sm-8 col-xs-0"></div>
                                     <div class="col-lg-3 col-sm-3 col-xs-4">
                                         <br>
-                                        <button id="send_message_c" type="submit">Send</button>
+                                        <button class="a_t" id="send_message_c" type="submit">Send</button>
                                     </div>
                                 </div>
                             </div>
@@ -476,8 +496,8 @@
                 </div>
             </div>
         </div>
-        <div class="sticky_button_up_c"><i class="fas fa-arrow-up" style="
-    padding-top: 7;
+        <div class="sticky_button_up_c a_t"><i class="fas fa-arrow-up" style="
+    padding-top: 8%;
 "></i></div>
     </div>
 
@@ -486,7 +506,7 @@
     <!-----------Animation for the selected box------------>
 
     <!-- Error when split into another file -->
-<!--
+
     <script>
         var x, i, j, selElmnt, a, b, c;
         /*look for any elements with the class "custom-select":*/
@@ -562,7 +582,8 @@
         then close all select boxes:*/
         document.addEventListener("click", closeAllSelect);
     </script>
-    <script>
+   
+  <!--  <script>
         var check = function() {
             if (document.getElementById('password').value ==
                 document.getElementById('confirm_password').value) {
@@ -573,8 +594,8 @@
                 document.getElementById('message').innerHTML = 'not matching';
             }
         }
-    </script>
-        <script>
+    </script>-->
+   <!--     <script>
     function inputValidation(inputTxt){
    
         var regx = /^[0-9a-zA-Z]+$/;
@@ -674,11 +695,12 @@
         }
     }
     </script> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
     <script src="js/thinh_login_form.js"></script>
     <script src="js/cuong_home_page.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
+    
 
 
 
