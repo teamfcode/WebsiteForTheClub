@@ -67,5 +67,22 @@ $(document).ready(function() {
 });
 
 
+// --------------VIEW CREATE-----------
+$(document).ready(function(){    
+    $(".display_create").click(function(){
+        $(".view_create").show();
+    });
+    $(".hide_create").click(function(){
+        $(".view_create").hide();
+    });
+});
 
-
+// --------------VIEW TABLE-----------
+$(document).ready(function(){    
+    $(".display_table").click(function(){
+        $(".table_da").show();
+    });
+    $(".hide_table").click(function(){
+        $(".table_da").hide();
+    });
+});

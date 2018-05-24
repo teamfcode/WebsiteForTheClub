@@ -3,14 +3,21 @@
 <head>	
 	<title>F-Code Website</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/day_admin.css">	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico">	
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nova+Mono">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	
+	<!-- <link rel="stylesheet" href="css/day_summer.css">	 -->
 
 	<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
    	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+	
+	<!-- ----------RESPONSIVE---------- -->
+   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -59,7 +66,7 @@
 		<div class="main_da">
 			<!-- header -->
 			<div class="header_da">
-				<h3 id="top_da" style=" color: #333333">ADMIN</h3>
+				<h3 id="top_da" style=" color: white">ADMIN</h3>
 				<div class="inner_right_da">
 					<ul>						
 						<li class="dropdown_da">
@@ -117,17 +124,17 @@
 									</li>
 								</ul>
 							</div>
-							<h4>Detail:</h4>
+							<h4>Outstanding Detail:</h4>
 							<ul class="dashboard_ul_da">
 
 								<li class="news_da dashboard_inner_da">							
 									<a href="news.html" target="_blank"><h4>NEWS</h4></a>
 									<img src="img/event_pic1.jpg" alt="news">	
 									<ol>
-										<li>Total news: 3<li>
-										<li>Lasted news: 10/05/2018</li>
-										<li>Comments: 999</li>
-										<li>Seen: 500</li>
+										<li>Name: ACM<li>
+										<li>Date: 10/05/2018</li>
+										<li>Total comments: 999</li>
+										<li>Most Interaction: Hoàng Yến Minh has most comments with 998</li>
 									</ol>								
 								</li>	
 	
@@ -135,9 +142,9 @@
 									<a href="event.html" target="_blank"><h4>EVENT</h4></a>
 									<img src="img/event_pic1.jpg" alt="event">	
 									<ol>
-										<li>Total event: 3<li>
-										<li>Lasted event: 10/05/2018</li>
-										<li>Comments: 9</li>
+										<li>Name: ACM<li>
+										<li>Date: 19/05/2018</li>
+										<li>Participants: 50</li>
 										<li>Seen: 500</li>
 										<li>Participants: 499</li>										
 									</ol>								
@@ -164,30 +171,101 @@
 						<div class="container_da">
 							<ul class="new_ul_da">
 								<li>
-									<h4>Create new:</h4>
-									<div class="title">
-										<form>
-											Title: 	
-											<input type="text"> <br>  
+									<div class="view_create_new">
+										<button class="display_create"><h4>Create new: </h4></button>
+										<button class="hide_create"><i class="fa fa-times"></i></button>
+									</div>	
+
+									<div class="wrap_create_new_da view_create" >
+										<form name="form_new_da" onsubmit="return validateForm_da()" method="post">
+											<p>Title: </p> 	
+											<input class="col-sm-6" type="text" name="title_da" required> <br>
 											<div class="space_da" style="padding-top: 1vw;"></div>
 											Description: 	<br>
 											<div id="new_text_da"></div>
-											Poster Name: 	
-											<input type="text"> <br>  
-										</form>
-										<!-- <form>
-											<p>Title: </p>
-											<input type="text"> <br>  
-											<p>Description: </p><br>
-											<div id="new_text_da"></div>
-											<p>Poster Name: </p>
-											<input type="text"> <br>  
-										</form> -->
+											<p style="float: right">Poster Name: </p>	<br>
+											<input class="col-sm-3" style="float: right" type="text" required> <br> 
 
+											<!-- /*--------Bỏ Comment-------*/ -->
+											<button class="submit_da">										
+												<i class="fa fa-fw fa-check-circle submit_new_da"></i>
+												<span class="submit_new_da" style="font-weight: 700">Submit</span>					
+											</button>
+
+										</form>
+											
+											<!-- ----------Xài nhét vô form--------- -->
+											<!-- <button class="submit_da">										
+												<i class="fa fa-fw fa-check-circle submit_new_da"></i>
+												<span class="submit_new_da" style="font-weight: 700">Submit</span>					
+											</button> -->
+										
 									</div>
 								</li>								
 								<li>
-									<h4>...</h4>
+									<div class="view_all_new">
+										<button class="display_table"><h4>Statistical news: </h4></button>
+										<button class="hide_table"><i class="fa fa-times"></i></button>
+									</div>	
+
+									<table class="table_da">
+										<tr>
+											<th>#</th>
+											<th>Name</th>
+											<th>Created Time</th>
+											<th>Poster Name</th>
+											<th>Status</th>
+											<th>Action</th>
+										</tr>
+
+										<tr>
+											<td>001</td>
+											<td>FPTU ACM Chanllenge Contest 2018</td>
+											<td>20/3/2018</td>
+											<td>Thien Nhan</td>
+											<td class="cell_active_table_da"><p class="active_table_da">Active</p></td>
+											<td>
+												<a href="javascript:void(0)" class="edit_table_da hvr-shutter-in-horizontal">Edit</a>
+												<a href="javascript:void(0)" class="deactive_table_da hvr-shutter-out-horizontal">Deactive</a>
+											</td>
+										</tr>
+
+										<tr>
+											<td>002</td>
+											<td>FPTU ACM Chanllenge Contest 2018</td>
+											<td>20/3/2018</td>
+											<td>Thien Nhan</td>
+											<td class="cell_active_table_da"><p class="active_table_da">Active</p></td>
+											<td>
+												<a href="javascript:void(0)" class="edit_table_da hvr-shutter-in-horizontal">Edit</a>
+												<a href="javascript:void(0)" class="deactive_table_da hvr-shutter-out-horizontal">Deactive</a>						
+											</td>
+										</tr>
+
+										<tr>
+											<td>003</td>
+											<td>FPTU ACM Chanllenge Contest 2018</td>
+											<td>20/3/2018</td>
+											<td>Thien Nhan</td>
+											<td class="cell_active_table_da"><p class="active_table_da">Active</p></td>
+											<td>
+												<a href="javascript:void(0)" class="edit_table_da hvr-shutter-in-horizontal">Edit</a>
+												<a href="javascript:void(0)" class="deactive_table_da hvr-shutter-out-horizontal">Deactive</a>
+											</td>
+										</tr>
+
+										<tr>
+											<td>004</td>
+											<td>FPTU ACM Chanllenge Contest 2018</td>
+											<td>20/3/2018</td>
+											<td>Thien Nhan</td>
+											<td class="cell_active_table_da"><p class="active_table_da">Active</p></td>
+											<td>
+												<a href="javascript:void(0)" class="edit_table_da hvr-shutter-in-horizontal">Edit</a>					
+												<a href="javascript:void(0)" class="deactive_table_da hvr-shutter-out-horizontal">Deactive</a>
+											</td>
+										</tr>
+									</table>
 								</li>
 							</ul>
 						</div>		
@@ -199,24 +277,114 @@
 						<div class="container_da">
 							<ul class="event_main_ul_da">
 								<li>
-									<h4>Create event:</h4>
-									<div class="title">
+									<div class="view_create_event">
+										<button class="display_create"><h4>Create event: </h4> </button>
+										<button class="hide_create"><i class="fa fa-times"></i> </button>
+									</div>	
+									
+									<div class="wrap_create_event_da view_create" >
 										<form>
-											Title: 
-											<input type="text"> <br>  
-											<div class="space_da" style="padding-top: 1vw;">
-											From: <input type="date" id="date_da"> 
-											To: <input type="date" id="date_da"> <br>
-											<div class="space_da" style="padding-top: 1vw;">
-											Location: <input type="location"> <br>
-											<div class="space_da" style="padding-top: 1.5vw;">
-											Description: <br>
-											<div id="event_text_da"></div>						
+											<p>Title: </p>
+											<input class="col-sm-6" type="text" required=""> <br>  
+											<div class="space_da" style="padding-top: 1vw;"></div>
+											<div class="event_date_da">
+												<div style="padding: 0" class="col-sm-6">
+													<p>From: </p>
+													<input style="margin-left: 3.29429vw" type="date" id="date_da" required="">
+												</div>
+												<div style="padding: 0" class="col-sm-6">
+													<p>To: </p>
+													<input style="margin-left: 1.903367vw" type="date" id="date_da" required="">
+												</div>
+											</div>	
+
+											<div class="space_da" style="padding-top: 1vw;"></div>
+											<p>Location: </p><input class="col-sm-6" type="location" required=""> <br>
+											<div class="space_da" style="padding-top: 1vw;"></div>						
+											<p>Description: </p>
+											<div id="event_text_da"></div>	
+
+											<button class="submit_da">										
+												<i class="fa fa-fw fa-check-circle submit_event_da"></i>
+												<span class="submit_event_da" style="font-weight: 700">Submit</span>
+											</button>					
 										</form>
+
+											<!-- <button class="submit_da">										
+												<i class="fa fa-fw fa-check-circle submit_event_da"></i>
+												<span class="submit_event_da" style="font-weight: 700">Submit</span>
+											</button> -->
 									</div>
 								</li>								
 								<li>
-									<h4>...</h4>
+									<div class="view_all_new">
+										<button class="display_table"><h4>Statistical Events: </h4></button>
+										<button class="hide_table"><i class="fa fa-times"></i></button>
+									</div>
+
+									<table style="font-size: 14px" class="table_da">
+										<tr>
+											<th>#</th>
+											<th>Name</th>
+											<th>Status</th>
+											<th>Date</th>
+											<th>Location</th>
+											<th>Participants</th>
+											<th>Action</th>
+										</tr>
+
+										<tr>
+											<td>001</td>
+											<td>FPTU ACM Chanllenge Contest 2018</td>
+											<td class="cell_active_table_da"><p class="active_table_da">Ongoing</p></td>
+											<td>05 May 2018 - 06 May 2018</td>
+											<td>Ho Chi Minh</td>
+											<td>30</td>													
+											<td>
+												<a href="javascript:void(0)" class="edit_table_da hvr-shutter-in-horizontal">Edit</a>
+												<a href="javascript:void(0)" class="deactive_table_da hvr-shutter-out-horizontal">Outgoing</a>
+											</td>
+										</tr>
+
+										<tr>
+											<td>002</td>
+											<td>FPTU ACM Chanllenge Contest 2018</td>
+											<td class="cell_active_table_da"><p class="active_table_da">Ongoing</p></td>
+											<td>05 May 2018 - 06 May 2018</td>
+											<td>Ho Chi Minh</td>
+											<td>30</td>											
+											<td>
+												<a href="javascript:void(0)" class="edit_table_da hvr-shutter-in-horizontal">Edit</a>
+												<a href="javascript:void(0)" class="deactive_table_da hvr-shutter-out-horizontal">Outgoing</a>						
+											</td>
+										</tr>
+
+										<tr>
+											<td>003</td>
+											<td>FPTU ACM Chanllenge Contest 2018</td>
+											<td class="cell_active_table_da"><p class="active_table_da">Ongoing</p></td>
+											<td>05 May 2018 - 06 May 2018</td>
+											<td>Ho Chi Minh</td>
+											<td>30</td>											
+											<td>
+												<a href="javascript:void(0)" class="edit_table_da hvr-shutter-in-horizontal">Edit</a>
+												<a href="javascript:void(0)" class="deactive_table_da hvr-shutter-out-horizontal">Outgoing</a>
+											</td>
+										</tr>
+
+										<tr>
+											<td>004</td>
+											<td>FPTU ACM Chanllenge Contest 2018</td>
+											<td class="cell_active_table_da"><p class="active_table_da">Ongoing</p></td>
+											<td>05 May 2018 - 06 May 2018</td>
+											<td>Ho Chi Minh</td>
+											<td>30										
+											<td>
+												<a href="javascript:void(0)" class="edit_table_da hvr-shutter-in-horizontal">Edit</a>					
+												<a href="javascript:void(0)" class="deactive_table_da hvr-shutter-out-horizontal">Outgoing</a>
+											</td>
+										</tr>
+									</table>
 								</li>
 							</ul>
 						</div>		
