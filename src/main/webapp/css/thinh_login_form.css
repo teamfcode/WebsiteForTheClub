@@ -8,14 +8,15 @@ html {
 }
 
 .body_t {
-background-image: url(code-26oct.jpg);
+background-image: url(binario.png);
   font-family: 'Titillium Web', sans-serif;
-    background-size: 1580px 1400px;
+    background-size: auto;
+    background-color: transparent;
 }
 
 .a_t {
   text-decoration: none;
-  color: #4c93ff;
+  
   transition: .5s ease;
 }
 .a_t:hover {
@@ -23,7 +24,8 @@ background-image: url(code-26oct.jpg);
 }
 
 .form_t {
-  background: rgb(5, 22, 51);
+  
+    background-color: rgb(16, 43, 76);
   padding: 40px;
   max-width: 600px;
   margin: 40px auto;
@@ -55,11 +57,11 @@ background-image: url(code-26oct.jpg);
   transition: .5s ease;
 }
 .tab-group li a:hover {
-  background: rgb(82, 211, 153);
+  background: rgb(54, 209, 139);
   color: #ffffff;
 }
 .tab-group .active a {
-  background: rgb(76, 165, 125);
+  background:rgb(20, 193, 121);
   color: #ffffff;
 }
 
@@ -81,7 +83,7 @@ background-image: url(code-26oct.jpg);
     margin: 0 0 40px;
 }
 
-label {
+.label {
   position: absolute;
   -webkit-transform: translateY(6px);
           transform: translateY(6px);
@@ -92,22 +94,22 @@ label {
   pointer-events: all;
   font-size: 22px;
 }
-label .req {
+.label .req {
   margin: 2px;
   color: steelblue;
 }
 
-label.active {
+.label.active {
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
   left: 2px;
   font-size: 14px;
 }
-label.active .req {
+.label.active .req {
   opacity: 0;
 }
 
-label.highlight {
+.label.highlight {
   color: steelblue;
 }
 
@@ -162,13 +164,13 @@ label.highlight {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: .1em;
-  background: rgb(76, 165, 125);
+  background: rgb(20, 193, 121);
   color: #ffffff;
   transition: all 0.5s ease;
   -webkit-appearance: none;
 }
 .button_t:hover, .button_t:focus {
-  background: rgb(82, 211, 153);
+  background: rgb(54, 209, 139);
 }
 
 .button-block_t {
@@ -177,7 +179,7 @@ label.highlight {
 }
 
 .forgot {
-  margin-top: -30px;
+  margin-top: -10%;
   text-align: right;
 }
 .tabs select {
