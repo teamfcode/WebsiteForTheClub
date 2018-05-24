@@ -80,9 +80,9 @@
 	<!---------------------------------Page title------------------------------------->
 	<div class="news_title_c">~News List~</div>
 	<div class="body_c">
-		<div class="container">
+		<div class="container-fluid" style="padding-left: 8vw">
 			<div class="row">
-				<div class="col-lg-8 col-xs-12">
+				<div class="col-lg-7 col-xs-11">
 					<h1 class="post_title_c">Post title</h1>
 					<p class="post_summary_c">Summary of the post</p>
 					<p class="date_of_post_c"><i class="fas fa-calendar-alt"></i> 20/3/2018</p>
@@ -138,7 +138,10 @@
 								<div class="comment_description_c">Always angry</div>
 							</div>
 							<p class="comment_text_c">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							<div class="delete_comment_c">Delete</div>
+							<div class="comment_info_c">
+								<div class="action_comment_c">Like</div><div class="dot_c"> · </div><div class="action_comment_c">Edit</div><div class="dot_c"> · </div><div class="action_comment_c">Delete</div>
+							</div>
+
 						</div>
 					</div>
 					<div class="comment_wrapper_c">
@@ -150,30 +153,50 @@
 								<div class="comment_description_c">Always angry</div>
 							</div>
 							<p class="comment_text_c">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-							<div class="delete_comment_c">Delete</div>
+							<div class="comment_info_c">
+								<div class="action_comment_c">Like</div><div class="dot_c"> · </div><div class="action_comment_c">Edit</div><div class="dot_c"> · </div><div class="action_comment_c">Delete</div>
+							</div>
 						</div>
 					</div>
 				</div>	
 				<div class="col-lg-0 col-xs-1"></div>
-				<div class="col-lg-3 col-xs-10 recent_post_wrapper_c">
+				<div class="col-lg-4 col-xs-10 more_post_wrapper_c" style="padding-right: 5vw">
 					<br>
-					<div class="recent_post_header_c">RECENT POSTS</div>
-					<div class="row recent_post_c">
+					<div class="more_post_header_c">RECENT POSTS</div>
+					<div class="row more_post_c">
 						<hr>
 						<div class="col-lg-5 col-xs-4"><a href=""><img class="post_img_c" src="img/body_pic1.jpg"></a></div>
 						<div class="col-lg-7 col-xs-8"><a href=""><p class="post_tilte_small_c">Post title</p></a></div>
 					</div>
-					<div class="row recent_post_c">
+					<div class="row more_post_c">
 						<hr>
 						<div class="col-lg-5 col-xs-4"><a href=""><img class="post_img_c" src="img/body_pic1.jpg"></a></div>
 						<div class="col-lg-7 col-xs-8"><a href=""><p class="post_tilte_small_c">Post title</p></a></div>
 					</div>
-					<div class="row recent_post_c">
+					<div class="row more_post_c">
+						<hr>
+						<div class="col-lg-5 col-xs-4"><a href=""><img class="post_img_c" src="img/body_pic1.jpg"></a></div>
+						<div class="col-lg-7 col-xs-8"><a href=""><p class="post_tilte_small_c">Post title</p></a></div>
+					</div>
+					<br><br>
+					<div class="more_post_header_c">POPULAR POSTS</div>
+					<div class="row more_post_c">
+						<hr>
+						<div class="col-lg-5 col-xs-4"><a href=""><img class="post_img_c" src="img/body_pic1.jpg"></a></div>
+						<div class="col-lg-7 col-xs-8"><a href=""><p class="post_tilte_small_c">Post title</p></a></div>
+					</div>
+					<div class="row more_post_c">
+						<hr>
+						<div class="col-lg-5 col-xs-4"><a href=""><img class="post_img_c" src="img/body_pic1.jpg"></a></div>
+						<div class="col-lg-7 col-xs-8"><a href=""><p class="post_tilte_small_c">Post title</p></a></div>
+					</div>
+					<div class="row more_post_c">
 						<hr>
 						<div class="col-lg-5 col-xs-4"><a href=""><img class="post_img_c" src="img/body_pic1.jpg"></a></div>
 						<div class="col-lg-7 col-xs-8"><a href=""><p class="post_tilte_small_c">Post title</p></a></div>
 					</div>
 				</div>
+				
 				<div class="col-lg-0 col-md-1"></div>
 			</div>
 		</div>
@@ -181,9 +204,9 @@
 	<div class="footer_c">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-1"></div>
+				<div class="col-lg-1 col-xs-0"></div>
 				<!---------------------------------Information------------------------------------->
-				<div class="col-lg-3 col-md-12">
+				<div class="col-lg-3 col-sm-6">
 					<h3 class="footer_title_c">Information</h3>
 					<p class="footer_text_c">
 						- Lorem ipsum dolor sit amet consectetur. <br> 
@@ -196,9 +219,10 @@
 					</p>
 				</div>
 				<!---------------------------------Find us at----------------------------------->
-				<div class="col-lg-3 col-md-12">
+				<div class="col-lg-3 col-sm-6">
 					<h3 class="footer_title_c">Find Us At</h3>
 					<p class="footer_text_c">Innovation building, block 24, Quang Trung Software City, District 12, Ho Chi Minh City, Vietnam</p>
+					<br>
 					<p class="icon_holder_c">
 					<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
 							<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -207,7 +231,7 @@
 					</p>
 				</div>
 				<!---------------------------------Send a message form------------------------------------->
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-xs-11">
 					<h3 class="footer_title_c">Send Us A Message</h3>
 					<form name="message" action="#thís">
 						<div class="row">

@@ -295,16 +295,16 @@
                         <h2 class="h2_t" style="font-family: 'Abril Fatface', cursive; color:lightsteelblue; font-size: 25px;">Enter your information to this form</h2><br>
 
 
-                        <form action="/" method="post">
+                        <form name="signup" action="#this">
 
                             <div class="top-row">
                                 <div class="field-wrap" style="height:6%; width: 48%">
-                                    <input class="input_t" type="text" placeholder="First Name*" style="font-size: 20px; color: aliceblue" required autocomplete="off" />
+                                    <input class="input_t" name="fname" type="text" placeholder="First Name*" style="font-size: 20px; color: aliceblue" required autocomplete="off" />
                                 </div>
 
                                 <div class="field-wrap" style="height:6%; width: 48%;">
 
-                                    <input class="input_t" type="text" placeholder="Last Name*" style="font-size: 20px; color: aliceblue" required autocomplete="off" />
+                                    <input class="input_t" name="lname" type="text" placeholder="Last Name*" style="font-size: 20px; color: aliceblue" required autocomplete="off" />
                                 </div>
 
 
@@ -325,7 +325,7 @@
                                 </div>
                                 <div class="field-wrap" style="height:6%; width: 48%;">
 
-                                      <input class="input_t" placeholder="Date of Birth*" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  required id="date" style="padding-left: 15px; font-size: 20px ">
+                                      <input class="input_t" name="bday" placeholder="Date of Birth*" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  required id="date" style="padding-left: 15px; font-size: 20px ">
                                 </div>
 
                             </div>
@@ -345,7 +345,7 @@
                             </div>
 
                             <div class="field-wrap" style="height:6%">
-                                <input class="input_t" type="password" placeholder="Confirm Password*" style="font-size: 20px; color: aliceblue" name="confirm_password" maxlength="60" id="confirm_password" onkeyup='check();'  required autocomplete="off" />
+                                <input class="input_t" type="password" placeholder="Confirm Password*" style="font-size: 20px; color: aliceblue" name="confirmpassword" maxlength="60" id="confirm_password" onkeyup='check();'  required autocomplete="off" />
                                 <span id='message'></span>
                             </div>
                             <div class="top-row">
@@ -376,11 +376,11 @@
                             <div class="top-row">
 
                             <div class="field-wrap" style="height:6%">
-                                <input  class="input_t" type="text" placeholder="Student ID*" style="font-size: 20px; color: aliceblue" maxlength="8" onblur="inputStudentNumberValidation(this)"  required autocomplete="on" />
+                                <input  class="input_t" name="studentid" type="text" placeholder="Student ID*" style="font-size: 20px; color: aliceblue" maxlength="8" onblur="inputStudentNumberValidation(this)"  required autocomplete="on" />
                                 <div id='textField_s'></div>
                             </div>
                             <div class="field-wrap" style="height:6%">
-                                <input class="input_t" type="tel" placeholder="Phone Number" style="font-size: 20px; color: aliceblue" maxlength="10" autocomplete="off" />
+                                <input class="input_t" name="phonenum" type="tel" placeholder="Phone Number" style="font-size: 20px; color: aliceblue" maxlength="10" autocomplete="off" />
                             </div>
 </div>
                             <!-- date of birth -->
@@ -388,7 +388,7 @@
                             <!-- Phone number -->
 <div class="field-wrap" style="height:6%">
 
-                                <input class="input_t" type="email" placeholder="Email*" style="font-size: 20px; color: aliceblue" required autocomplete="off" onblur='inputEmailValidation(this)' />
+                                <input class="input_t" name="email" placeholder="Email*" style="font-size: 20px; color: aliceblue" required autocomplete="off" onblur='inputEmailValidation(this)' />
                                 <div id='textField_t'></div>
                             </div>
                             

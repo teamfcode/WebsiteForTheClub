@@ -8,7 +8,7 @@ html {
 }
 
 .body_t {
-background-image: url(code-26oct.jpg);
+background-image: url(/img/code-26oct.jpg);
   font-family: 'Titillium Web', sans-serif;
     background-size: 1580px 1400px;
 }
@@ -81,6 +81,7 @@ background-image: url(code-26oct.jpg);
     margin: 0 0 40px;
 }
 
+/*
 label {
   position: absolute;
   -webkit-transform: translateY(6px);
@@ -92,6 +93,7 @@ label {
   pointer-events: all;
   font-size: 22px;
 }
+*/
 label .req {
   margin: 2px;
   color: steelblue;
@@ -184,4 +186,7 @@ label.highlight {
     width: 48%;
     float: left;
     margin-right: 4%;
+}
+label.error_login_c{
+	color: rgb(76, 165, 125);
 }
