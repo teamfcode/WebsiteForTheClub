@@ -3,6 +3,7 @@
 }
 
 
+
 html {
   overflow-y: scroll;
 }
@@ -124,6 +125,7 @@ background-image: url(binario.png);
   border: 1px solid #a0b3b0;
   color: #ffffff;
   border-radius: 0;
+    font-family: 'Exo 2', sans-serif;
   transition: border-color .15s ease, box-shadow .15s ease;
 }
 .input_t:focus, .textarea_t:focus {
