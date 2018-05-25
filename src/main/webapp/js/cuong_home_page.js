@@ -58,7 +58,9 @@ jQuery.validator.addMethod("phonenum", function(value, element)
 {
 return this.optional(element) || /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/.test(value);
 });
-
+jQuery.validator.addMethod('notnone', function(value) {
+        return (value != '0');
+ });
 
 $("form[name='message']").validate({
 	onfocusout: false,
@@ -132,7 +134,10 @@ $("form[name='signup']").validate({
 		phonenum: true
       },
       email: {
-        required: true,
+        required: true
+      },
+      choice: {
+        notnone: true
       },
     },
     messages: {
@@ -172,6 +177,9 @@ $("form[name='signup']").validate({
       email: {
         required: "Please fill the required field.",
         email: "Email address seems invalid."
+      },
+      choice: {
+        notnone: "Please choose an option",
       },
     },
 	errorClass: "error_login_c",

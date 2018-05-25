@@ -460,8 +460,7 @@
 }
 
 #find_event_c:hover{
-	border: 3px solid hotpink;
-	background-color: hotpink;
+	opacity: 0.7;
 }
 
 .invisible{
@@ -675,6 +674,18 @@
 	line-height: 2vmin;
 	font-size: 1.5vmax;
 	display: block;
+}
+
+.btn_green_c:hover{
+	opacity: 0.7;
+}
+
+.btn_green_c:link{
+	text-decoration: none;
+}
+
+.btn_green_c:visited{
+	text-decoration: none;
 }
 
 .news_background_c  a:link{
@@ -1177,8 +1188,7 @@ label.error_contact_c{
 }
 
 #send_message_c:hover{
-	border: 3px solid hotpink;
-	background-color: hotpink;
+	opacity: 0.7;
 }
 
 @media only screen and (max-width: 750px) {
@@ -1253,8 +1263,10 @@ label.error_contact_c{
     }
 }
 
+							/*-----------------------Detail event-------------------------*/
+
 .event_info_c{
-	width: 60%;
+	width: 80%;
 }
 .event_info_c h1{
 	font-size: 3vw;
@@ -1282,4 +1294,41 @@ label.error_contact_c{
 }
 .activity_c{
 	font-size: 1.5vw;
+}
+@media only screen and (max-width: 1200px) and (min-width: 750px){
+	.event_info_c h1{
+		font-size: 4.5vw;
+	}
+	.event_info_c p{
+		font-size: 2.5vw;
+	}
+	.schedule_c p{
+		font-size: 2.5vw;
+	}
+	.time_c{
+		font-size: 3.5vw;
+	}
+	.activity_c{
+		font-size: 2vw;
+	}
+}
+@media only screen and (max-width: 750px) {
+	.event_info_c h1{
+		font-size: 7vw;
+	}
+	.event_info_c p{
+		font-size: 3vw;
+	}
+	.schedule_c p{
+		font-size: 5vw;
+	}
+	.time_c{
+		font-size: 4.5vw;
+	}
+	.activity_c{
+		font-size: 3vw;
+	}
+	.event_info_c{
+		width: 100%;
+	}
 }
