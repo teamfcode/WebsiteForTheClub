@@ -1,0 +1,713 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Login/SignUp</title>
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet"> 
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> 
+    <link rel="stylesheet" href="css/thinh_login_form.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cuong_home_page.css">
+    <!-----Style for the selected box------>
+    <style>
+        /*the container must be positioned relative:*/
+
+        .custom-select {
+            position: inherit;
+            font-family: Arial;
+        }
+
+        .custom-select select {
+            display: none;
+            transition: .5s ease;
+            /*hide original SELECT element:*/
+        }
+
+        .select-selected {
+            background-color: rgb(43, 181, 123);
+            transition: .5s ease;
+        }
+
+        /*style the arrow inside the select element:*/
+
+        .select-selected:after {
+            position: absolute;
+            content: "";
+            top: 14px;
+            right: 10px;
+            width: 0;
+            height: 100%;
+            border: 6px solid transparent;
+            border-color: #fff transparent transparent transparent;
+            transition: .16s ease;
+        }
+
+        /*point the arrow upwards when the select box is open (active):*/
+
+        .select-selected.select-arrow-active:after {
+            border-color: transparent transparent #fff transparent;
+            top: 7px;
+        }
+
+        /*style the items (options), including the selected item:*/
+
+        .select-items div,
+        .select-selected {
+            color: #ffffff;
+            padding: 8px 16px;
+            border: 1px solid transparent;
+            border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+            cursor: pointer;
+            user-select: none;
+            transition: .5s ease;
+            transition-property: all;
+            transition-duration: 2s;
+        }
+
+        /*style items (options):*/
+
+        .select-items {
+            position: absolute;
+            background-color: rgb(43, 181, 123);
+            top: 100%;
+            left: 0;
+            right: 0;
+            z-index: 99;
+            transition: .1s ease;
+            
+        }
+
+        /*hide the items when the select box is closed:*/
+
+        .select-hide {
+            display: none;
+            transition: .3s ease;
+        }
+
+        .select-items div:hover,
+        .same-as-selected {
+            background-color: rgba(0, 0, 0, 0.1);
+            transition: .3s ease;
+        }
+    </style>
+    <style>
+        /* The container */
+
+        .container {
+            display: block;
+            position: inherit;
+            padding-right: 65%;
+            margin-bottom: 6%;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Hide the browser's default checkbox */
+
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        /* Create a custom checkbox */
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+
+        /* On mouse-over, add a grey background color */
+
+        .container:hover input~.checkmark {
+            background-color: #ccc;
+            cursor: pointer;
+            transition: 0.5s ease;
+        }
+
+        /* When the checkbox is checked, add a blue background */
+
+        .container input:checked~.checkmark {
+            background-color: rgb(43, 181, 123);
+            transition: 0.2s ease;
+        }
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the checkmark when checked */
+
+        .container input:checked~.checkmark:after {
+            display: block;
+        }
+
+        /* Style the checkmark/indicator */
+
+        .container .checkmark:after {
+            left: 10px;
+            top: 6px;
+            width: 7px;
+            height: 13px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    </style>
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+</head>
+
+<body class="body_t">
+    <!--------------------Prevent overflowing------------------------------------>
+    <div class="overflow">
+        <!--------------------------------Navigation bar------------------------------------>
+        <div class="header_c container-fluid" style="height: 65px">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="brand_c">Fcode</div>
+                </div>
+                <div class="col-md-2 col-lg-3"></div>
+                <div class="col-md-5 col-lg-4">
+                    <ul class="nav_bar_c">
+                        <li>
+                            <div class="nav_bar_wrapper_c"><a class="a_t" href="index.html">HOME</a></div>
+                        </li>
+                        <li>
+                            <div class="nav_bar_wrapper_c"><a class="a_t" href="news.html">NEWS</a></div>
+                        </li>
+                        <li>
+                            <div class="nav_bar_wrapper_c"><a class="a_t" href="event.html">EVENT</a></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <div class="search_wrapper_c">
+                        <form action="">
+                            <input class="search_c" type="text" name="search" style="display: inline" placeholder="Search..">
+                            <button class="search_btn_c a_t" type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="login_c"><a href="login.html"><i class="fas fa-sign-in-alt"></i> LOGIN</a></div>
+                </div>
+            </div>
+        </div>
+        <!--Hidden navigation bar---------------------->
+        <div class="header_hidden_c container-fluid">
+            <div class="row">
+                <div class="col-xs-1">
+                    <div class="menu_c"><i class="fas fa-bars"></i></div>
+                </div>
+                <div class="col-xs-10" style="text-align: center">
+                    <div class="brand_alt_c">Fcode</div>
+                </div>
+                <div class="col-xs-1"></div>
+            </div>
+        </div>
+        <!-----------------Toggle for hidden navigation bar---------------------------------->
+        <div class="toggle_menu_c">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="link_wrapper_c"><a href="index.html">HOME</a></div>
+                </div>
+                <div class="row">
+                    <div class="link_wrapper_c"><a href="news.html">NEWS</a></div>
+                </div>
+                <div class="row">
+                    <div class="link_wrapper_c"><a href="event.html">EVENT</a></div>
+                </div>
+                <div class="row">
+                    <div class="link_wrapper_c"><a href="login.html"><i class="fas fa-sign-in-alt"></i> LOGIN</a></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-xs-3"></div>
+                    <div class="col-md-4 col-xs-6">
+                        <div class="hidden_search_wrapper_c">
+                            <form action="">
+                                <input class="hidden_search_c" type="text" name="search" style="display: inline" placeholder="Search..">
+                                <button class="hidden_search_btn_c" type="submit"><i class="fas fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-3"></div>
+                </div>
+            </div>
+        </div>
+        <!----the form for the sign up and Login---->
+        <div class="body_c">
+            <div class="form_t">
+
+                <ul class="tab-group">
+                    <li class="tab active"><a href="#login">Log In</a></li>
+                    <li class="tab"><a href="#signup">Sign Up</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="login">
+                        <h1 class="h1_t"  style="
+
+    font-family: 'Press Start 2P', cursive;
+
+ color: rgb(20, 193, 121); font-size: 40px; padding-top: 21px;">Welcome Back Member!</h1> <br>
+
+                        <form action="/" method="post">
+
+                            <div class="field-wrap"  style="height:6%;">
+
+                                <input class="input_t" type="text" placeholder="Username*" style="font-size: 20px; color: aliceblue" autocomplete="off" />
+                            </div>
+
+                            <div class="field-wrap" style="height:6%; margin-bottom: 30px">
+
+
+                                <input class="input_t" type="password" placeholder="Password*" style="font-size: 20px; color: aliceblue" autocomplete="off" />
+                            </div>
+
+                                   <div class="top-row" style="margin-bottom: 20px"> 
+                              <label class="container label" style="font-size: 120%; color: rgb(20, 193, 121)">Remember Me
+  <input type="checkbox" name="remember_me">
+  <span class="checkmark"></span>
+</label>
+                                        
+
+                          
+                                <p class="forgot" style="font-size: 120%; text-align: right;"><a class="a_t" style="color:rgb(43, 181, 123);" href="#">Forgot Password?</a></p>
+                            </div>
+                            
+                            <a href="profile.html" class="button_t button-block_t" style="text-align: center">LogIn</a>
+
+                        </form>
+
+                    </div>
+                    <div id="signup">
+                        <h1 class="h1_t" style="font-family: 'Russo One', sans-serif; color: rgb(20, 193, 121); font-size: 40px; padding-top: 21px;">Welcome to F-Code</h1>
+                        <h2 class="h2_t" style="font-family: 'Abril Fatface', cursive; color:lightsteelblue; font-size: 25px;">Enter your information to this form</h2>
+
+
+                        <form action="/" method="post">
+
+                            <div class="top-row">
+                                <div class="field-wrap" style="height:6%; width: 48%">
+                                    <input class="input_t" type="text" placeholder="First Name*" style="font-size: 20px; color: aliceblue" required autocomplete="off" />
+                                </div>
+
+                                <div class="field-wrap" style="height:6%; width: 48%;">
+
+                                    <input class="input_t" type="text" placeholder="Last Name*" style="font-size: 20px; color: aliceblue" required autocomplete="off" />
+                                </div>
+
+
+                            </div>
+                            <div class="top-row">
+
+                                <div class="field-wrap" style="height:6%;">
+                                    <div class="top-row">
+                                      <div class="custom-select" style="width: 99%; height: 100%">                                <select style="height: 100%">
+    <option value="0"> Chooose Gender* </option>
+    <option value="1">Male</option>
+    <option value="2">Female</option>
+    <option value="3">Others</option>
+  </select>
+                            </div>
+     
+                                      <!--  </div> -->
+
+                                    </div>
+                                </div>
+                                <div class="field-wrap" style="height:6%; width: 48%;">
+
+                                      <input class="input_t" placeholder="Date of Birth*" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"  required id="date" style="padding-left: 15px; font-size: 20px ">
+                                </div>
+
+                            </div>
+                            <div class="field-wrap" style="height:6%">
+
+                                <input class="input_t" type="text" name="username" placeholder="Username*" style="font-size: 20px; color: aliceblue" maxlength="32"required autocomplete="off" id="name"/>
+                                 <div id='textField'></div>
+                            </div>
+       
+
+
+                            <!-- Set up Passwords -->
+
+                            <div class="field-wrap" style="height:6%">
+                                <input class="input_t" type="password" name="password" placeholder="Password*" style="font-size: 20px; color: aliceblue" id="password" maxlength="60" onkeyup='check();' required autocomplete="off" onblur="inputPasswordValidation(this)" />
+                                <div id='textField_p'></div>
+                            </div>
+
+                            <div class="field-wrap" style="height:6%">
+                                <input class="input_t" type="password" placeholder="Confirm Password*" style="font-size: 20px; color: aliceblue" name="confirm_password" maxlength="60" id="confirm_password" onkeyup='check();'  required autocomplete="off" />
+                                <span id='message'></span>
+                            </div>
+                            <div class="top-row" style="height: 10%">
+                                               <div class="field-wrap" style="height:6%;">
+                                    <div class="top-row">
+                                        <div class="custom-select" style="width: 99%; height: 100%">                                <select style="height: 100%">
+  <option value="0">Choose Major* </option>
+    <option value="1">Software Engineer</option>
+    <option value="2">Information Assurance</option>
+  </select>
+                            </div>
+                                        
+
+                                    </div>
+                                </div>
+                                                                           <div class="field-wrap" style="height:6%;">
+                                    <div class="top-row">
+                                        
+                                        <div class="custom-select" style="width: 99%; height: 100%">                                <select style="height: 100%">
+   <option value="0"> Choose Course* </option>
+    <option value="1">K12</option>
+    <option value="2">K13</option>
+    <option value="3">K14</option>
+  </select>
+                            </div>
+                                       
+                                        
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="top-row">
+
+                            <div class="field-wrap" style="height:6%">
+                                <input  class="input_t" type="text" placeholder="Student ID*" style="font-size: 20px; color: aliceblue" maxlength="8" onblur="inputStudentNumberValidation(this)"  required autocomplete="on" />
+                                <div id='textField_s'></div>
+                            </div>
+                            <div class="field-wrap" style="height:6%">
+                                <input class="input_t" type="tel" placeholder="Phone Number" style="font-size: 20px; color: aliceblue" maxlength="10" autocomplete="off" />
+                            </div>
+</div>
+                            <!-- date of birth -->
+
+                            <!-- Phone number -->
+<div class="field-wrap" style="height:6%">
+
+                                <input class="input_t" type="email" placeholder="Email*" style="font-size: 20px; color: aliceblue" required autocomplete="off" onblur='inputEmailValidation(this)' />
+                                <div id='textField_t'></div>
+                            </div>
+                            
+
+                            <!-- email -->
+
+
+
+
+
+                            <!-- Submit button -->
+
+                            <button type="submit" class="button_t button-block_t">Submit</button>
+
+                        </form>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- tab-content -->
+    
+        <div class="footer_c">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <!---Information---->
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="footer_title_c">Information</h3>
+                        <br>
+                        <p class="footer_text_c">
+                            - Lorem ipsum dolor sit amet consectetur. <br> - Sit amet consectetur dolor. <br> - Dolor sit amet consectetur dolor. <br> - Claritas est etiam processus dynamicus. <br> - Sit amet consectetur dolor. <br> - Dolor sit amet consectetur dolor. <br> - Mirum est notare quam littera gothica. <br>
+                        </p>
+                        <br><br>
+                    </div>
+                    <!---Find us at---->
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="footer_title_c">Find Us At</h3>
+                        <br>
+                        <p class="footer_text_c">Innovation building, block 24, Quang Trung <br> Software City, District 12, Ho Chi Minh City, <br> Vietnam</p>
+                        <br>
+                        <p class="icon_holder_c">
+                            <a class="a_t" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a class="a_t" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a class="a_t" href="https://plus.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+                            <a class="a_t" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </p>
+                        <br><br>
+                    </div>
+                    <!--Send a message form-->
+                    <div class="col-lg-4">
+                        <h3 class="footer_title_c">Send Us A Message</h3>
+                        <form name="message" action="#thís">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <br>
+                                    <p class="text_input_c">Your Name</p>
+                                    <input class="name_input_c" type="text" name="name" placeholder="Your Name" autocomplete="off">
+                                </div>
+                                <div class="col-sm-6">
+                                    <br>
+                                    <p class="text_input_c">Your Email</p>
+                                    <input class="email_input_c" type="text" name="email" placeholder="Your Email" autocomplete="off">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <br>
+                                    <p class="text_input_c">Your Message</p>
+                                    <textarea class="message_area_c" name="messsage" placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-9 col-sm-8 col-xs-0"></div>
+                                    <div class="col-lg-3 col-sm-3 col-xs-4">
+                                        <br>
+                                        <button class="a_t" id="send_message_c" type="submit">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky_button_up_c a_t"><i class="fas fa-arrow-up" style="
+    padding-top: 8%;
+"></i></div>
+    </div>
+
+    <!-- /form -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <!-----------Animation for the selected box------------>
+
+    <!-- Error when split into another file -->
+
+    <script>
+        var x, i, j, selElmnt, a, b, c;
+        /*look for any elements with the class "custom-select":*/
+        x = document.getElementsByClassName("custom-select");
+        for (i = 0; i < x.length; i++) {
+            selElmnt = x[i].getElementsByTagName("select")[0];
+            /*for each element, create a new DIV that will act as the selected item:*/
+            a = document.createElement("DIV");
+            a.setAttribute("class", "select-selected");
+            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+            x[i].appendChild(a);
+            /*for each element, create a new DIV that will contain the option list:*/
+            b = document.createElement("DIV");
+            b.setAttribute("class", "select-items select-hide");
+            for (j = 0; j < selElmnt.length; j++) {
+                /*for each option in the original select element,
+                create a new DIV that will act as an option item:*/
+                c = document.createElement("DIV");
+                c.innerHTML = selElmnt.options[j].innerHTML;
+                c.addEventListener("click", function(e) {
+                    /*when an item is clicked, update the original select box,
+                    and the selected item:*/
+                    var y, i, k, s, h;
+                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                    h = this.parentNode.previousSibling;
+                    for (i = 0; i < s.length; i++) {
+                        if (s.options[i].innerHTML == this.innerHTML) {
+                            s.selectedIndex = i;
+                            h.innerHTML = this.innerHTML;
+                            y = this.parentNode.getElementsByClassName("same-as-selected");
+                            for (k = 0; k < y.length; k++) {
+                                y[k].removeAttribute("class");
+                            }
+                            this.setAttribute("class", "same-as-selected");
+                            break;
+                        }
+                    }
+                    h.click();
+                });
+                b.appendChild(c);
+            }
+            x[i].appendChild(b);
+            a.addEventListener("click", function(e) {
+                /*when the select box is clicked, close any other select boxes,
+                and open/close the current select box:*/
+                e.stopPropagation();
+                closeAllSelect(this);
+                this.nextSibling.classList.toggle("select-hide");
+                this.classList.toggle("select-arrow-active");
+            });
+        }
+
+        function closeAllSelect(elmnt) {
+            /*a function that will close all select boxes in the document,
+            except the current select box:*/
+            var x, y, i, arrNo = [];
+            x = document.getElementsByClassName("select-items");
+            y = document.getElementsByClassName("select-selected");
+            for (i = 0; i < y.length; i++) {
+                if (elmnt == y[i]) {
+                    arrNo.push(i)
+                } else {
+                    y[i].classList.remove("select-arrow-active");
+                }
+            }
+            for (i = 0; i < x.length; i++) {
+                if (arrNo.indexOf(i)) {
+                    x[i].classList.add("select-hide");
+                }
+            }
+        }
+        /*if the user clicks anywhere outside the select box,
+        then close all select boxes:*/
+        document.addEventListener("click", closeAllSelect);
+    </script>
+   
+  <!--  <script>
+        var check = function() {
+            if (document.getElementById('password').value ==
+                document.getElementById('confirm_password').value) {
+                document.getElementById('message').style.color = 'green';
+                document.getElementById('message').innerHTML = 'matching';
+            } else {
+                document.getElementById('message').style.color = 'red';
+                document.getElementById('message').innerHTML = 'not matching';
+            }
+        }
+    </script>-->
+   <!--     <script>
+    function inputValidation(inputTxt){
+   
+        var regx = /^[0-9a-zA-Z]+$/;
+        var textField = document.getElementById("textField");
+           
+        if(inputTxt.value != '' ){
+       
+            if(inputTxt.value.length >= 5){
+           
+                if(inputTxt.value.match(regx)){
+                    textField.textContent = 'Good input';
+                    textField.style.color = "green";
+                       
+                }else{
+                    textField.textContent = 'only numbers and letters';
+                    textField.style.color = "red";
+                }  
+            }else{
+                textField.textContent = 'your input is less than 5 chracters';
+                textField.style.color = "red";
+            }  
+        }else{
+            textField.textContent = 'your input is empty';
+            textField.style.color = "red";
+        }
+    }
+    </script>
+            <script>
+    function inputEmailValidation(inputEmail){
+   
+        var regx_t = /^[a-zA-Z0-9]*\@[a-zA-Z0-9]*\.[a-zA-Z0-9]*$/gm;
+        var textField_t = document.getElementById("textField_t");
+           
+        if(inputEmail.value != '' ){
+       
+            if(inputEmail.value.length >= 5){
+           
+                if(inputEmail.value.match(regx_t)){
+                    textField_t.textContent = 'Good input';
+                    textField_t.style.color = "green";
+                       
+                }else{
+                    textField_t.textContent = 'only numbers,@ and letters';
+                    textField_t.style.color = "red";
+                }  
+            }
+        }
+    }
+    </script>
+  <script>
+    function inputStudentNumberValidation(inputSNum){
+   
+        var regx_s = /(?:SE|IA)\d+/gm;
+        var textField_s = document.getElementById("textField_s");
+           
+        if(inputSNum.value != '' ){
+       
+            if(inputSNum.value.length <= 8 || inputSNum.value.length >= 7 ){
+           
+                if(inputSNum.value.match(regx_s)){
+                    textField_s.textContent = 'Good input';
+                    textField_s.style.color = "green";
+                       
+                }else{
+                    textField_s.textContent = 'only numbers, SE or IA';
+                    textField_s.style.color = "red";
+                }  
+            }else{
+                textField_s.textContent = 'your input less than 7 chracters';
+                textField_s.style.color = "red";
+            }  
+        }
+    }
+    </script>
+   <script>
+    function inputPasswordValidation(inputPW){
+   
+        var regx_p= /[0-9a-zA-Z]/gm;
+        var textField_p = document.getElementById("textField_p");
+           
+        if(inputPW.value != '' ){
+       
+            if(inputPW.value.length <= 60 || inputPW.value.length >= 10){
+           
+                if(inputPW.value.match(regx_p)){
+                    textField_p.textContent = 'Good input';
+                    textField_p.style.color = "green";
+                       
+                }else{
+                    textField_p.textContent = 'only numbers and letters';
+                    textField_p.style.color = "red";
+                }  
+            }else{
+                textField_p.textContent = 'your input must be more than 10 characters';
+                textField_p.style.color = "red";
+            }  
+        }
+    }
+    </script> -->
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/thinh_login_form.js"></script>
+    <script src="js/cuong_home_page.js"></script>
+    <script src="js/jquery-3.1.1.js"></script>
+    
+
+
+
+</body>
+
+</html>

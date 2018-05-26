@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<title>F-Code Website</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/day_admin.css">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico">	
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nova+Mono">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">	
+
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+   	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper_da">
+		<!-- Menu -->
+		<div class="wrap_menu_da">		
+			<div class="menu_logo_da">
+				<img id="logo_da" src="img/logo.png" alt="logo">
+				<h3 id="title_da">Fcode Club</h3>
+			</div>
+			<div class="line_da"></div>
+			<ul class="left_menu_da">
+				<li class="menu1_da menu_da active_da" >
+					<a class="mainmenu_da" href="#dashboard_da">
+						<i class="fa fa-bar-chart 1x"></i>
+						<p id="title_da">DASHBOARD</p>
+					</a>
+				</li>
+				<li class="menu2_da menu_da"> 
+					<a class="mainmenu_da" href="#new_da">
+						<i class="fa fa-newspaper-o"></i>	
+						<p id="title_da">NEWS</p> 			
+					</a>
+				</li>
+				<li class="menu3_da menu_da"> 
+					<a class="mainmenu_da" href="#event_main_da">
+						<i class="fa fa-calendar"></i>	
+						<p id="title_da">EVENTS</p>			
+					</a>
+				</li>
+				<li class="menu4_da menu_da"> 
+					<a class="mainmenu_da" href="javascript:void(0)">
+						<i class="fa fa-users"></i>					
+						<p id="title_da">MEMBERS</p>			
+					</a>
+				</li>
+				<li class="menu5_da menu_da"> 
+					<a class="mainmenu_da" href="javascript:void(0)">
+						<i class="fa fa-address-card"></i>					
+						<p id="title_da">ABOUT</p>			
+					</a>
+				</li>
+			</ul>			
+		</div>
+		
+		<div class="main_da">
+			<!-- header -->
+			<div class="header_da">
+				<h3 id="top_da" style=" color: #333333">ADMIN</h3>
+				<div class="inner_right_da">
+					<ul>						
+						<li class="dropdown_da">
+							<a href="javascript:void(0)">
+								<i id="showDropdown_da" class="fa fa-cog"></i>					
+							</a>	
+							<ul class="wrap_dropdown_da" id="wrap_drop_da">							<li>
+									<a href="index.html" target="">
+										<i class="fa fa-home"></i>
+										<span>Home Page</span>
+									</a>
+								</li>	
+								<li>
+									<a href="profile.html" target="_blank">
+										<i class="fa fa-sign-out"></i>
+										<span>Sign out</span>
+									</a>
+								</li>									
+							</ul>						
+						</li>	
+					</ul>	
+
+				</div>
+			</div>
+		
+			<div class="wrap_content_da">
+				<div class="content_da">
+					<div id="dashboard_da" class="dashboard_da active_da">	  
+						<h3>DASHBOARD</h3>	
+						<div class="space_da"></div>
+						<div class="container_da">
+							<div class="overview_da">
+								<h4>Overview: </h4>
+								<ul>
+									<li>
+										<center>
+											<h5><strong>APPROACH:</strong></h5>
+											<p>Apr 15 - May 13</p>
+											<span>11 037</span>
+										</center> 
+									</li>									
+									<li>
+										<center>
+											<h5><strong>ACTION ON PAGE:</strong></h5>
+											<p>Apr 15 - May 13</p>
+											<span>119</span>
+										</center>
+									</li>									
+									<li>
+										<center>
+											<h5><strong>MESSAGES:</strong></h5>
+											<p>Apr 15 - May 13</p>
+											<span>10 317</span>
+										</center>
+									</li>
+								</ul>
+							</div>
+							<h4>Detail:</h4>
+							<ul class="dashboard_ul_da">
+
+								<li class="news_da dashboard_inner_da">							
+									<a href="news.html" target="_blank"><h4>NEWS</h4></a>
+									<img src="img/event_pic1.jpg" alt="news">	
+									<ol>
+										<li>Total news: 3<li>
+										<li>Lasted news: 10/05/2018</li>
+										<li>Comments: 999</li>
+										<li>Seen: 500</li>
+									</ol>								
+								</li>	
+	
+								<li class="event_da dashboard_inner_da">						
+									<a href="event.html" target="_blank"><h4>EVENT</h4></a>
+									<img src="img/event_pic1.jpg" alt="event">	
+									<ol>
+										<li>Total event: 3<li>
+										<li>Lasted event: 10/05/2018</li>
+										<li>Comments: 9</li>
+										<li>Seen: 500</li>
+										<li>Participants: 499</li>										
+									</ol>								
+								</li>
+
+								<li class="member_da dashboard_inner_da">						
+									<a href="javascript:void(0)"><h4>MEMBERS</h4></a>
+									<img src="img/member_pic1.jpg" alt="member">	
+									<ol>
+										<li>Members: 500ae<li>
+										<li>New Members: 4</li>
+										<li>Admin: 4</li>
+										<li>Online: 30</li>
+									</ol>								
+								</li>	
+							</ul>
+						</div>		
+					</div>
+
+
+					<div id="new_da" class="new_da hide_da">	
+						<h3>NEWS</h3>	
+						<div class="space_da"></div>
+						<div class="container_da">
+							<ul class="new_ul_da">
+								<li>
+									<h4>Create new:</h4>
+									<div class="title">
+										<form>
+											Title: 	
+											<input type="text"> <br>  
+											<div class="space_da" style="padding-top: 1vw;"></div>
+											Description: 	<br>
+											<div id="new_text_da"></div>
+											Poster Name: 	
+											<input type="text"> <br>  
+										</form>
+										<!-- <form>
+											<p>Title: </p>
+											<input type="text"> <br>  
+											<p>Description: </p><br>
+											<div id="new_text_da"></div>
+											<p>Poster Name: </p>
+											<input type="text"> <br>  
+										</form> -->
+
+									</div>
+								</li>								
+								<li>
+									<h4>...</h4>
+								</li>
+							</ul>
+						</div>		
+					</div>
+
+					<div id="event_main_da" class="event_main_da hide_da">	
+						<h3>EVENTS</h3>	
+						<div class="space_da"></div>
+						<div class="container_da">
+							<ul class="event_main_ul_da">
+								<li>
+									<h4>Create event:</h4>
+									<div class="title">
+										<form>
+											Title: 
+											<input type="text"> <br>  
+											<div class="space_da" style="padding-top: 1vw;">
+											From: <input type="date" id="date_da"> 
+											To: <input type="date" id="date_da"> <br>
+											<div class="space_da" style="padding-top: 1vw;">
+											Location: <input type="location"> <br>
+											<div class="space_da" style="padding-top: 1.5vw;">
+											Description: <br>
+											<div id="event_text_da"></div>						
+										</form>
+									</div>
+								</li>								
+								<li>
+									<h4>...</h4>
+								</li>
+							</ul>
+						</div>		
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+	<script src="js/day_admin.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>  
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>   
+   	<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+
+
+</body>
+</html>
