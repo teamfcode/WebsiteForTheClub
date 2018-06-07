@@ -760,6 +760,11 @@
 .date_of_post_c{
 	font-size: 1vw;
 }
+.folder_c > a{
+	font-size: 1vw;
+	color: black;
+	text-decoration: none;
+}
 .post_text_c{
 	font-size: 1vw;
 	line-height: 1.5vw;
@@ -1015,6 +1020,9 @@
 	.post_text_c{
 		font-size: 2vw;
 		line-height: 3.5vw;
+	}
+	.folder_c > a{
+		font-size: 2vw;
 	}
 	.post_img_caption_c{
 		font-size: 2.5vw;
