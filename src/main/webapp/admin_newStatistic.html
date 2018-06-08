@@ -25,7 +25,7 @@
 </head>
 
 <body>	
-	<div class="wrapper_da">
+		<div class="wrapper_da">
 		<!-- Menu -->
 		<div class="wrap_menu_da">		
 			<div class="menu_logo_da">
@@ -52,12 +52,12 @@
 				<div class="dropdown_new_da">
 					<ul>	
 						<li>	
-							<a href="admin_newCreate.html" target="_blank">
+							<a href="admin_eventCreate.html" target="_blank">
 								<p>CREATE NEW</p>
 							</a>
 						</li>
 						<li>
-							<a href="admin_newStatistic.html" target="_blank">
+							<a href="admin_eventStatistic.html" target="_blank">
 								<p>STATISTIACL NEW</p>
 							</a>
 						</li>
@@ -135,149 +135,16 @@
 		
 			<div class="wrap_content_da">
 				<div class="content_da">
-					<div id="dashboard_da" class="dashboard_da active_da">	  
-						<h3>DASHBOARD</h3>	
-						<div class="space_da"></div>
-						<div class="container_da">
-							<div class="overview_da">
-								<h4>Overview: </h4>
-								<ul>
-									<li class="first_overview_da col-sm-3">										
-										<a href="javascript:void(0)">
-											<div>
-												<span class="glyphicon glyphicon-refresh"></span>
-											</div>						
-										</a>
-										<div style="display: inline-block; margin-top: 10px">
-											<span class="glyphicon glyphicon-globe"></span>								
-											<p>9999</p>
-										</div>
-										<h5>TOTAL VISITORS</h5>											
-									</li>	
-
-									<li class="second_overview_da col-sm-3">
-										<a href="javascript:void(0)">
-											<div>
-												<span class="glyphicon glyphicon-refresh"></span>
-											</div>						
-										</a>
-										<div style="display: inline-block;">
-											<i class="fa fa-newspaper-o"></i>								
-											<p>FPTU ACM Chanllenge Contest 2018</p>
-										</div>
-										<h5>RECENT NEW</h5>	
-									</li>		
-
-									<li class="third_overview_da col-sm-3">
-										<a href="javascript:void(0)">
-											<div>
-												<span class="glyphicon glyphicon-refresh"></span>
-											</div>						
-										</a>
-										<div style="display: inline-block;">
-											<i class="fa fa-calendar"></i>								
-											<p>FPTU ACM Chanllenge Contest 2018</p>
-										</div>
-										<h5>ONGOING EVENT</h5>
-									</li>
-
-									<li class="fourth_overview_da col-sm-3">
-										<a href="javascript:void(0)">
-											<div>
-												<span class="glyphicon glyphicon-refresh"></span>
-											</div>						
-										</a>
-										<div style="display: inline-block; margin-top: 10px">
-											<i class="fa fa-users"></i>								
-											<p>9999</p>
-										</div>
-										<h5>TOTAL MEMBERS</h5>
-									</li>
-								</ul>
-							</div>
-							<h4>Outstanding Detail:</h4>
-							<ul class="dashboard_ul_da">
-
-								<li class="news_da dashboard_inner_da">							
-									<a href="news.html" target="_blank"><h4>NEWS</h4></a>
-									<img src="img/event_pic1.jpg" alt="news">	
-									<ol>
-										<li>Name: ACM<li>
-										<li>Date: 10/05/2018</li>
-										<li>Total comments: 999</li>
-										<li>Most Interaction: Hoàng Yến Minh has most comments with 998</li>
-									</ol>								
-								</li>	
-	
-								<li class="event_da dashboard_inner_da">						
-									<a href="event.html" target="_blank"><h4>EVENT</h4></a>
-									<img src="img/event_pic1.jpg" alt="event">	
-									<ol>
-										<li>Name: ACM<li>
-										<li>Date: 19/05/2018</li>
-										<li>Participants: 50</li>
-										<li>Seen: 500</li>
-										<li>Participants: 499</li>										
-									</ol>								
-								</li>
-
-								<li class="member_da dashboard_inner_da">						
-									<a href="javascript:void(0)"><h4>MEMBERS</h4></a>
-									<img src="img/member_pic1.jpg" alt="member">	
-									<ol>
-										<li>Members: 500ae<li>
-										<li>New Members: 4</li>
-										<li>Admin: 4</li>
-										<li>Online: 30</li>
-									</ol>								
-								</li>	
-							</ul>
-						</div>		
-					</div>
-
-
-					<div id="new_da" class="new_da hide_da">	
+					<div id="new_da" class="new_da">	
 						<h3>NEWS</h3>	
 						<div class="space_da"></div>
 						<div class="container_da">
 							<ul class="new_ul_da">
 								<li>
-									<div class="view_create_new">
-										<button class="display_create"><h4>Create new: </h4></button>
-										<button class="hide_create"><i class="fa fa-times"></i></button>
-									</div>	
-
-									<div class="wrap_create_new_da view_create" >
-										<form name="form_new_da" onsubmit="return validateForm_da()" method="post">
-											<p>Title: </p> 	
-											<input class="col-sm-6" type="text" name="title_da" required> <br>
-											<div class="space_da" style="padding-top: 1vw;"></div>
-											Description: 	<br>
-											<div id="new_text_da"></div>
-											<p style="float: right">Poster Name: </p>	<br>
-											<input class="col-sm-3" style="float: right" type="text" required> <br> 
-
-											<!-- /*--------Bỏ Comment-------*/ -->
-											<button class="submit_da">										
-												<i class="fa fa-fw fa-check-circle submit_new_da"></i>
-												<span class="submit_new_da" style="font-weight: 700">Submit</span>					
-											</button>
-
-										</form>
-											
-											<!-- ----------Xài nhét vô form--------- -->
-											<!-- <button class="submit_da">										
-												<i class="fa fa-fw fa-check-circle submit_new_da"></i>
-												<span class="submit_new_da" style="font-weight: 700">Submit</span>					
-											</button> -->
-										
-									</div>
-								</li>								
-								<li>
-									<div class="view_all_new">
+									<!-- <div class="view_all_new">
 										<button class="display_table"><h4>Statistical news: </h4></button>
 										<button class="hide_table"><i class="fa fa-times"></i></button>
-									</div>	
+									</div>	 -->
 
 									<table class="table_da">
 										<tr>
@@ -383,81 +250,13 @@
 												</a>	
 											</td>
 										</tr>
-									</table>
-								</li>
-							</ul>
-						</div>		
-					</div>
-
-					<div id="event_main_da" class="event_main_da hide_da">	
-						<h3>EVENTS</h3>	
-						<div class="space_da"></div>
-						<div class="container_da">
-							<ul class="event_main_ul_da">
-								<li>
-									<div class="view_create_event">
-										<button class="display_create"><h4>Create event: </h4> </button>
-										<button class="hide_create"><i class="fa fa-times"></i> </button>
-									</div>	
-									
-									<div class="wrap_create_event_da view_create" >
-										<form>
-											<p>Title: </p>
-											<input class="col-sm-6" type="text" required=""> <br>  
-											<div class="space_da" style="padding-top: 1vw;"></div>
-											<div class="event_date_da">
-												<div style="padding: 0" class="col-sm-6">
-													<p>From: </p>
-													<input style="margin-left: 3.29429vw" type="date" id="date_da" required="">
-												</div>
-												<div style="padding: 0" class="col-sm-6">
-													<p>To: </p>
-													<input style="margin-left: 1.903367vw" type="date" id="date_da" required="">
-												</div>
-											</div>	
-
-											<div class="space_da" style="padding-top: 1vw;"></div>
-											<p>Location: </p><input class="col-sm-6" type="location" required=""> <br>
-											<div class="space_da" style="padding-top: 1vw;"></div>						
-											<p>Description: </p>
-											<div id="event_text_da"></div>	
-
-											<button class="submit_da">										
-												<i class="fa fa-fw fa-check-circle submit_event_da"></i>
-												<span class="submit_event_da" style="font-weight: 700">Submit</span>
-											</button>					
-										</form>
-
-											<!-- <button class="submit_da">										
-												<i class="fa fa-fw fa-check-circle submit_event_da"></i>
-												<span class="submit_event_da" style="font-weight: 700">Submit</span>
-											</button> -->
-									</div>
-								</li>								
-								<li>
-									<div class="view_all_new">
-										<button class="display_table"><h4>Statistical Events: </h4></button>
-										<button class="hide_table"><i class="fa fa-times"></i></button>
-									</div>
-
-									<table style="font-size: 14px" class="table_da">
-										<tr>
-											<th>#</th>
-											<th>Name</th>
-											<th>Status</th>
-											<th>Date</th>
-											<th>Location</th>
-											<th>Participants</th>
-											<th>Action</th>
-										</tr>
 
 										<tr>
-											<td>001</td>
+											<td>006</td>
 											<td>FPTU ACM Chanllenge Contest 2018</td>
-											<td class="cell_active_table_da"><p class="active_table_da">Ongoing</p></td>
-											<td>05 May 2018 - 06 May 2018</td>
-											<td>Ho Chi Minh</td>
-											<td>30</td>													
+											<td>20/3/2018</td>
+											<td>Thien Nhan</td>
+											<td class="cell_active_table_da"><p class="active_table_da">Active</p></td>
 											<td>
 												<a href="javascript:void(0)" class="view_action_da">
 													<i class="fa fa-eye"></i>
@@ -472,12 +271,11 @@
 										</tr>
 
 										<tr>
-											<td>002</td>
+											<td>007</td>
 											<td>FPTU ACM Chanllenge Contest 2018</td>
-											<td class="cell_active_table_da"><p class="active_table_da">Ongoing</p></td>
-											<td>05 May 2018 - 06 May 2018</td>
-											<td>Ho Chi Minh</td>
-											<td>30</td>											
+											<td>20/3/2018</td>
+											<td>Thien Nhan</td>
+											<td class="cell_active_table_da"><p class="active_table_da">Active</p></td>
 											<td>
 												<a href="javascript:void(0)" class="view_action_da">
 													<i class="fa fa-eye"></i>
@@ -492,52 +290,11 @@
 										</tr>
 
 										<tr>
-											<td>003</td>
+											<td>008</td>
 											<td>FPTU ACM Chanllenge Contest 2018</td>
-											<td class="cell_active_table_da"><p class="active_table_da">Ongoing</p></td>
-											<td>05 May 2018 - 06 May 2018</td>
-											<td>Ho Chi Minh</td>
-											<td>30</td>											
-											<td>
-												<a href="javascript:void(0)" class="view_action_da">
-													<i class="fa fa-eye"></i>
-												</a>					
-												<a href="javascript:void(0)" class="edit_action_da">
-													<i class="fa fa-pencil"></i>
-												</a>
-												<a href="javascript:void(0)" class="delete_action_da">
-													<i class="fa fa-trash"></i>
-												</a>	
-											</td>
-										</tr>
-
-										<tr>
-											<td>004</td>
-											<td>FPTU ACM Chanllenge Contest 2018</td>
-											<td class="cell_active_table_da"><p class="active_table_da">Ongoing</p></td>
-											<td>05 May 2018 - 06 May 2018</td>
-											<td>Ho Chi Minh</td>
-											<td>30										
-											<td>
-												<a href="javascript:void(0)" class="view_action_da">
-													<i class="fa fa-eye"></i>
-												</a>					
-												<a href="javascript:void(0)" class="edit_action_da">
-													<i class="fa fa-pencil"></i>
-												</a>
-												<a href="javascript:void(0)" class="delete_action_da">
-													<i class="fa fa-trash"></i>
-												</a>	
-											</td>
-										</tr>
-
-										<tr>
-											<td>005</td>
-											<td>FPTU ACM Chanllenge Contest 2018</td>
-											<td class="cell_active_table_da"><p class="active_table_da">Ongoing</p></td>
-											<td>05 May 2018 - 06 May 2018</td>
-											<td>Ho Chi Minh</td>
-											<td>30										
+											<td>20/3/2018</td>
+											<td>Thien Nhan</td>
+											<td class="cell_active_table_da"><p class="active_table_da">Active</p></td>
 											<td>
 												<a href="javascript:void(0)" class="view_action_da">
 													<i class="fa fa-eye"></i>
@@ -551,7 +308,7 @@
 											</td>
 										</tr>
 									</table>
-								</li>
+								</li>										
 							</ul>
 						</div>		
 					</div>
@@ -566,8 +323,7 @@
    	<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
 	<script>
 		$(document).ready(function(){
-    		$('.menu1_da').click();
-  			// $('.1x').click();
+    		$('.menu2_da').click();  			
 		});
 	</script>
 </body>
