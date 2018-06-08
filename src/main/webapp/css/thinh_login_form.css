@@ -8,7 +8,7 @@ html {
 }
 
 .body_t {
-background-image: url(/img/code-26oct.jpg);
+background-image: url(/img/binario.png);
   font-family: 'Titillium Web', sans-serif;
     background-size: 1580px 1400px;
 }
@@ -81,22 +81,20 @@ background-image: url(/img/code-26oct.jpg);
     margin: 0 0 40px;
 }
 
-/*
-label {
-  position: absolute;
+.top-row > label.container {
   -webkit-transform: translateY(6px);
           transform: translateY(6px);
   left: 13px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(20, 193, 121);
+	
   transition: all 0.15s ease;
   -webkit-backface-visibility: hidden;
   pointer-events: all;
   font-size: 22px;
 }
-*/
 label .req {
   margin: 2px;
-  color: steelblue;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 label.active {
@@ -110,7 +108,7 @@ label.active .req {
 }
 
 label.highlight {
-  color: steelblue;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .input_t, .textarea_t {
